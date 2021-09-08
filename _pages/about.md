@@ -31,8 +31,8 @@ The 39th ACM Conference on Human Factors in Computing Systems (CHI), Online, May
 Teaching
 ====== 
 
-CS373, Data Mining & Machine Learning
-Fall 2021, Purdue University
+CS373, Data Mining & Machine Learning<br>
+Teaching Assistant, Fall 2021, Purdue University
 
 Contact
 =====
