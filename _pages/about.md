@@ -28,7 +28,7 @@ Human Reliance on Machine Learning Models When Performance Feedback is Limited: 
 The 39th ACM Conference on Human Factors in Computing Systems (CHI), Online, May 2021.
 
 Predicting Human Behavior in AI-Assisted Decision Making<br>
-**Zhuoran Lu***, Xinru Wang*, and Ming Yin <br>
+**Zhuoran Lu**\*, Xinru Wang\*, and Ming Yin <br>
 The Web Conference (WWW), Online, April 2022.<br>
 (* indicates equal contribution)
 
