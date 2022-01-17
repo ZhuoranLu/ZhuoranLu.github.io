@@ -20,19 +20,23 @@ My research currently lies in the intersection of human-computer interaction and
 I am also broadly interested in computational social science, crowdsourcing, and behavioral science.
 
 
-Publication
+Publications
 ====== 
 
 Human Reliance on Machine Learning Models When Performance Feedback is Limited: Heuristics and Risks<br>
 **Zhuoran Lu** and Ming Yin.<br>
 The 39th ACM Conference on Human Factors in Computing Systems (CHI), Online, May 2021.
 
+Predicting Human Behavior in AI-Assisted Decision Making<br>
+Xinru Wang*, **Zhuoran Lu***, and Ming Yin <br>
+The Web Conference (WWW), Online, April 2022.<br>
+(* indicates equal contribution)
 
 Teaching
 ====== 
 
 CS373, Data Mining & Machine Learning<br>
-Teaching Assistant, Fall 2021, Purdue University
+Teaching Assistant, Fall 2021, Spring 2022, Purdue University
 
 Contact
 =====
