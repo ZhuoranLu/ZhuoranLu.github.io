@@ -29,7 +29,7 @@ The 39th ACM Conference on Human Factors in Computing Systems (CHI), Online, May
 
 The Effects of AI-based Credibility Indicators on the Detection and Spread of Misinformation under Social Influence<br>
 **Zhuoran Lu**, Patrick Li, Weilong Wang, and Ming Yin.<br>
-The 25th ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW), Online
+The 25th ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW), Online, November 2022<br>
 
 Will You Accept the AI Recommendation? Predicting Human Behavior in AI-Assisted Decision Making <br>
 **Zhuoran Lu**\*, Xinru Wang\*, and Ming Yin <br>
