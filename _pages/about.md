@@ -27,7 +27,11 @@ Human Reliance on Machine Learning Models When Performance Feedback is Limited: 
 **Zhuoran Lu** and Ming Yin.<br>
 The 39th ACM Conference on Human Factors in Computing Systems (CHI), Online, May 2021.
 
-Predicting Human Behavior in AI-Assisted Decision Making<br>
+The Effects of AI-based Credibility Indicators on the Detection and Spread of Misinformation under Social Influence<br>
+**Zhuoran Lu**, Patrick Li, Weilong Wang, and Ming Yin.<br>
+The 25th ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW), Online
+
+Will You Accept the AI Recommendation? Predicting Human Behavior in AI-Assisted Decision Making <br>
 **Zhuoran Lu**\*, Xinru Wang\*, and Ming Yin <br>
 The Web Conference (WWW), Online, April 2022.<br>
 (* indicates equal contribution)
@@ -37,6 +41,7 @@ Teaching
 
 CS373, Data Mining & Machine Learning<br>
 Teaching Assistant, Fall 2021, Spring 2022, Purdue University
+Guest Lecturer, Spring 2022, Purdue University
 
 Contact
 =====
