@@ -22,6 +22,7 @@ I am also broadly interested in computational social science, crowdsourcing, and
 
 Publications
 ====== 
+(* indicates equal contribution)<br>
 
 Human Reliance on Machine Learning Models When Performance Feedback is Limited: Heuristics and Risks<br>
 **Zhuoran Lu** and Ming Yin.<br>
@@ -30,7 +31,6 @@ The 39th ACM Conference on Human Factors in Computing Systems (CHI), Online, May
 Will You Accept the AI Recommendation? Predicting Human Behavior in AI-Assisted Decision Making <br>
 **Zhuoran Lu**\*, Xinru Wang\*, and Ming Yin <br>
 The Web Conference (WWW), Online, April 2022.<br>
-(* indicates equal contribution)
 
 CLEARE: Contrastive Learning with Robust Encoder for Better Detection of Biased Language <br>
 **Zhuoran Lu**\*, Zhuoyan Li\*, and Ming Yin.<br>
