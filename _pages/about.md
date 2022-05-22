@@ -24,19 +24,19 @@ Publications
 ====== 
 (* indicates equal contribution)<br>
 
-Human Reliance on Machine Learning Models When Performance Feedback is Limited: Heuristics and Risks<br>
+<strong>Human Reliance on Machine Learning Models When Performance Feedback is Limited: Heuristics and Risks</strong><br>
 **Zhuoran Lu** and Ming Yin.<br>
 The 39th ACM Conference on Human Factors in Computing Systems (CHI), Online, May 2021.
 
-Will You Accept the AI Recommendation? Predicting Human Behavior in AI-Assisted Decision Making <br>
+<strong>Will You Accept the AI Recommendation? Predicting Human Behavior in AI-Assisted Decision Making</strong> <br>
 **Zhuoran Lu**\*, Xinru Wang\*, and Ming Yin <br>
 The Web Conference (WWW), Online, April 2022.<br>
 
-CLEARE: Contrastive Learning with Robust Encoder for Better Detection of Biased Language <br>
+<strong>CLEARE: Contrastive Learning with Robust Encoder for Better Detection of Biased Language</strong> <br>
 **Zhuoran Lu**\*, Zhuoyan Li\*, and Ming Yin.<br>
 The 5th AAAI/ACM Conference on Artificial Intelligence, Ethics, and Society (AIES), Online, August 2022<br>
 
-The Effects of AI-based Credibility Indicators on the Detection and Spread of Misinformation under Social Influence<br>
+<strong>The Effects of AI-based Credibility Indicators on the Detection and Spread of Misinformation under Social Influence</strong><br>
 **Zhuoran Lu**, Patrick Li, Weilong Wang, and Ming Yin.<br>
 The 25th ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW), Online, November 2022<br>
 
