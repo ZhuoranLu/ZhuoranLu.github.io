@@ -32,6 +32,14 @@ Will You Accept the AI Recommendation? Predicting Human Behavior in AI-Assisted 
 The Web Conference (WWW), Online, April 2022.<br>
 (* indicates equal contribution)
 
+CLEARE: Contrastive Learning with Robust Encoder for Better Detection of Biased Language <br>
+**Zhuoran Lu**\*, Zhuoyan Li\*, and Ming Yin.<br>
+The 5th AAAI/ACM Conference on Artificial Intelligence, Ethics, and Society (AIES), Online, August 2022<br>
+
+The Effects of AI-based Credibility Indicators on the Detection and Spread of Misinformation under Social Influence<br>
+**Zhuoran Lu**, Patrick Li, Weilong Wang, and Ming Yin.<br>
+The 25th ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW), Online, November 2022<br>
+
 Teaching
 ====== 
 
