@@ -32,7 +32,7 @@ The 39th ACM Conference on Human Factors in Computing Systems (CHI), Online, May
 **Zhuoran Lu**\*, Xinru Wang\*, and Ming Yin <br>
 The Web Conference (WWW), Online, April 2022.<br>
 
-<strong>CLEARE: Contrastive Learning with Robust Encoder for Better Detection of Biased Language</strong> <br>
+<strong>Towards Better Detection of Biased Language with Scarce, Noisy, and Biased Annotations</strong> <br>
 **Zhuoran Lu**\*, Zhuoyan Li\*, and Ming Yin.<br>
 The 5th AAAI/ACM Conference on Artificial Intelligence, Ethics, and Society (AIES), Online, August 2022<br>
 
