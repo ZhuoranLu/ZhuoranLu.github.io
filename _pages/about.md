@@ -20,7 +20,7 @@ My research currently lies in the intersection of human-computer interaction and
 I am also broadly interested in computational social science, crowdsourcing, and behavioral science.
 
 
-<span style="color:#8b0000"> I'm actively looking for internship opportunities for Summer 2023! </span>
+<span style="color:#8b0000"> I am actively looking for internship opportunities for Summer 2023! </span>
 
 
 Publications
