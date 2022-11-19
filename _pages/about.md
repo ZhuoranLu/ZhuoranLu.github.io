@@ -45,7 +45,7 @@ The 25th ACM Conference on Computer-Supported Cooperative Work and Social Comput
 
 <strong>Modeling Human Trust and Reliance in AI-assisted Decision Making: A Markovian Approach</strong><br>
 **Zhuoran Lu**\*, Zhuoyan Li\*, and Ming Yin.<br>
-The 37th ACM Conference on Artificial Intelligence (AAAI), Washington, D.C., February 2023.
+The 37th Conference on Artificial Intelligence (AAAI), Washington, D.C., February 2023.
 
 
 Teaching
