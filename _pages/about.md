@@ -43,7 +43,7 @@ The 5th AAAI/ACM Conference on Artificial Intelligence, Ethics, and Society (AIE
 **Zhuoran Lu**, Patrick Li, Weilong Wang, and Ming Yin.<br>
 The 25th ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW), Online, November 2022<br>
 
-<strong>Modeling Human Trust and Reliance in AI-assisted Decision Making: A Markovian Approach</strong><br>
+<strong>Modeling Human Trust and Reliance in AI-assisted Decision Making: A Markovian Approach</strong><span style="color:#8b0000"> [Oral]</span><br>
 **Zhuoran Lu**\*, Zhuoyan Li\*, and Ming Yin.<br>
 The 37th Conference on Artificial Intelligence (AAAI), Washington, D.C., February 2023.
 
