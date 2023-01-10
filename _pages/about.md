@@ -39,11 +39,11 @@ The Web Conference (WWW), Online, April 2022.<br>
 **Zhuoran Lu**\*, Zhuoyan Li\*, and Ming Yin.<br>
 The 5th AAAI/ACM Conference on Artificial Intelligence, Ethics, and Society (AIES), Online, August 2022<br>
 
-<strong>The Effects of AI-based Credibility Indicators on the Detection and Spread of Misinformation under Social Influence</strong><span style="color:#8b0000"> [Best Paper Award]</span><br>
+<strong>The Effects of AI-based Credibility Indicators on the Detection and Spread of Misinformation under Social Influence</strong><span style="color:red"> [Best Paper Award]</span><br>
 **Zhuoran Lu**, Patrick Li, Weilong Wang, and Ming Yin.<br>
 The 25th ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW), Online, November 2022<br>
 
-<strong>Modeling Human Trust and Reliance in AI-assisted Decision Making: A Markovian Approach</strong><span style="color:#8b0000"> [Oral]</span><br>
+<strong>Modeling Human Trust and Reliance in AI-assisted Decision Making: A Markovian Approach</strong><span style="color:red"> [Oral]</span><br>
 **Zhuoran Lu**\*, Zhuoyan Li\*, and Ming Yin.<br>
 The 37th Conference on Artificial Intelligence (AAAI), Washington, D.C., February 2023.
 
