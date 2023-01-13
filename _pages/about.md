@@ -49,7 +49,7 @@ The 37th Conference on Artificial Intelligence (AAAI), Washington, D.C., Februar
 
 <strong>Are Two Heads Better Than One in AI-Assisted Decision Making? Comparing the Behavior and Performance of Groups and Individuals in Human-AI Collaborative Recidivism Risk Assessment</strong>
 Chun-wei Chiang, **Zhuoran Lu**, Zhuoyan Li, and Ming Yin.<br>
-The 41th ACM Conference on Human Factors in Computing Systems (CHI), Online, May 2023.
+The 41st ACM Conference on Human Factors in Computing Systems (CHI), Online, May 2023.
 
 
 Teaching
