@@ -47,6 +47,10 @@ The 25th ACM Conference on Computer-Supported Cooperative Work and Social Comput
 **Zhuoran Lu**\*, Zhuoyan Li\*, and Ming Yin.<br>
 The 37th Conference on Artificial Intelligence (AAAI), Washington, D.C., February 2023.
 
+<strong>Are Two Heads Better Than One in AI-Assisted Decision Making? Comparing the Behavior and Performance of Groups and Individuals in Human-AI Collaborative Recidivism Risk Assessment</strong>
+Chun-wei Chiang, **Zhuoran Lu**, Zhuoyan Li, and Ming Yin.<br>
+The 41th ACM Conference on Human Factors in Computing Systems (CHI), Online, May 2023.
+
 
 Teaching
 ====== 
