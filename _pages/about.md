@@ -13,7 +13,7 @@ Bio
 
 I am a Ph.D. student in Computer Science at Purdue University, fortunately advised by Prof. [Ming Yin](http://mingyin.org/). 
 
-Prior to Purdue, I received my Bachelor's degree in Computer Science and Statistics from the University of Illinois at Urbana-Champaign, advised by Prof. [Roxana Girju](https://linguistics.illinois.edu/directory/profile/girju) and Prof. [Richard Sowers](http://publish.illinois.edu/r-sowers/) in 2019.
+Prior to Purdue, I received my Bachelor's degree in Computer Science and Statistics from the University of Illinois at Urbana-Champaign in 2019, advised by Prof. [Roxana Girju](https://linguistics.illinois.edu/directory/profile/girju) and Prof. [Richard Sowers](http://publish.illinois.edu/r-sowers/).
 
 My research currently lies in the intersection of human-computer interaction and machine learning, mainly focusing on human-AI interaction and human-centered AI.
 
