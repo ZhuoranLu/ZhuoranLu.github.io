@@ -51,6 +51,9 @@ The 37th Conference on Artificial Intelligence (AAAI), Washington, D.C., Februar
 Chun-wei Chiang, **Zhuoran Lu**, Zhuoyan Li, and Ming Yin.<br>
 The 41st ACM Conference on Human Factors in Computing Systems (CHI), Online, May 2023.
 
+<strong>Does More Advice Help? The Effects of Second Opinions from Peers in AI-Assisted Decision Making</strong><br>
+**Zhuoran Lu**, Dakuo Wang, Ming Yin.<br>
+The CHI Workshop on Trust and Reliance in AI-Assisted Tasks (TRAIT), Hamburg, May 2023
 
 Teaching
 ====== 
