@@ -13,14 +13,11 @@ Bio
 
 I am a Ph.D. student in Computer Science at Purdue University, fortunately advised by Prof. [Ming Yin](http://mingyin.org/). 
 
-Prior to Purdue, I received my Bachelor's degree in Computer Science and Statistics from the University of Illinois at Urbana-Champaign, advised by Prof. [Roxana Girju](https://linguistics.illinois.edu/directory/profile/girju) and Prof. [Richard Sowers](http://publish.illinois.edu/r-sowers/) in 2019.
+Prior to Purdue, I received my Bachelor's degree in Computer Science and Statistics from the University of Illinois at Urbana-Champaign in 2019, advised by Prof. [Roxana Girju](https://linguistics.illinois.edu/directory/profile/girju) and Prof. [Richard Sowers](http://publish.illinois.edu/r-sowers/).
 
 My research currently lies in the intersection of human-computer interaction and machine learning, mainly focusing on human-AI interaction and human-centered AI.
 
 I am also broadly interested in computational social science, crowdsourcing, and behavioral science.
-
-
-<span style="color:#8b0000"> I am actively looking for internship opportunities for Summer 2023! </span>
 
 
 Publications
@@ -48,7 +45,7 @@ The 25th ACM Conference on Computer-Supported Cooperative Work and Social Comput
 The 37th Conference on Artificial Intelligence (AAAI), Washington, D.C., February 2023.
 
 <strong>Are Two Heads Better Than One in AI-Assisted Decision Making? Comparing the Behavior and Performance of Groups and Individuals in Human-AI Collaborative Recidivism Risk Assessment</strong><br>
-Chun-wei Chiang, **Zhuoran Lu**, Zhuoyan Li, and Ming Yin.<br>
+Chun-Wei Chiang, **Zhuoran Lu**, Zhuoyan Li, and Ming Yin.<br>
 The 41st ACM Conference on Human Factors in Computing Systems (CHI), Online, May 2023.
 
 <strong>Does More Advice Help? The Effects of Second Opinions from Peers in AI-Assisted Decision Making</strong><br>
@@ -61,6 +58,12 @@ Teaching
 CS373, Data Mining & Machine Learning<br>
 Teaching Assistant, Fall 2021, Spring 2022, Purdue University<br>
 Guest Lecturer, Spring 2022, Purdue University<br>
+
+Service
+====== 
+**Reviewer:**<br>
+2023: ICWSM, CHI, IUI, IDC, MobileHCI, CogSci, CSCW, DIS<br>
+2022: DIS, CHI PLAY, NordiCHI, MobileHCI, Ubicomp, ISWC, ICMI, SUI, HAI<br>
 
 Contact
 =====
