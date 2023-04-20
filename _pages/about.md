@@ -54,7 +54,7 @@ The CHI Workshop on Trust and Reliance in AI-Assisted Tasks (TRAIT), Hamburg, Ma
 
 <strong>Strategic Adversarial Attacks in AI-assisted Decision Making to Reduce Human Trust and Reliance</strong><br>
 **Zhuoran Lu**\*, Zhuoyan Li\*, Chun-wei Chiang, Ming Yin.<br>
-the 32nd International Joint Conference on Artificial Intelligence (IJCAI), Macao, August 2023
+The 32nd International Joint Conference on Artificial Intelligence (IJCAI), Macao, August 2023
 
 Teaching
 ====== 
