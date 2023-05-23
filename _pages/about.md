@@ -63,6 +63,17 @@ CS373, Data Mining & Machine Learning<br>
 Teaching Assistant, Fall 2021, Spring 2022, Purdue University<br>
 Guest Lecturer, Spring 2022, Purdue University<br>
 
+Experience
+====== 
+
+**Microsoft Research**, Redmond, WA<br>
+Research Intern<br>
+May 2023 - August 2023<br>
+
+**Honda Research Institute**, San Jose, CA<br>
+Research Intern<br>
+January 2023 - April 2023<br>
+
 Service
 ====== 
 **Reviewer:**<br>
