@@ -67,11 +67,11 @@ Experience
 ====== 
 
 **Microsoft Research**, Redmond, WA<br>
-Research Intern<br>
+Research Intern, Office of Applied Research<br>
 May 2023 - August 2023<br>
 
 **Honda Research Institute**, San Jose, CA<br>
-Research Intern<br>
+Research Intern, Human-centered Intelligence Group<br>
 January 2023 - April 2023<br>
 
 Service
