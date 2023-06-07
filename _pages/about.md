@@ -77,8 +77,12 @@ January 2023 - April 2023<br>
 Service
 ====== 
 **Reviewer:**<br>
+2024: ICWSM
 2023: ICWSM, CHI, IUI, IDC, MobileHCI, CogSci, CSCW, DIS, ISS, CUI, CHI PLAY, FAccT, UIST<br>
 2022: DIS, CHI PLAY, NordiCHI, MobileHCI, Ubicomp, ISWC, ICMI, SUI, HAI<br>
+
+**PC member**<br>
+2023: Ubicomp/ISWC demos and posters<br>
 
 Contact
 =====
