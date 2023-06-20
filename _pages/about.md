@@ -24,6 +24,10 @@ Publications
 ====== 
 (* indicates equal contribution)<br>
 
+<strong>Give Weight to Human Reactions: Optimizing Complementary AI in Practical Human-AI Teams</strong><br>
+Syed Hasan Amin Mahmood, **Zhuoran Lu**, and Ming Yin.<br>
+The ICML Workshop on Artificial Intelligence & Human Computer Interaction (AI HCI), Hawaii, July 2023
+
 <strong>Strategic Adversarial Attacks in AI-assisted Decision Making to Reduce Human Trust and Reliance</strong><br>
 **Zhuoran Lu**\*, Zhuoyan Li\*, Chun-Wei Chiang, and Ming Yin.<br>
 The 32nd International Joint Conference on Artificial Intelligence (IJCAI), Macao, August 2023
@@ -66,7 +70,7 @@ Guest Lecturer, Spring 2022, Purdue University<br>
 Experience
 ====== 
 
-**Microsoft Research**, Redmond, WA<br>
+**Microsoft**, Redmond, WA<br>
 Research Intern, Office of Applied Research<br>
 May 2023 - August 2023<br>
 
