@@ -32,17 +32,14 @@ td, th {
 }
 </style>
 
-<center>
-<div align="center">
 
-|                                                      |      Internal Signals       |  External Signals  |
-|:----------------------------------------------------:|:---------------------------:|:------------------:|
-|               Experimental Examination               |            CHI21            |  CSCW22<br/>CHI23  |
-|                Compuational Modeling                 |      WWW22<br/>AAAI23       |       [todo]       |
-|     Appropriate Reliance<br/>- Design Approaches     |           [todo]            |    TRAIT@CHI23     |
-| Appropriate Reliance<br/>- Intelligent Intervention  |  IJCAI23<br/>AI&HCI@ICML23  |       [todo]       |
-</div>
-</center>
+|                                                      |     Internal Signals      | External Signals  |
+|:----------------------------------------------------:|:-------------------------:|:-----------------:|
+|               Experimental Examination               |           CHI21           | CSCW22<br/>CHI23  |
+|                Compuational Modeling                 |     WWW22<br/>AAAI23      |      [todo]       |
+|     Appropriate Reliance<br/>- Design Approaches     |          [todo]           |    TRAIT@CHI23    |
+| Appropriate Reliance<br/>- Intelligent Intervention  | IJCAI23<br/>AI&HCI@ICML23 |      [todo]       |
+
 
 Publications
 ====== 
