@@ -3,28 +3,52 @@ permalink: /
 title: ""
 excerpt: "About me"
 author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
+redirect_from:
+
+- /about/
+- /about.html
+
 ---
 
 Bio
 =====
 
-I am a Ph.D. student in Computer Science at Purdue University, fortunately advised by Prof. [Ming Yin](http://mingyin.org/). 
+I am a Ph.D. student in Computer Science at Purdue University, fortunately advised by
+Prof. [Ming Yin](http://mingyin.org/).
 
-Prior to Purdue, I received my Bachelor's degree in Computer Science and Statistics from the University of Illinois at Urbana-Champaign in 2019, advised by Prof. [Roxana Girju](https://linguistics.illinois.edu/directory/profile/girju) and Prof. [Richard Sowers](http://publish.illinois.edu/r-sowers/).
+Prior to Purdue, I received my Bachelor's degree in Computer Science and Statistics from the University of Illinois at
+Urbana-Champaign in 2019, advised by Prof. [Roxana Girju](https://linguistics.illinois.edu/directory/profile/girju) and
+Prof. [Richard Sowers](http://publish.illinois.edu/r-sowers/).
 
-My research currently lies in the intersection of human-computer interaction and machine learning, mainly focusing on human-AI interaction and human-centered AI. 
+My research currently lies in the intersection of human-computer interaction and machine learning, mainly focusing on
+human-AI interaction and human-centered AI.
 
 I am also broadly interested in computational social science, crowdsourcing, and behavioral science.
 
+
+<style>
+td, th {
+   border: none!important;
+}
+</style>
+
+<center>
+<div align="center">
+
+|                                                      |      Internal Signals       |  External Signals  |
+|:----------------------------------------------------:|:---------------------------:|:------------------:|
+|               Experimental Examination               |            CHI21            |  CSCW22<br/>CHI23  |
+|                Compuational Modeling                 |      WWW22<br/>AAAI23       |       [todo]       |
+|     Appropriate Reliance<br/>- Design Approaches     |           [todo]            |    TRAIT@CHI23     |
+| Appropriate Reliance<br/>- Intelligent Intervention  |  IJCAI23<br/>AI&HCI@ICML23  |       [todo]       |
+</div>
+</center>
 
 Publications
 ====== 
 (* indicates equal contribution)<br>
 
-<strong>Give Weight to Human Reactions: Optimizing Complementary AI in Practical Human-AI Teams</strong><br>
+<strong>[Give Weight to Human Reactions: Optimizing Complementary AI in Practical Human-AI Teams]()</strong><br>
 Syed Hasan Amin Mahmood, **Zhuoran Lu**, and Ming Yin.<br>
 The ICML Workshop on Artificial Intelligence & Human Computer Interaction (AI HCI), Hawaii, July 2023
 
@@ -32,23 +56,23 @@ The ICML Workshop on Artificial Intelligence & Human Computer Interaction (AI HC
 **Zhuoran Lu**\*, Zhuoyan Li\*, Chun-Wei Chiang, and Ming Yin.<br>
 The 32nd International Joint Conference on Artificial Intelligence (IJCAI), Macao, August 2023
 
-<strong>[Does More Advice Help? The Effects of Second Opinions from Peers in AI-Assisted Decision Making]()</strong><br>
+<strong>[Does More Advice Help? The Effects of Second Opinions from Peers in AI-Assisted Decision Making](../files/second-camera.pdf)</strong><br>
 **Zhuoran Lu**, Dakuo Wang, and Ming Yin.<br>
 The CHI Workshop on Trust and Reliance in AI-Assisted Tasks (TRAIT), Hamburg, May 2023
 
-<strong>[Are Two Heads Better Than One in AI-Assisted Decision Making? Comparing the Behavior and Performance of Groups and Individuals in Human-AI Collaborative Recidivism Risk Assessment]()</strong><br>
+<strong>[Are Two Heads Better Than One in AI-Assisted Decision Making? Comparing the Behavior and Performance of Groups and Individuals in Human-AI Collaborative Recidivism Risk Assessment](../files/group-camera.pdf)</strong><br>
 Chun-Wei Chiang, **Zhuoran Lu**, Zhuoyan Li, and Ming Yin.<br>
 The 41st ACM Conference on Human Factors in Computing Systems (CHI), Hamburg, May 2023.
 
-<strong>[Modeling Human Trust and Reliance in AI-assisted Decision Making: A Markovian Approach]()</strong><span style="color:red"> [Oral]</span><br>
+<strong>[Modeling Human Trust and Reliance in AI-assisted Decision Making: A Markovian Approach](../files/TrustModel.pdf)</strong><span style="color:red"> [Oral]</span><br>
 **Zhuoran Lu**\*, Zhuoyan Li\*, and Ming Yin.<br>
 The 37th Conference on Artificial Intelligence (AAAI), Washington, D.C., February 2023.
 
-<strong>[The Effects of AI-based Credibility Indicators on the Detection and Spread of Misinformation under Social Influence]()</strong><span style="color:red"> [Best Paper Award]</span><br>
+<strong>[The Effects of AI-based Credibility Indicators on the Detection and Spread of Misinformation under Social Influence](../files/misinformation.pdf)</strong><span style="color:red"> [Best Paper Award]</span><br>
 **Zhuoran Lu**, Patrick Li, Weilong Wang, and Ming Yin.<br>
 The 25th ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW), Online, November 2022<br>
 
-<strong>[Towards Better Detection of Biased Language with Scarce, Noisy, and Biased Annotations]()</strong> <br>
+<strong>[Towards Better Detection of Biased Language with Scarce, Noisy, and Biased Annotations](../files/cleare.pdf)</strong> <br>
 **Zhuoran Lu**\*, Zhuoyan Li\*, and Ming Yin.<br>
 The 5th AAAI/ACM Conference on Artificial Intelligence, Ethics, and Society (AIES), Online, August 2022<br>
 
