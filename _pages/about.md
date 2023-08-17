@@ -32,7 +32,6 @@ td, th {
 }
 </style>
 
-
 |      Human Reliance on AI in Human-AI Decision Making       |     Internal Signals      | External Signals  |
 |:-----------------------------------------------------------:|:-------------------------:|:-----------------:|
 |                  Experimental Examination                   |           CHI21           | CSCW22<br/>CHI23  |
@@ -45,11 +44,11 @@ Publications
 ====== 
 (* indicates equal contribution)<br>
 
-<strong>[Give Weight to Human Reactions: Optimizing Complementary AI in Practical Human-AI Teams]()</strong><br>
+<strong>[Give Weight to Human Reactions: Optimizing Complementary AI in Practical Human-AI Teams](../files/64_give_weight_to_human_reactions.pdf)</strong><br>
 Syed Hasan Amin Mahmood, **Zhuoran Lu**, and Ming Yin.<br>
 The ICML Workshop on Artificial Intelligence & Human Computer Interaction (AI HCI), Hawaii, July 2023
 
-<strong>[Strategic Adversarial Attacks in AI-assisted Decision Making to Reduce Human Trust and Reliance]()</strong><br>
+<strong>[Strategic Adversarial Attacks in AI-assisted Decision Making to Reduce Human Trust and Reliance](../files/IJCAI__23_Confidence_Attack.pdf)</strong><br>
 **Zhuoran Lu**\*, Zhuoyan Li\*, Chun-Wei Chiang, and Ming Yin.<br>
 The 32nd International Joint Conference on Artificial Intelligence (IJCAI), Macao, August 2023
 
@@ -102,7 +101,7 @@ January 2023 - April 2023<br>
 Service
 ====== 
 **Reviewer:**<br>
-2024: ICWSM <br>
+2024: ICWSM, CSCW<br>
 2023: ICWSM, CHI, IUI, IDC, MobileHCI, CogSci, CSCW, DIS, ISS, CUI, CHI PLAY, FAccT, UIST<br>
 2022: DIS, CHI PLAY, NordiCHI, MobileHCI, Ubicomp, ISWC, ICMI, SUI, HAI<br>
 
