@@ -48,7 +48,7 @@ Publications
 ====== 
 (* indicates equal contribution)<br>
 
-<strong>Synthetic Data Generation with Large Language Models for Text Classification: Potential and Limitations</strong><br>
+<strong>[Synthetic Data Generation with Large Language Models for Text Classification: Potential and Limitations]()</strong><br>
 Zhuoyan Li, Hangxiao Zhu, **Zhuoran Lu**, and Ming Yin.<br>
 The Empirical Methods in Natural Language Processing (EMNLP), Singapore, December 2023
 
