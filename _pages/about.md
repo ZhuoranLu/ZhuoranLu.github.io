@@ -39,8 +39,7 @@ td, th {
 |    Towards Appropriate Reliance<br/>- Design Approaches     |          [todo]           |    TRAIT@CHI23    |
 | Towards Appropriate Reliance<br/>- Intelligent Intervention | IJCAI23<br/>AI&HCI@ICML23 |      [todo]       |
 
-Ongoing Projects
-======
+
 
 
 
