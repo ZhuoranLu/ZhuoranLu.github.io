@@ -39,10 +39,18 @@ td, th {
 |    Towards Appropriate Reliance<br/>- Design Approaches     |          [todo]           |    TRAIT@CHI23    |
 | Towards Appropriate Reliance<br/>- Intelligent Intervention | IJCAI23<br/>AI&HCI@ICML23 |      [todo]       |
 
+Ongoing Projects
+======
+
+
 
 Publications
 ====== 
 (* indicates equal contribution)<br>
+
+<strong>Synthetic Data Generation with Large Language Models for Text Classification: Potential and Limitations</strong><br>
+Zhuoyan Li, Hangxiao Zhu, **Zhuoran Lu**, and Ming Yin.<br>
+The Empirical Methods in Natural Language Processing (EMNLP), Singapore, December 2023
 
 <strong>[Give Weight to Human Reactions: Optimizing Complementary AI in Practical Human-AI Teams](../files/64_give_weight_to_human_reactions.pdf)</strong><br>
 Syed Hasan Amin Mahmood, **Zhuoran Lu**, and Ming Yin.<br>
