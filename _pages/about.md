@@ -32,12 +32,12 @@ td, th {
 }
 </style>
 
-|      Human Reliance on AI in Human-AI Decision Making       |     Internal Signals      | External Signals  |
-|:-----------------------------------------------------------:|:-------------------------:|:-----------------:|
-|                  Experimental Examination                   |           CHI21           | CSCW22<br/>CHI23  |
-|                   Computational Modeling                    |     WWW22<br/>AAAI23      |      [todo]       |
-|    Towards Appropriate Reliance<br/>- Design Approaches     |          [todo]           |    TRAIT@CHI23    |
-| Towards Appropriate Reliance<br/>- Intelligent Intervention | IJCAI23<br/>AI&HCI@ICML23 |      [todo]       |
+|      Human Reliance on AI in Human-AI Decision Making       |     Internal Signals      |     External Signals     |
+|:-----------------------------------------------------------:|:-------------------------:|:------------------------:|
+|                  Experimental Examination                   |           CHI21           |     CSCW22<br/>CHI23     |
+|                   Computational Modeling                    |     WWW22<br/>AAAI23      |          [todo]          |
+|    Towards Appropriate Reliance<br/>- Design Approaches     |          [todo]           | CSCW2024<br/>TRAIT@CHI23 |
+| Towards Appropriate Reliance<br/>- Intelligent Intervention | IJCAI23<br/>AI&HCI@ICML23 |          [todo]          |
 
 
 
@@ -46,6 +46,15 @@ td, th {
 Publications
 ====== 
 (* indicates equal contribution)<br>
+
+<strong>[Does More Advice Help? The Effects of Second Opinions in AI-Assisted Decision Making](../files/second-camera.pdf)</strong><br>
+**Zhuoran Lu**, Dakuo Wang, and Ming Yin.<br>
+The 27th ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW), San José, November 2024<br>
+Preliminary version in the CHI Workshop on Trust and Reliance in AI-Assisted Tasks (TRAIT), Hamburg, May 2023
+
+<strong>[Decoding AI's Nudge: A Unified Framework to Predict Human Behavior in AI-assisted Decision Making]()</strong><br>
+Zhuoyan Li, **Zhuoran Lu**, and Ming Yin.<br>
+The 38th Conference on Artificial Intelligence (AAAI), Vancouver, February 2023.
 
 <strong>[Synthetic Data Generation with Large Language Models for Text Classification: Potential and Limitations]()</strong><br>
 Zhuoyan Li, Hangxiao Zhu, **Zhuoran Lu**, and Ming Yin.<br>
@@ -59,9 +68,6 @@ The ICML Workshop on Artificial Intelligence & Human Computer Interaction (AI HC
 **Zhuoran Lu**\*, Zhuoyan Li\*, Chun-Wei Chiang, and Ming Yin.<br>
 The 32nd International Joint Conference on Artificial Intelligence (IJCAI), Macao, August 2023
 
-<strong>[Does More Advice Help? The Effects of Second Opinions from Peers in AI-Assisted Decision Making](../files/second-camera.pdf)</strong><br>
-**Zhuoran Lu**, Dakuo Wang, and Ming Yin.<br>
-The CHI Workshop on Trust and Reliance in AI-Assisted Tasks (TRAIT), Hamburg, May 2023
 
 <strong>[Are Two Heads Better Than One in AI-Assisted Decision Making? Comparing the Behavior and Performance of Groups and Individuals in Human-AI Collaborative Recidivism Risk Assessment](../files/group-camera.pdf)</strong><br>
 Chun-Wei Chiang, **Zhuoran Lu**, Zhuoyan Li, and Ming Yin.<br>
