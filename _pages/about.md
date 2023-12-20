@@ -68,7 +68,6 @@ The ICML Workshop on Artificial Intelligence & Human Computer Interaction (AI HC
 **Zhuoran Lu**\*, Zhuoyan Li\*, Chun-Wei Chiang, and Ming Yin.<br>
 The 32nd International Joint Conference on Artificial Intelligence (IJCAI), Macao, August 2023
 
-
 <strong>[Are Two Heads Better Than One in AI-Assisted Decision Making? Comparing the Behavior and Performance of Groups and Individuals in Human-AI Collaborative Recidivism Risk Assessment](../files/group-camera.pdf)</strong><br>
 Chun-Wei Chiang, **Zhuoran Lu**, Zhuoyan Li, and Ming Yin.<br>
 The 41st ACM Conference on Human Factors in Computing Systems (CHI), Hamburg, May 2023.
@@ -119,7 +118,8 @@ Service
 2022: DIS, CHI PLAY, NordiCHI, MobileHCI, Ubicomp, ISWC, ICMI, SUI, HAI<br>
 
 **Program Committee/Associate Chair**<br>
-2023: CHI Late-Breaking Work, Ubicomp/ISWC demos and posters<br>
+2024: CHI Late-Breaking Work <br>
+2023: Ubicomp/ISWC demos and posters<br>
 
 Contact
 =====
