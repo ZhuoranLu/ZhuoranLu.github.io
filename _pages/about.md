@@ -32,12 +32,12 @@ td, th {
 }
 </style>
 
-|      Human Reliance on AI in Human-AI Decision Making       |       Internal Signals        |     External Signals     |
-|:-----------------------------------------------------------:|:-----------------------------:|:------------------------:|
-|                  Experimental Examination                   |             CHI21             |     CSCW22<br/>CHI23     |
-|                   Computational Modeling                    | WWW22<br/>AAAI23<br/>AAAI2024 |          [todo]          |
-|    Towards Appropriate Reliance<br/>- Design Approaches     |            [todo]             | CSCW2024<br/>TRAIT@CHI23 |
-| Towards Appropriate Reliance<br/>- Intelligent Intervention |   IJCAI23<br/>AI&HCI@ICML23   |          [todo]          |
+|      Human Reliance on AI in Human-AI Decision Making       |      Internal Signals       |     External Signals     |
+|:-----------------------------------------------------------:|:---------------------------:|:------------------------:|
+|                  Experimental Examination                   |            CHI21            |     CSCW22<br/>CHI23     |
+|                   Computational Modeling                    | WWW22<br/>AAAI23<br/>AAAI24 |          [todo]          |
+|    Towards Appropriate Reliance<br/>- Design Approaches     |           [todo]            | CSCW2024<br/>TRAIT@CHI23 |
+| Towards Appropriate Reliance<br/>- Intelligent Intervention |  IJCAI23<br/>AI&HCI@ICML23  |          [todo]          |
 
 
 
