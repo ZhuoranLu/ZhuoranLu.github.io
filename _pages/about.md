@@ -118,8 +118,8 @@ Service
 2023: ICWSM, CHI, IUI, IDC, MobileHCI, CogSci, CSCW, DIS, ISS, CUI, CHI PLAY, FAccT, UIST<br>
 2022: DIS, CHI PLAY, NordiCHI, MobileHCI, Ubicomp, ISWC, ICMI, SUI, HAI<br>
 
-**PC member**<br>
-2023: Ubicomp/ISWC demos and posters<br>
+**Program Committee/Associate Chair**<br>
+2023: CHI Late-Breaking Work, Ubicomp/ISWC demos and posters<br>
 
 Contact
 =====
