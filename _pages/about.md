@@ -32,12 +32,12 @@ td, th {
 }
 </style>
 
-|      Human Reliance on AI in Human-AI Decision Making       |     Internal Signals      |     External Signals     |
-|:-----------------------------------------------------------:|:-------------------------:|:------------------------:|
-|                  Experimental Examination                   |           CHI21           |     CSCW22<br/>CHI23     |
-|                   Computational Modeling                    |     WWW22<br/>AAAI23      |          [todo]          |
-|    Towards Appropriate Reliance<br/>- Design Approaches     |          [todo]           | CSCW2024<br/>TRAIT@CHI23 |
-| Towards Appropriate Reliance<br/>- Intelligent Intervention | IJCAI23<br/>AI&HCI@ICML23 |          [todo]          |
+|      Human Reliance on AI in Human-AI Decision Making       |       Internal Signals        |     External Signals     |
+|:-----------------------------------------------------------:|:-----------------------------:|:------------------------:|
+|                  Experimental Examination                   |             CHI21             |     CSCW22<br/>CHI23     |
+|                   Computational Modeling                    | WWW22<br/>AAAI23<br/>AAAI2024 |          [todo]          |
+|    Towards Appropriate Reliance<br/>- Design Approaches     |            [todo]             | CSCW2024<br/>TRAIT@CHI23 |
+| Towards Appropriate Reliance<br/>- Intelligent Intervention |   IJCAI23<br/>AI&HCI@ICML23   |          [todo]          |
 
 
 
@@ -54,7 +54,7 @@ Preliminary version in the CHI Workshop on Trust and Reliance in AI-Assisted Tas
 
 <strong>[Decoding AI's Nudge: A Unified Framework to Predict Human Behavior in AI-assisted Decision Making]()</strong><br>
 Zhuoyan Li, **Zhuoran Lu**, and Ming Yin.<br>
-The 38th Conference on Artificial Intelligence (AAAI), Vancouver, February 2023.
+The 38th Conference on Artificial Intelligence (AAAI), Vancouver, February 2024.
 
 <strong>[Synthetic Data Generation with Large Language Models for Text Classification: Potential and Limitations]()</strong><br>
 Zhuoyan Li, Hangxiao Zhu, **Zhuoran Lu**, and Ming Yin.<br>
@@ -114,7 +114,7 @@ January 2023 - April 2023<br>
 Service
 ====== 
 **Reviewer:**<br>
-2024: ICWSM, CSCW<br>
+2024: ICWSM, CHI, IUI, CSCW, CogSci<br>
 2023: ICWSM, CHI, IUI, IDC, MobileHCI, CogSci, CSCW, DIS, ISS, CUI, CHI PLAY, FAccT, UIST<br>
 2022: DIS, CHI PLAY, NordiCHI, MobileHCI, Ubicomp, ISWC, ICMI, SUI, HAI<br>
 
