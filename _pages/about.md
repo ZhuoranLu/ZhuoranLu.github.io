@@ -52,6 +52,10 @@ Publications
 The 27th ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW), San José, November 2024<br>
 Preliminary version in the CHI Workshop on Trust and Reliance in AI-Assisted Tasks (TRAIT), Hamburg, May 2023
 
+<strong>[AI Pilot in the Cockpit: An Investigation of Public Acceptance]()</strong><br>
+Shan Gao, **Zhuoran Lu**, Hao Luan, Ming Yin, and Lei Wang.<br>
+International Journal of Human–Computer Interaction (IJHCI)
+
 <strong>[Decoding AI's Nudge: A Unified Framework to Predict Human Behavior in AI-assisted Decision Making]()</strong><br>
 Zhuoyan Li, **Zhuoran Lu**, and Ming Yin.<br>
 The 38th Conference on Artificial Intelligence (AAAI), Vancouver, February 2024.
