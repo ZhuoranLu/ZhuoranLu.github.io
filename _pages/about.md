@@ -56,6 +56,10 @@ Preliminary version in the CHI Workshop on Trust and Reliance in AI-Assisted Tas
 Shan Gao, **Zhuoran Lu**, Hao Luan, Ming Yin, and Lei Wang.<br>
 International Journal of Human–Computer Interaction (IJHCI)
 
+<strong>[Enhancing AI-Assisted Group Decision Making through LLM-Powered Devil's Advocate]()</strong><br>
+Chun-Wei Chiang, Zhuoyan Li, **Zhuoran Lu**, and Ming Yin.<br>
+The 29th ACM Conference on Intelligent User Interface (IUI), Greenville, March 2024.
+
 <strong>[Decoding AI's Nudge: A Unified Framework to Predict Human Behavior in AI-assisted Decision Making]()</strong><br>
 Zhuoyan Li, **Zhuoran Lu**, and Ming Yin.<br>
 The 38th Conference on Artificial Intelligence (AAAI), Vancouver, February 2024.
