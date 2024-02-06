@@ -34,7 +34,7 @@ td, th {
 
 |        Human-AI Decision Making (HAIDM)        |    Human-related Factors    | Context-related Factors  |
 |:----------------------------------------------:|:---------------------------:|:------------------------:|
-|            Experimental Examination            |            CHI21            |     CSCW22<br/>CHI23     |
+|            Empirical Understanding             |       CHI21<br>IJHCI        |     CSCW22<br/>CHI23     |
 |             Computational Modeling             | WWW22<br/>AAAI23<br/>AAAI24 |          [todo]          |
 |    Advancing HAIDM<br/>- Design Approaches     |           [todo]            | CSCW2024<br/>TRAIT@CHI23 |
 | Advancing HAIDM<br/>- Intelligent Intervention |  IJCAI23<br/>AI&HCI@ICML23  |          IUI24           |
@@ -57,7 +57,7 @@ Shan Gao, **Zhuoran Lu**, Hao Luan, Ming Yin, and Lei Wang.<br>
 International Journal of Human–Computer Interaction (IJHCI)
 
 <strong>[Enhancing AI-Assisted Group Decision Making through LLM-Powered Devil's Advocate]()</strong><br>
-Chun-Wei Chiang, Zhuoyan Li, **Zhuoran Lu**, and Ming Yin.<br>
+Chun-Wei Chiang, **Zhuoran Lu**, Zhuoyan Li, and Ming Yin.<br>
 The 29th ACM Conference on Intelligent User Interface (IUI), Greenville, March 2024.
 
 <strong>[Decoding AI's Nudge: A Unified Framework to Predict Human Behavior in AI-assisted Decision Making]()</strong><br>
@@ -126,7 +126,7 @@ Service
 2022: DIS, CHI PLAY, NordiCHI, MobileHCI, Ubicomp, ISWC, ICMI, SUI, HAI<br>
 
 **Program Committee/Associate Chair**<br>
-2024: CHI Late-Breaking Work <br>
+2024: CHI Late-Breaking Work, FAccT, ICWSM<br>
 2023: Ubicomp/ISWC demos and posters<br>
 
 Contact
