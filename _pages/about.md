@@ -36,7 +36,7 @@ td, th {
 |:----------------------------------------------:|:---------------------------:|:------------------------:|
 |            Empirical Understanding             |       CHI21<br>IJHCI        |     CSCW22<br/>CHI23     |
 |             Computational Modeling             | WWW22<br/>AAAI23<br/>AAAI24 |          [todo]          |
-|    Advancing HAIDM<br/>- Design Approaches     |           [todo]            | CSCW2024<br/>TRAIT@CHI23 |
+|     Advancing HAIDM<br/>- Design Approach      |           [todo]            | CSCW2024<br/>TRAIT@CHI23 |
 | Advancing HAIDM<br/>- Intelligent Intervention |  IJCAI23<br/>AI&HCI@ICML23  |          IUI24           |
 
 
