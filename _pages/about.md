@@ -128,6 +128,7 @@ Service
 2024: ICWSM, CHI, IUI, CSCW, IDC, DIS, CogSci<br>
 2023: ICWSM, CHI, IUI, IDC, MobileHCI, CogSci, CSCW, DIS, ISS, CUI, CHI PLAY, FAccT, UIST<br>
 2022: DIS, CHI PLAY, NordiCHI, MobileHCI, Ubicomp, ISWC, ICMI, SUI, HAI<br>
+Journal: IJHCI<br>
 
 **Program Committee/Associate Chair**<br>
 2024: CHI Late-Breaking Work, FAccT, ICWSM<br>
