@@ -110,9 +110,11 @@ Guest Lecturer, Spring 2022, Purdue University<br>
 Experience
 ====== 
 
-**Autodesk Research**, Toronto, ON<br>
-Research Intern, Human-computer Interaction & Visualization Group<br>
-May 2024 - September 2024<br>
+[//]: # (**Autodesk Research**, Toronto, ON<br>)
+
+[//]: # (Research Intern, Human-computer Interaction & Visualization Group<br>)
+
+[//]: # (May 2024 - September 2024<br>)
 
 **Microsoft**, Redmond, WA<br>
 Research Intern, Office of Applied Research<br>
