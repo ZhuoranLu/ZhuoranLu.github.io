@@ -52,6 +52,11 @@ Publications
 The 27th ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW), San José, November 2024<br>
 Preliminary version in the CHI Workshop on Trust and Reliance in AI-Assisted Tasks (TRAIT), Hamburg, May 2023
 
+<strong>[Designing Behavior-Aware AI to Improve the Human-AI Team Performance in AI-Assisted Decision Making]()</strong><br>
+**Zhuoran Lu**\*, Hasan Amin*, and Ming Yin.<br>
+The 33th International Joint Conference on Artificial Intelligence (IJCAI), Jeju, August 2024
+Preliminary version in the ICML Workshop on Artificial Intelligence & Human Computer Interaction (AI HCI), Hawaii, July 2023
+
 <strong>[AI Pilot in the Cockpit: An Investigation of Public Acceptance]()</strong><br>
 Shan Gao, **Zhuoran Lu**, Hao Luan, Ming Yin, and Lei Wang.<br>
 International Journal of Human–Computer Interaction (IJHCI)
@@ -68,9 +73,10 @@ The 38th Conference on Artificial Intelligence (AAAI), Vancouver, February 2024.
 Zhuoyan Li, Hangxiao Zhu, **Zhuoran Lu**, and Ming Yin.<br>
 The Empirical Methods in Natural Language Processing (EMNLP), Singapore, December 2023
 
-<strong>[Give Weight to Human Reactions: Optimizing Complementary AI in Practical Human-AI Teams](../files/64_give_weight_to_human_reactions.pdf)</strong><br>
-Syed Hasan Amin Mahmood, **Zhuoran Lu**, and Ming Yin.<br>
-The ICML Workshop on Artificial Intelligence & Human Computer Interaction (AI HCI), Hawaii, July 2023
+[//]: # ()
+[//]: # (<strong>[Give Weight to Human Reactions: Optimizing Complementary AI in Practical Human-AI Teams]&#40;../files/64_give_weight_to_human_reactions.pdf&#41;</strong><br>)
+
+[//]: # (Syed Hasan Amin Mahmood, **Zhuoran Lu**, and Ming Yin.<br>)
 
 <strong>[Strategic Adversarial Attacks in AI-assisted Decision Making to Reduce Human Trust and Reliance](../files/IJCAI__23_Confidence_Attack.pdf)</strong><br>
 **Zhuoran Lu**\*, Zhuoyan Li\*, Chun-Wei Chiang, and Ming Yin.<br>
