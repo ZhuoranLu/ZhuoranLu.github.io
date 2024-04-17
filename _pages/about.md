@@ -54,7 +54,7 @@ Preliminary version in the CHI Workshop on Trust and Reliance in AI-Assisted Tas
 
 <strong>[Designing Behavior-Aware AI to Improve the Human-AI Team Performance in AI-Assisted Decision Making]()</strong><br>
 **Zhuoran Lu**\*, Hasan Amin*, and Ming Yin.<br>
-The 33th International Joint Conference on Artificial Intelligence (IJCAI), Jeju, August 2024
+The 33th International Joint Conference on Artificial Intelligence (IJCAI), Jeju, August 2024<br>
 Preliminary version in the ICML Workshop on Artificial Intelligence & Human Computer Interaction (AI HCI), Hawaii, July 2023
 
 <strong>[AI Pilot in the Cockpit: An Investigation of Public Acceptance]()</strong><br>
