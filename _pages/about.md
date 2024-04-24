@@ -32,12 +32,12 @@ td, th {
 }
 </style>
 
-|      Human-AI Decision Making (HAIDM)       |    Human-related Factors     | Context-related Factors |
-|:-------------------------------------------:|:----------------------------:|:-----------------------:|
-|           Empirical Understanding           |        CHI21<br>IJHCI        |     CSCW22<br>CHI23     |
-|           Computational Modeling            |  WWW22<br>AAAI23<br>AAAI24   |         [todo]          |
-| Advancing HAIDM<br/>- Intervention to Human |            [todo]            |    CSCW2024<br>IUI24    |
-|  Advancing HAIDM<br/>- Intervention to AI   |      IJCAI23<br>IJCAI24      |                         |
+| Human-AI Decision Making (HAIDM) |    Human-related Factors     | Context-related Factors |
+|:--------------------------------:|:----------------------------:|:-----------------------:|
+|     Empirical Understanding      |        CHI21<br>IJHCI        |     CSCW22<br>CHI23     |
+|      Computational Modeling      |  WWW22<br>AAAI23<br>AAAI24   |         [todo]          |
+| Interventions to Influence Human |            [todo]            |    CSCW2024<br>IUI24    |
+|    Interventions to Adjust AI    |      IJCAI23<br>IJCAI24      |                         |
 
 
 
