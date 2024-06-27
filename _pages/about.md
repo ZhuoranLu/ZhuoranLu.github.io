@@ -116,11 +116,9 @@ Guest Lecturer, Spring 2022, Purdue University<br>
 Experience
 ====== 
 
-[//]: # (**Autodesk Research**, Toronto, ON<br>)
-
-[//]: # (Research Intern, Human-computer Interaction & Visualization Group<br>)
-
-[//]: # (May 2024 - September 2024<br>)
+**Autodesk Research**, Toronto, ON<br>
+Research Intern, From Intent to Experience Group<br>
+May 2024 - September 2024<br>
 
 **Microsoft**, Redmond, WA<br>
 Research Intern, Office of Applied Research<br>
@@ -136,7 +134,7 @@ Service
 2024: ICWSM, CHI, IUI, CSCW, IDC, DIS, CogSci<br>
 2023: ICWSM, CHI, IUI, IDC, MobileHCI, CogSci, CSCW, DIS, ISS, CUI, CHI PLAY, FAccT, UIST<br>
 2022: DIS, CHI PLAY, NordiCHI, MobileHCI, Ubicomp, ISWC, ICMI, SUI, HAI<br>
-Journal: IJHCI<br>
+Journal: IJHCI, TiiS, IPM<br>
 
 **Program Committee/Associate Chair**<br>
 2024: CHI Late-Breaking Work, FAccT, ICWSM<br>
