@@ -52,7 +52,7 @@ Publications
 The 27th ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW), San José, November 2024<br>
 Preliminary version in the CHI Workshop on Trust and Reliance in AI-Assisted Tasks (TRAIT), Hamburg, May 2023
 
-<strong>[Mix and Match: Characterizing Heterogeneous Human Behavior in AI-assisted Decision Making]</strong><br>
+<strong>[Mix and Match: Characterizing Heterogeneous Human Behavior in AI-assisted Decision Making]()</strong><br>
 **Zhuoran Lu**, Hasan Amin, Zhuoyan Li, and Ming Yin.<br>
 The 12th AAAI Conference on Human Computation and Crowdsourcing (HCOMP), Pittsburgh, October 2024.
 
