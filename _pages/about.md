@@ -32,12 +32,12 @@ td, th {
 }
 </style>
 
-| Human-AI Decision Making (HAIDM) |    Human-related Factors     | Context-related Factors |
-|:--------------------------------:|:----------------------------:|:-----------------------:|
-|     Empirical Understanding      |        CHI21<br>IJHCI        |     CSCW22<br>CHI23     |
-|      Computational Modeling      |  WWW22<br>AAAI23<br>AAAI24   |         [todo]          |
-| Interventions to Influence Human |            [todo]            |    CSCW2024<br>IUI24    |
-|    Interventions to Adjust AI    |      IJCAI23<br>IJCAI24      |                         |
+| Human-AI Decision Making (HAIDM) |        Human-related Factors         | Context-related Factors |
+|:--------------------------------:|:------------------------------------:|:-----------------------:|
+|     Empirical Understanding      |            CHI21<br>IJHCI            |     CSCW22<br>CHI23     |
+|      Computational Modeling      | WWW22<br>AAAI23<br>AAAI24<br>HCOMP24 |         [todo]          |
+| Interventions to Influence Human |                [todo]                |    CSCW2024<br>IUI24    |
+|    Interventions to Adjust AI    |          IJCAI23<br>IJCAI24          |                         |
 
 
 
@@ -51,6 +51,10 @@ Publications
 **Zhuoran Lu**, Dakuo Wang, and Ming Yin.<br>
 The 27th ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW), San José, November 2024<br>
 Preliminary version in the CHI Workshop on Trust and Reliance in AI-Assisted Tasks (TRAIT), Hamburg, May 2023
+
+<strong>[PEARL: Personalizing Large Language Model Writing Assistants with Generation-Calibrated Retrievers.] </strong><br>
+Sheshera Mysore, **Zhuoran Lu**, Mengting Wan, Longqi Yang, Steve Menezes, Tina Baghaee, Emmanuel Barajas Gonzalez, Jennifer Neville, Tara Safavi.<br>
+EMNLP Workshop on Customiz and Customizable NLP (CustomNLP4U), Miami, November 2024
 
 <strong>[Mix and Match: Characterizing Heterogeneous Human Behavior in AI-assisted Decision Making]()</strong><br>
 **Zhuoran Lu**, Hasan Amin, Zhuoyan Li, and Ming Yin.<br>
@@ -138,7 +142,7 @@ Service
 2024: ICWSM, CHI, IUI, CSCW, IDC, DIS, CogSci<br>
 2023: ICWSM, CHI, IUI, IDC, MobileHCI, CogSci, CSCW, DIS, ISS, CUI, CHI PLAY, FAccT, UIST<br>
 2022: DIS, CHI PLAY, NordiCHI, MobileHCI, Ubicomp, ISWC, ICMI, SUI, HAI<br>
-Journal: IJHCI, TiiS, IPM<br>
+Journal: IJHCI, TiiS, IPM, TKDD<br>
 
 **Program Committee/Associate Chair**<br>
 2024: CHI Late-Breaking Work, FAccT, ICWSM<br>
