@@ -52,7 +52,7 @@ Publications
 The 27th ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW), San José, November 2024<br>
 Preliminary version in the CHI Workshop on Trust and Reliance in AI-Assisted Tasks (TRAIT), Hamburg, May 2023
 
-<strong>[PEARL: Personalizing Large Language Model Writing Assistants with Generation-Calibrated Retrievers.] </strong><br>
+<strong>[PEARL: Personalizing Large Language Model Writing Assistants with Generation-Calibrated Retrievers]() </strong><br>
 Sheshera Mysore, **Zhuoran Lu**, Mengting Wan, Longqi Yang, Steve Menezes, Tina Baghaee, Emmanuel Barajas Gonzalez, Jennifer Neville, Tara Safavi.<br>
 EMNLP Workshop on Customiz and Customizable NLP (CustomNLP4U), Miami, November 2024
 
@@ -139,6 +139,7 @@ January 2023 - April 2023<br>
 Service
 ====== 
 **Reviewer:**<br>
+2025: CHI <br>
 2024: ICWSM, CHI, IUI, CSCW, IDC, DIS, CogSci<br>
 2023: ICWSM, CHI, IUI, IDC, MobileHCI, CogSci, CSCW, DIS, ISS, CUI, CHI PLAY, FAccT, UIST<br>
 2022: DIS, CHI PLAY, NordiCHI, MobileHCI, Ubicomp, ISWC, ICMI, SUI, HAI<br>
