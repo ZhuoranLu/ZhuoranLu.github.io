@@ -54,7 +54,7 @@ Preliminary version in the CHI Workshop on Trust and Reliance in AI-Assisted Tas
 
 <strong>[PEARL: Personalizing Large Language Model Writing Assistants with Generation-Calibrated Retrievers]() </strong><br>
 Sheshera Mysore, **Zhuoran Lu**, Mengting Wan, Longqi Yang, Steve Menezes, Tina Baghaee, Emmanuel Barajas Gonzalez, Jennifer Neville, Tara Safavi.<br>
-EMNLP Workshop on Customiz and Customizable NLP (CustomNLP4U), Miami, November 2024
+EMNLP Workshop on Customizable NLP (CustomNLP4U), Miami, November 2024
 
 <strong>[Mix and Match: Characterizing Heterogeneous Human Behavior in AI-assisted Decision Making]()</strong><br>
 **Zhuoran Lu**, Hasan Amin, Zhuoyan Li, and Ming Yin.<br>
