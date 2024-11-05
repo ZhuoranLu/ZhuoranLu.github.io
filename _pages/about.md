@@ -1,158 +1,58 @@
 ---
 permalink: /
 title: ""
-excerpt: "About me"
+excerpt: ""
 author_profile: true
-redirect_from:
-
-- /about/
-- /about.html
-
+redirect_from: 
+  - /about/
+  - /about.html
 ---
 
-Bio
-=====
+{% if site.google_scholar_stats_use_cdn %}
+{% assign gsDataBaseUrl = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: "@" %}
+{% else %}
+{% assign gsDataBaseUrl = "https://raw.githubusercontent.com/" | append: site.repository | append: "/" %}
+{% endif %}
+{% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
-I am a Ph.D. student in Computer Science at Purdue University, fortunately advised by
-Prof. [Ming Yin](http://mingyin.org/).
+<span class='anchor' id='about-me'></span>
 
-Prior to Purdue, I received my Bachelor's degree in Computer Science and Statistics from the University of Illinois at
-Urbana-Champaign in 2019, advised by Prof. [Roxana Girju](https://linguistics.illinois.edu/directory/profile/girju) and
-Prof. [Richard Sowers](http://publish.illinois.edu/r-sowers/).
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. Suspendisse condimentum, libero vel tempus mattis, risus risus vulputate libero, elementum fermentum mi neque vel nisl. Maecenas facilisis maximus dignissim. Curabitur mattis vulputate dui, tincidunt varius libero luctus eu. Mauris mauris nulla, scelerisque eget massa id, tincidunt congue felis. Sed convallis tempor ipsum rhoncus viverra. Pellentesque nulla orci, accumsan volutpat fringilla vitae, maximus sit amet tortor. Aliquam ultricies odio ut volutpat scelerisque. Donec nisl nisl, porttitor vitae pharetra quis, fringilla sed mi. Fusce pretium dolor ut aliquam consequat. Cras volutpat, tellus accumsan mattis molestie, nisl lacus tempus massa, nec malesuada tortor leo vel quam. Aliquam vel ex consectetur, vehicula leo nec, efficitur eros. Donec convallis non urna quis feugiat.
 
-My research currently lies in the intersection of human-computer interaction and machine learning, mainly focusing on
-human-AI interaction and human-centered AI.
-
-I am also broadly interested in computational social science, crowdsourcing, and behavioral science.
+My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>).
 
 
-<style>
-td, th {
-   border: none!important;
-}
-</style>
+# 🔥 News
+- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 
-| Human-AI Decision Making (HAIDM) |        Human-related Factors         | Context-related Factors |
-|:--------------------------------:|:------------------------------------:|:-----------------------:|
-|     Empirical Understanding      |            CHI21<br>IJHCI            |     CSCW22<br>CHI23     |
-|      Computational Modeling      | WWW22<br>AAAI23<br>AAAI24<br>HCOMP24 |         [todo]          |
-| Interventions to Influence Human |                [todo]                |    CSCW2024<br>IUI24    |
-|    Interventions to Adjust AI    |          IJCAI23<br>IJCAI24          |                         |
+# 📝 Publications 
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
 
+[Deep Residual Learning for Image Recognition](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
 
+**Kaiming He**, Xiangyu Zhang, Shaoqing Ren, Jian Sun
 
+[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+</div>
+</div>
 
-Publications
-====== 
-(* indicates equal contribution)<br>
+- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
 
-<strong>[Does More Advice Help? The Effects of Second Opinions in AI-Assisted Decision Making](../files/second-camera.pdf)</strong><br>
-**Zhuoran Lu**, Dakuo Wang, and Ming Yin.<br>
-The 27th ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW), San José, November 2024<br>
-Preliminary version in the CHI Workshop on Trust and Reliance in AI-Assisted Tasks (TRAIT), Hamburg, May 2023
+# 🎖 Honors and Awards
+- *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 
-<strong>[PEARL: Personalizing Large Language Model Writing Assistants with Generation-Calibrated Retrievers]() </strong><br>
-Sheshera Mysore, **Zhuoran Lu**, Mengting Wan, Longqi Yang, Steve Menezes, Tina Baghaee, Emmanuel Barajas Gonzalez, Jennifer Neville, Tara Safavi.<br>
-EMNLP Workshop on Customizable NLP (CustomNLP4U), Miami, November 2024
+# 📖 Educations
+- *2019.06 - 2022.04 (now)*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2015.09 - 2019.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 
-<strong>[Mix and Match: Characterizing Heterogeneous Human Behavior in AI-assisted Decision Making]()</strong><br>
-**Zhuoran Lu**, Hasan Amin, Zhuoyan Li, and Ming Yin.<br>
-The 12th AAAI Conference on Human Computation and Crowdsourcing (HCOMP), Pittsburgh, October 2024.
+# 💬 Invited Talks
+- *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)
 
-<strong>[Designing Behavior-Aware AI to Improve the Human-AI Team Performance in AI-Assisted Decision Making]()</strong><br>
-**Zhuoran Lu**\*, Hasan Amin*, and Ming Yin.<br>
-The 33th International Joint Conference on Artificial Intelligence (IJCAI), Jeju, August 2024<br>
-Preliminary version in the ICML Workshop on Artificial Intelligence & Human Computer Interaction (AI HCI), Hawaii, July 2023
-
-<strong>[AI Pilot in the Cockpit: An Investigation of Public Acceptance]()</strong><br>
-Shan Gao, **Zhuoran Lu**, Hao Luan, Ming Yin, and Lei Wang.<br>
-International Journal of Human–Computer Interaction (IJHCI)
-
-<strong>[Enhancing AI-Assisted Group Decision Making through LLM-Powered Devil's Advocate]()</strong><br>
-Chun-Wei Chiang, **Zhuoran Lu**, Zhuoyan Li, and Ming Yin.<br>
-The 29th ACM Conference on Intelligent User Interface (IUI), Greenville, March 2024.
-
-<strong>[Decoding AI's Nudge: A Unified Framework to Predict Human Behavior in AI-assisted Decision Making]()</strong><br>
-Zhuoyan Li, **Zhuoran Lu**, and Ming Yin.<br>
-The 38th Conference on Artificial Intelligence (AAAI), Vancouver, February 2024.
-
-<strong>[Synthetic Data Generation with Large Language Models for Text Classification: Potential and Limitations]()</strong><br>
-Zhuoyan Li, Hangxiao Zhu, **Zhuoran Lu**, and Ming Yin.<br>
-The Empirical Methods in Natural Language Processing (EMNLP), Singapore, December 2023
-
-[//]: # ()
-[//]: # (<strong>[Give Weight to Human Reactions: Optimizing Complementary AI in Practical Human-AI Teams]&#40;../files/64_give_weight_to_human_reactions.pdf&#41;</strong><br>)
-
-[//]: # (Syed Hasan Amin Mahmood, **Zhuoran Lu**, and Ming Yin.<br>)
-
-<strong>[Strategic Adversarial Attacks in AI-assisted Decision Making to Reduce Human Trust and Reliance](../files/IJCAI__23_Confidence_Attack.pdf)</strong><br>
-**Zhuoran Lu**\*, Zhuoyan Li\*, Chun-Wei Chiang, and Ming Yin.<br>
-The 32nd International Joint Conference on Artificial Intelligence (IJCAI), Macao, August 2023
-
-<strong>[Are Two Heads Better Than One in AI-Assisted Decision Making? Comparing the Behavior and Performance of Groups and Individuals in Human-AI Collaborative Recidivism Risk Assessment](../files/group-camera.pdf)</strong><br>
-Chun-Wei Chiang, **Zhuoran Lu**, Zhuoyan Li, and Ming Yin.<br>
-The 41st ACM Conference on Human Factors in Computing Systems (CHI), Hamburg, May 2023.
-
-<strong>[Modeling Human Trust and Reliance in AI-assisted Decision Making: A Markovian Approach](../files/TrustModel.pdf)</strong><span style="color:red"> [Oral]</span><br>
-**Zhuoran Lu**\*, Zhuoyan Li\*, and Ming Yin.<br>
-The 37th Conference on Artificial Intelligence (AAAI), Washington, D.C., February 2023.
-
-<strong>[The Effects of AI-based Credibility Indicators on the Detection and Spread of Misinformation under Social Influence](../files/misinformation.pdf)</strong><span style="color:red"> [Best Paper Award]</span><br>
-**Zhuoran Lu**, Patrick Li, Weilong Wang, and Ming Yin.<br>
-The 25th ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW), Online, November 2022<br>
-
-<strong>[Towards Better Detection of Biased Language with Scarce, Noisy, and Biased Annotations](../files/cleare.pdf)</strong> <br>
-**Zhuoran Lu**\*, Zhuoyan Li\*, and Ming Yin.<br>
-The 5th AAAI/ACM Conference on Artificial Intelligence, Ethics, and Society (AIES), Online, August 2022<br>
-
-<strong>[Will You Accept the AI Recommendation? Predicting Human Behavior in AI-Assisted Decision Making](../files/WWW_HAI_model.pdf)</strong> <br>
-**Zhuoran Lu**\*, Xinru Wang\*, and Ming Yin <br>
-The Web Conference (WWW), Online, April 2022.<br>
-
-<strong>[Human Reliance on Machine Learning Models When Performance Feedback is Limited: Heuristics and Risks](../files/reliance.pdf)</strong><br>
-**Zhuoran Lu** and Ming Yin.<br>
-The 39th ACM Conference on Human Factors in Computing Systems (CHI), Online, May 2021.
-
-Teaching
-====== 
-
-CS373, Data Mining & Machine Learning<br>
-Teaching Assistant, Fall 2021, Spring 2022, Purdue University<br>
-Guest Lecturer, Spring 2022, Purdue University<br>
-
-Experience
-====== 
-
-**Autodesk Research**, Toronto, ON<br>
-Research Intern, From Intent to Experience Group<br>
-May 2024 - September 2024<br>
-
-**Microsoft**, Redmond, WA<br>
-Research Intern, Office of Applied Research<br>
-May 2023 - September 2023<br>
-
-**Honda Research Institute**, San Jose, CA<br>
-Research Intern, Human-centered Intelligence Group<br>
-January 2023 - April 2023<br>
-
-Service
-====== 
-**Reviewer:**<br>
-2025: CHI <br>
-2024: ICWSM, CHI, IUI, CSCW, IDC, DIS, CogSci<br>
-2023: ICWSM, CHI, IUI, IDC, MobileHCI, CogSci, CSCW, DIS, ISS, CUI, CHI PLAY, FAccT, UIST<br>
-2022: DIS, CHI PLAY, NordiCHI, MobileHCI, Ubicomp, ISWC, ICMI, SUI, HAI<br>
-Journal: IJHCI, TiiS, IPM, TKDD<br>
-
-**Program Committee/Associate Chair**<br>
-2024: CHI Late-Breaking Work, FAccT, ICWSM<br>
-2023: Ubicomp/ISWC demos and posters<br>
-
-Contact
-=====
-
-Office: Room 2149, 305 N. University St., Purdue University, West Lafayette, IN 47907
-
-Email: lu800 [AT] purdue.edu
-
+# 💻 Internships
+- *2019.05 - 2020.02*, [Lorem](https://github.com/), China.
