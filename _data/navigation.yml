@@ -11,6 +11,8 @@ main:
 
   # - title: "Honors and Awards"
   #   url: "/#-honors-and-awards"
+  - title: "Industry Experiences"
+    url: "/#-internships"
 
   - title: "Service"
     url: "/#-service"
@@ -18,5 +20,4 @@ main:
   # - title: "Invited Talks"
   #   url: "/#-invited-talks"
 
-  # - title: "Internships"
-  #   url: "/#-internships"
+
