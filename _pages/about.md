@@ -92,12 +92,12 @@ Preliminary version in the ICML Workshop on Artificial Intelligence & Human Comp
 <strong>[AI Pilot in the Cockpit: An Investigation of Public Acceptance]()</strong><br>
 Shan Gao, **Zhuoran Lu**, Hao Luan, Ming Yin, and Lei Wang.<br>
 International Journal of Human–Computer Interaction (IJHCI) <br>
-<a style="background-color: #B2D1D3; color: black; padding: 3px; text-decoration: none;">IJHCI</a> <a href="../">PDF</a>
+<a style="background-color: #F4B0A5; color: black; padding: 3px; text-decoration: none;">IJHCI</a> <a href="../">PDF</a>
 
 <strong>[Enhancing AI-Assisted Group Decision Making through LLM-Powered Devil's Advocate]()</strong><br>
 Chun-Wei Chiang, **Zhuoran Lu**, Zhuoyan Li, and Ming Yin.<br>
 The 29th ACM Conference on Intelligent User Interface (IUI), Greenville, March 2024.<br>
-<a style="background-color: #B2D1D3; color: black; padding: 3px; text-decoration: none;">IUI</a> <a href="../">PDF</a>
+<a style="background-color: #D9939B; color: black; padding: 3px; text-decoration: none;">IUI</a> <a href="../">PDF</a>
 
 <strong>[Decoding AI's Nudge: A Unified Framework to Predict Human Behavior in AI-assisted Decision Making]()</strong><br>
 Zhuoyan Li, **Zhuoran Lu**, and Ming Yin.<br>
@@ -147,7 +147,7 @@ The Web Conference (WWW), Online, April 2022.<br>
 
 <strong>[Human Reliance on Machine Learning Models When Performance Feedback is Limited: Heuristics and Risks](../files/reliance.pdf)</strong><br>
 **Zhuoran Lu** and Ming Yin.<br>
-The 39th ACM Conference on Human Factors in Computing Systems (CHI), Online, May 2021.
+The 39th ACM Conference on Human Factors in Computing Systems (CHI), Online, May 2021.<br>
 <a style="background-color: #D9939B; color: black; padding: 3px; text-decoration: none;">CHI</a> <a href="../">PDF</a>
 
 
@@ -162,34 +162,36 @@ The 39th ACM Conference on Human Factors in Computing Systems (CHI), Online, May
 - *2021.10* Best 
 - *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  -->
 
-# Educations
+<!-- # Educations
 - *2019.06 - 2025.05 (Expected)*, Ph.D. in Computer Science, Purdue University
 - *2017.01 - 2019.05*, B.S. in Computer Science and Statistics, University of Illinois at Urbana-Champaign
 
 # Invited Talks
 - *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)
+- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/) -->
 
 # Industry Experiences
-- *2019.05 - 2020.02*, [Autodesk Research](https://github.com/), Toronto, ON. <br>
-&nbsp; From Intent to Experience, work with Yi Wang and Qian Zhou
-- *2023.05 - 2023.09*, [Microsoft](https://github.com/), Seattle, WA.<br>
-&nbsp; [Office of Applied Research](https://github.com/), work with Mengting Wan and Longqi Yang
-- *2023.01 - 2023.04*, [Honda Research Institute](https://github.com/), San Jose, CA.<br>
-&nbsp; [Human-centered Intelligence Group](https://github.com/), work with Shashank Mehrotra
+*2019.05 - 2020.02*, [Autodesk Research](https://github.com/), Toronto, ON. <br>
+- [From Intent to Experience](), work with Yi Wang and Qian Zhou<br>
+
+*2023.05 - 2023.09*, [Microsoft](https://github.com/), Seattle, WA.<br>
+- [Office of Applied Research](https://github.com/), work with Mengting Wan and Longqi Yang<br>
+
+*2023.01 - 2023.04*, [Honda Research Institute](https://github.com/), San Jose, CA.<br>
+- [Human-centered Intelligence Group](https://github.com/), work with Shashank Mehrotra<br>
 
 
 # Service
 
 **Program Committee/Associate Chair**<br>
-2024: CHI Late-Breaking Work, FAccT, ICWSM<br>
-2023: Ubicomp/ISWC demos and posters<br>
+- 2024: CHI Late-Breaking Work, FAccT, ICWSM<br>
+- 2023: Ubicomp/ISWC demos and posters<br>
 
 **Reviewer:**<br>
-2025: CHI <br>
-2024: ICWSM, CHI, IUI, CSCW, IDC, DIS, CogSci<br>
-2023: ICWSM, CHI, IUI, IDC, MobileHCI, CogSci, CSCW, DIS, ISS, CUI, CHI PLAY, FAccT, UIST<br>
-2022: DIS, CHI PLAY, NordiCHI, MobileHCI, Ubicomp, ISWC, ICMI, SUI, HAI<br>
-Journal: IJHCI, TiiS, IPM, TKDD<br>
+- 2025: CHI <br>
+- 2024: ICWSM, CHI, IUI, CSCW, IDC, DIS, CogSci<br>
+- 2023: ICWSM, CHI, IUI, IDC, MobileHCI, CogSci, CSCW, DIS, ISS, CUI, CHI PLAY, FAccT, UIST<br>
+- 2022: DIS, CHI PLAY, NordiCHI, MobileHCI, Ubicomp, ISWC, ICMI, SUI, HAI<br>
+- Journal: IJHCI, TiiS, IPM, TKDD<br>
 
 
