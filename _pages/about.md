@@ -126,7 +126,7 @@ The 41st ACM Conference on Human Factors in Computing Systems (CHI), Hamburg, Ma
 <strong>[Modeling Human Trust and Reliance in AI-assisted Decision Making: A Markovian Approach](../files/TrustModel.pdf)</strong><span style="color:red"> [Oral]</span><br>
 **Zhuoran Lu**\*, Zhuoyan Li\*, and Ming Yin.<br>
 The 37th Conference on Artificial Intelligence (AAAI), Washington, D.C., February 2023.<br>
-<a style="background-color: #B2D1D3; color: black; padding: 3px; text-decoration: none;">AAAI</a> <a href="../">PDF</a>
+<a style="background-color: #A2BFE1; color: black; padding: 3px; text-decoration: none;">AAAI</a> <a href="../">PDF</a>
 
 ## 2022
 
