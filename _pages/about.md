@@ -27,10 +27,13 @@ Prof. [Richard Sowers](http://publish.illinois.edu/r-sowers/).
 
 ## Research Interests
 
-My research lies in the intersection of human-computer interaction and machine learning, focusing on
-human-AI interaction and human-centered AI. 
+My research interests are in the intersection of HCI and AI, mainly focusing on human-AI interaction and human-centered AI. 
 
-I am also broadly interested in computational social science, crowdsourcing, and behavioral science.
+Specifically, my research aims to empower humans to engage more effectively and appropriately with AI, with a focus on the paradigm of **human-AI decision-making**. I understand human-AI interaction and design human-centered AI based on two perspectives:
+- Human decision makers' cognitive process of engaging with AI, which potentially has a bias.
+- Social influence from other information sources in addition to AI.
+
+I am also broadly interested in applied machine learning, computational social science, crowdsourcing, and behavioral science.
 
 **I am on the job market this year (2024-25). Please feel free to contact me regarding any relevant opportunities!**
 
@@ -173,7 +176,7 @@ The 39th ACM Conference on Human Factors in Computing Systems (CHI), Online, May
 - *2021.03*, Zhuoran ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/) -->
 
 # Industry Experiences
-*2024.05 - 2024.02*, [Autodesk Research](https://github.com/), Toronto, ON. <br>
+*2024.05 - 2024.08*, [Autodesk Research](https://github.com/), Toronto, ON. <br>
 - [From Intent to Experience](), work with Yi Wang and Qian Zhou<br>
 
 *2023.05 - 2023.09*, [Microsoft](https://github.com/), Seattle, WA.<br>
