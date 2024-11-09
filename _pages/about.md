@@ -27,8 +27,8 @@ Prof. [Richard Sowers](http://publish.illinois.edu/r-sowers/).
 
 ## Research Interests
 
-My research currently lies in the intersection of human-computer interaction and machine learning, mainly focusing on
-human-AI interaction and human-centered AI.
+My research lies in the intersection of human-computer interaction and machine learning, focusing on
+human-AI interaction and human-centered AI. 
 
 I am also broadly interested in computational social science, crowdsourcing, and behavioral science.
 
@@ -123,7 +123,7 @@ Chun-Wei Chiang, **Zhuoran Lu**, Zhuoyan Li, and Ming Yin.<br>
 The 41st ACM Conference on Human Factors in Computing Systems (CHI), Hamburg, May 2023.<br>
 <a style="background-color: #D9939B; color: black; padding: 3px; text-decoration: none;">CHI</a> <a href="../">PDF</a>
 
-<strong>[Modeling Human Trust and Reliance in AI-assisted Decision Making: A Markovian Approach](../files/TrustModel.pdf)</strong><span style="color:red"> [Oral]</span><br>
+<strong>[Modeling Human Trust and Reliance in AI-assisted Decision Making: A Markovian Approach](../files/TrustModel.pdf)</strong><span style="color:red"> [Oral Presentation]</span><br>
 **Zhuoran Lu**\*, Zhuoyan Li\*, and Ming Yin.<br>
 The 37th Conference on Artificial Intelligence (AAAI), Washington, D.C., February 2023.<br>
 <a style="background-color: #A2BFE1; color: black; padding: 3px; text-decoration: none;">AAAI</a> <a href="../">PDF</a>
@@ -173,7 +173,7 @@ The 39th ACM Conference on Human Factors in Computing Systems (CHI), Online, May
 - *2021.03*, Zhuoran ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/) -->
 
 # Industry Experiences
-*2019.05 - 2020.02*, [Autodesk Research](https://github.com/), Toronto, ON. <br>
+*2024.05 - 2024.02*, [Autodesk Research](https://github.com/), Toronto, ON. <br>
 - [From Intent to Experience](), work with Yi Wang and Qian Zhou<br>
 
 *2023.05 - 2023.09*, [Microsoft](https://github.com/), Seattle, WA.<br>
