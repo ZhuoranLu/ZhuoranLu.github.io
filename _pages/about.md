@@ -35,16 +35,20 @@ Specifically, my research aims to empower humans to engage more effectively and 
 
 I am also broadly interested in applied machine learning, computational social science, crowdsourcing, and behavioral science.
 
-**I am on the job market this year (2024-25). Please feel free to contact me regarding any relevant opportunities!**
+- **<span style="color:red">  I am on the job market this year (2024-25). Please feel free to contact me regarding any relevant opportunities! </span>**
 
 
 <!-- 
 My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>). -->
 
 
-<!-- # 🔥 News
-- *2022.02*: &nbsp;🎉🎉 Zhuoran dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2022.02*: &nbsp;🎉🎉 Zhuoran ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  -->
+# News
+- *2024.11*: &nbsp; I will present our paper on [Second Opinions in Human-AI Decision-making](https://dl.acm.org/doi/10.1145/3653708) at CSCW 2024! See you in Costa Rica!
+- *2024.01*: &nbsp; I’m selected as a recipient of the [Bilsland Dissertation Fellowship]()!
+- *2023.11*: &nbsp; Received a special recognition for outstanding reviews at CHI.
+- *2023.07*: &nbsp; Our paper on [Modeling Human Trust and Reliance on in AI]() was selected as an Oral Presentation at AAAI 2023.
+- *2022.10*: &nbsp; Our paper on [AI & Misinformation](https://dl.acm.org/doi/10.1145/3555562) received the [best paper award](https://programs.sigchi.org/cscw/2022/awards/best-papers) at CSCW 2022!
+
 
 # Publications 
 
@@ -73,7 +77,7 @@ Preliminary version in the CHI Workshop on Trust and Reliance in AI-Assisted Tas
 
 ## 2024
 
-<strong>[Does More Advice Help? The Effects of Second Opinions in AI-Assisted Decision Making](../files/second-camera.pdf)</strong><br>
+<strong>[Does More Advice Help? The Effects of Second Opinions in AI-Assisted Decision Making](https://dl.acm.org/doi/10.1145/3653708)</strong><br>
 **Zhuoran Lu**, Dakuo Wang, and Ming Yin.<br>
 The 27th ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW), San José, November 2024.<br>
 Preliminary version in the CHI Workshop on Trust and Reliance in AI-Assisted Tasks (TRAIT), Hamburg, May 2023.<br>
