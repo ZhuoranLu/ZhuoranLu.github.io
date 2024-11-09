@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am a Ph.D. student in Computer Science at Purdue University, fortunately advised by
+I am a Ph.D. candidate in Computer Science at Purdue University, fortunately advised by
 Prof. [Ming Yin](http://mingyin.org/).
 
 Prior to Purdue, I received my Bachelor's degree in Computer Science and Statistics from the University of Illinois at
@@ -83,49 +83,49 @@ The 27th ACM Conference on Computer-Supported Cooperative Work and Social Comput
 Preliminary version in the CHI Workshop on Trust and Reliance in AI-Assisted Tasks (TRAIT), Hamburg, May 2023.<br>
 <a style="background-color: #FB6571; color: black; padding: 3px; text-decoration: none;">CSCW</a> <a href="../">PDF</a>
 
-<strong>[PEARL: Personalizing Large Language Model Writing Assistants with Generation-Calibrated Retrievers]() </strong><br>
+<strong>[PEARL: Personalizing Large Language Model Writing Assistants with Generation-Calibrated Retrievers](https://arxiv.org/abs/2311.09180) </strong><br>
 Sheshera Mysore, **Zhuoran Lu**, Mengting Wan, Longqi Yang, Steve Menezes, Tina Baghaee, Emmanuel Barajas Gonzalez, Jennifer Neville, Tara Safavi.<br>
 EMNLP Workshop on Customizable NLP (CustomNLP4U), Miami, November 2024.
 
-<strong>[Mix and Match: Characterizing Heterogeneous Human Behavior in AI-assisted Decision Making]()</strong><br>
+<strong>[Mix and Match: Characterizing Heterogeneous Human Behavior in AI-assisted Decision Making](https://ojs.aaai.org/index.php/HCOMP/article/view/31604)</strong><br>
 **Zhuoran Lu**, Hasan Amin, Zhuoyan Li, and Ming Yin.<br>
 The 12th AAAI Conference on Human Computation and Crowdsourcing (HCOMP), Pittsburgh, October 2024.<br>
 <a style="background-color: #A2BFE1; color: black; padding: 3px; text-decoration: none;">HCOMP</a> <a href="../">PDF</a>
 
-<strong>[Designing Behavior-Aware AI to Improve the Human-AI Team Performance in AI-Assisted Decision Making]()</strong><br>
+<strong>[Designing Behavior-Aware AI to Improve the Human-AI Team Performance in AI-Assisted Decision Making](https://www.ijcai.org/proceedings/2024/344)</strong><br>
 **Zhuoran Lu**\*, Hasan Amin*, and Ming Yin.<br>
 The 33th International Joint Conference on Artificial Intelligence (IJCAI), Jeju, August 2024.<br>
 Preliminary version in the ICML Workshop on Artificial Intelligence & Human Computer Interaction (AI HCI), Hawaii, July 2023.<br>
 <a style="background-color: #94CCC3; color: black; padding: 3px; text-decoration: none;">IJCAI</a> <a href="../">PDF</a>
 
-<strong>[AI Pilot in the Cockpit: An Investigation of Public Acceptance]()</strong><br>
+<strong>[AI Pilot in the Cockpit: An Investigation of Public Acceptance](https://www.tandfonline.com/doi/full/10.1080/10447318.2024.2301856)</strong><br>
 Shan Gao, **Zhuoran Lu**, Hao Luan, Ming Yin, and Lei Wang.<br>
 International Journal of Human–Computer Interaction (IJHCI) <br>
 <a style="background-color: #F4B0A5; color: black; padding: 3px; text-decoration: none;">IJHCI</a> <a href="../">PDF</a>
 
-<strong>[Enhancing AI-Assisted Group Decision Making through LLM-Powered Devil's Advocate]()</strong><br>
+<strong>[Enhancing AI-Assisted Group Decision Making through LLM-Powered Devil's Advocate](https://dl.acm.org/doi/10.1145/3640543.3645199)</strong><br>
 Chun-Wei Chiang, **Zhuoran Lu**, Zhuoyan Li, and Ming Yin.<br>
 The 29th ACM Conference on Intelligent User Interface (IUI), Greenville, March 2024.<br>
 <a style="background-color: #D9939B; color: black; padding: 3px; text-decoration: none;">IUI</a> <a href="../">PDF</a>
 
-<strong>[Decoding AI's Nudge: A Unified Framework to Predict Human Behavior in AI-assisted Decision Making]()</strong><br>
+<strong>[Decoding AI's Nudge: A Unified Framework to Predict Human Behavior in AI-assisted Decision Making](https://arxiv.org/abs/2401.05840)</strong><br>
 Zhuoyan Li, **Zhuoran Lu**, and Ming Yin.<br>
 The 38th Conference on Artificial Intelligence (AAAI), Vancouver, February 2024.<br>
 <a style="background-color: #A2BFE1; color: black; padding: 3px; text-decoration: none;">AAAI</a> <a href="../">PDF</a>
 
 ## 2023
 
-<strong>[Synthetic Data Generation with Large Language Models for Text Classification: Potential and Limitations]()</strong><br>
+<strong>[Synthetic Data Generation with Large Language Models for Text Classification: Potential and Limitations](https://arxiv.org/abs/2310.07849)</strong><br>
 Zhuoyan Li, Hangxiao Zhu, **Zhuoran Lu**, and Ming Yin.<br>
 The Empirical Methods in Natural Language Processing (EMNLP), Singapore, December 2023.<br>
 <a style="background-color: #B2D1D3; color: black; padding: 3px; text-decoration: none;">EMNLP</a> <a href="../">PDF</a>
 
-<strong>[Strategic Adversarial Attacks in AI-assisted Decision Making to Reduce Human Trust and Reliance](../files/IJCAI__23_Confidence_Attack.pdf)</strong><br>
+<strong>[Strategic Adversarial Attacks in AI-assisted Decision Making to Reduce Human Trust and Reliance](https://www.ijcai.org/proceedings/2023/337)</strong><br>
 **Zhuoran Lu**\*, Zhuoyan Li\*, Chun-Wei Chiang, and Ming Yin.<br>
 The 32nd International Joint Conference on Artificial Intelligence (IJCAI), Macao, August 2023<br>
 <a style="background-color: #94CCC3; color: black; padding: 3px; text-decoration: none;">IJCAI</a> <a href="../">PDF</a>
 
-<strong>[Are Two Heads Better Than One in AI-Assisted Decision Making? Comparing the Behavior and Performance of Groups and Individuals in Human-AI Collaborative Recidivism Risk Assessment](../files/group-camera.pdf)</strong><br>
+<strong>[Are Two Heads Better Than One in AI-Assisted Decision Making? Comparing the Behavior and Performance of Groups and Individuals in Human-AI Collaborative Recidivism Risk Assessment](https://dl.acm.org/doi/10.1145/3544548.3581015)</strong><br>
 Chun-Wei Chiang, **Zhuoran Lu**, Zhuoyan Li, and Ming Yin.<br>
 The 41st ACM Conference on Human Factors in Computing Systems (CHI), Hamburg, May 2023.<br>
 <a style="background-color: #D9939B; color: black; padding: 3px; text-decoration: none;">CHI</a> <a href="../">PDF</a>
@@ -137,12 +137,12 @@ The 37th Conference on Artificial Intelligence (AAAI), Washington, D.C., Februar
 
 ## 2022
 
-<strong>[The Effects of AI-based Credibility Indicators on the Detection and Spread of Misinformation under Social Influence](../files/misinformation.pdf)</strong><span style="color:red"> [Best Paper Award]</span><br>
+<strong>[The Effects of AI-based Credibility Indicators on the Detection and Spread of Misinformation under Social Influence](https://dl.acm.org/doi/10.1145/3555562)</strong><span style="color:red"> [Best Paper Award]</span><br>
 **Zhuoran Lu**, Patrick Li, Weilong Wang, and Ming Yin.<br>
 The 25th ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW), Online, November 2022<br>
 <a style="background-color: #FB6571; color: black; padding: 3px; text-decoration: none;">CSCW</a> <a href="../">PDF</a>
 
-<strong>[Towards Better Detection of Biased Language with Scarce, Noisy, and Biased Annotations](../files/cleare.pdf)</strong> <br>
+<strong>[Towards Better Detection of Biased Language with Scarce, Noisy, and Biased Annotations](https://dl.acm.org/doi/10.1145/3514094.3534142)</strong> <br>
 **Zhuoran Lu**\*, Zhuoyan Li\*, and Ming Yin.<br>
 The 5th AAAI/ACM Conference on Artificial Intelligence, Ethics, and Society (AIES), Online, August 2022<br>
 <a style="background-color: #B2D1D3; color: black; padding: 3px; text-decoration: none;">AIES</a> <a href="../">PDF</a>
@@ -154,7 +154,7 @@ The Web Conference (WWW), Online, April 2022.<br>
 
 ## 2021
 
-<strong>[Human Reliance on Machine Learning Models When Performance Feedback is Limited: Heuristics and Risks](../files/reliance.pdf)</strong><br>
+<strong>[Human Reliance on Machine Learning Models When Performance Feedback is Limited: Heuristics and Risks](https://dl.acm.org/doi/10.1145/3411764.3445562)</strong><br>
 **Zhuoran Lu** and Ming Yin.<br>
 The 39th ACM Conference on Human Factors in Computing Systems (CHI), Online, May 2021.<br>
 <a style="background-color: #D9939B; color: black; padding: 3px; text-decoration: none;">CHI</a> <a href="../">PDF</a>
