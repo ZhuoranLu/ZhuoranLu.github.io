@@ -43,6 +43,7 @@ My research interest includes neural machine translation and computer vision. I 
 
 
 # News
+- *2025.01*: &nbsp; **3** full papers accepted by CHI 2025! See you in Yokohama!
 - *2024.11*: &nbsp; I will present our paper on [Second Opinions in Human-AI Decision-making](https://dl.acm.org/doi/10.1145/3653708) at CSCW 2024! See you in Costa Rica!
 - *2024.01*: &nbsp; I’m selected as a recipient of the [Bilsland Dissertation Fellowship]()!
 - *2023.11*: &nbsp; Received a special recognition for outstanding reviews at CHI.
@@ -50,7 +51,7 @@ My research interest includes neural machine translation and computer vision. I 
 - *2022.10*: &nbsp; Our paper on [AI & Misinformation](https://dl.acm.org/doi/10.1145/3555562) received the [best paper award](https://programs.sigchi.org/cscw/2022/awards/best-papers) at CSCW 2022!
 
 
-# Publications 
+# Selected Publications 
 
 <!-- <div class='paper-box'> -->
 <!-- <div class='paper-box-image'>
@@ -74,6 +75,19 @@ Preliminary version in the CHI Workshop on Trust and Reliance in AI-Assisted Tas
 
 
 <div class='paper-box-text' markdown="1">
+
+## 2025
+
+<strong>[Understanding the Effects of AI-based Credibility Indicators When People Are Influenced By Both Peers and Experts](https://zhuoranlu.github.io/)</strong><br>
+**Zhuoran Lu**, Patrick Li, Weilong Wang, and Ming Yin.<br>
+The 43rd ACM Conference on Human Factors in Computing Systems (CHI), Yokohama, May 2025.<br>
+<a style="background-color: #D9939B; color: black; padding: 3px; text-decoration: none;">CHI</a> <a href="../">PDF</a>
+
+<strong>[Zhuoran Lu, Qian Zhou, Yi Wang. WhatELSE: Shaping Narrative Space at Configurable Level of Abstraction for AI-bridged Interactive Storytelling.](https://zhuoranlu.github.io/)</strong><br>
+**Zhuoran Lu**, Qian Zhou, and Yi Wang.<br>
+The 43rd ACM Conference on Human Factors in Computing Systems (CHI), Yokohama, May 2025.<br>
+<a style="background-color: #D9939B; color: black; padding: 3px; text-decoration: none;">CHI</a> <a href="../">PDF</a>
+
 
 ## 2024
 
