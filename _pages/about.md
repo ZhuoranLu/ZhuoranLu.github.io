@@ -83,7 +83,7 @@ Preliminary version in the CHI Workshop on Trust and Reliance in AI-Assisted Tas
 The 43rd ACM Conference on Human Factors in Computing Systems (CHI), Yokohama, May 2025.<br>
 <a style="background-color: #D9939B; color: black; padding: 3px; text-decoration: none;">CHI</a> <a href="../">PDF</a>
 
-<strong>[Zhuoran Lu, Qian Zhou, Yi Wang. WhatELSE: Shaping Narrative Space at Configurable Level of Abstraction for AI-bridged Interactive Storytelling.](https://zhuoranlu.github.io/)</strong><br>
+<strong>[WhatELSE: Shaping Narrative Space at Configurable Level of Abstraction for AI-bridged Interactive Storytelling.](https://zhuoranlu.github.io/)</strong><br>
 **Zhuoran Lu**, Qian Zhou, and Yi Wang.<br>
 The 43rd ACM Conference on Human Factors in Computing Systems (CHI), Yokohama, May 2025.<br>
 <a style="background-color: #D9939B; color: black; padding: 3px; text-decoration: none;">CHI</a> <a href="../">PDF</a>
