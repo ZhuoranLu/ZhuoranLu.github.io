@@ -81,12 +81,12 @@ Preliminary version in the CHI Workshop on Trust and Reliance in AI-Assisted Tas
 <strong>[Understanding the Effects of AI-based Credibility Indicators When People Are Influenced By Both Peers and Experts](https://zhuoranlu.github.io/)</strong><br>
 **Zhuoran Lu**, Patrick Li, Weilong Wang, and Ming Yin.<br>
 The 43rd ACM Conference on Human Factors in Computing Systems (CHI), Yokohama, May 2025.<br>
-<a style="background-color: #D9939B; color: black; padding: 3px; text-decoration: none;">CHI</a> <a href="../">PDF</a>
+<a style="background-color: #D9939B; color: black; padding: 3px; border-radius: 5px; text-decoration: none;">CHI</a> <a href="../">PDF</a>
 
 <strong>[WhatELSE: Shaping Narrative Space at Configurable Level of Abstraction for AI-bridged Interactive Storytelling.](https://zhuoranlu.github.io/)</strong><br>
 **Zhuoran Lu**, Qian Zhou, and Yi Wang.<br>
 The 43rd ACM Conference on Human Factors in Computing Systems (CHI), Yokohama, May 2025.<br>
-<a style="background-color: #D9939B; color: black; padding: 3px; text-decoration: none;">CHI</a> <a href="../">PDF</a>
+<a style="background-color: #D9939B; color: black; padding: 3px; border-radius: 5px; text-decoration: none;">CHI</a> <a href="../">PDF</a>
 
 
 ## 2024
