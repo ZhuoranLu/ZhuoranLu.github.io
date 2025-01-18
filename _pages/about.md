@@ -43,7 +43,7 @@ My research interest includes neural machine translation and computer vision. I 
 
 
 # News
-- *2025.01*: &nbsp; **3** full papers accepted by CHI 2025! See you in Yokohama!
+- *2025.01*: &nbsp; **2** first-authored papers accepted by CHI 2025! See you in Yokohama!
 - *2024.11*: &nbsp; I will present our paper on [Second Opinions in Human-AI Decision-making](https://dl.acm.org/doi/10.1145/3653708) at CSCW 2024! See you in Costa Rica!
 - *2024.01*: &nbsp; I’m selected as a recipient of the [Bilsland Dissertation Fellowship]()!
 - *2023.11*: &nbsp; Received a special recognition for outstanding reviews at CHI.
@@ -194,24 +194,25 @@ The 39th ACM Conference on Human Factors in Computing Systems (CHI), Online, May
 - *2021.03*, Zhuoran ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/) -->
 
 # Industry Experiences
-*2024.05 - 2024.08*, [Autodesk Research](https://github.com/), Toronto, ON. <br>
-- [From Intent to Experience](), work with Yi Wang and Qian Zhou<br>
+*2024.05 - 2024.08*, [Autodesk Research](https://www.research.autodesk.com/), Toronto, ON. <br>
+- [From Intent to Experience](https://www.research.autodesk.com/), work with Yi Wang and Qian Zhou<br>
 
 *2023.05 - 2023.09*, [Microsoft](https://github.com/), Seattle, WA.<br>
-- [Office of Applied Research](https://github.com/), work with Mengting Wan and Longqi Yang<br>
+- [Office of Applied Research](https://www.microsoft.com/en-us/research/group/office-of-applied-research/), work with Mengting Wan and Longqi Yang<br>
 
-*2023.01 - 2023.04*, [Honda Research Institute](https://github.com/), San Jose, CA.<br>
-- [Human-centered Intelligence Group](https://github.com/), work with Shashank Mehrotra<br>
+*2023.01 - 2023.04*, [Honda Research Institute](https://usa.honda-ri.com/home), San Jose, CA.<br>
+- [Human-centered Intelligence Group](https://usa.honda-ri.com/human-factors-ergonomics), work with Shashank Mehrotra<br>
 
 
 # Service
 
 **Program Committee/Associate Chair**<br>
+- 2024: CHI Late-Breaking Work, FAccT<br>
 - 2024: CHI Late-Breaking Work, FAccT, ICWSM<br>
 - 2023: Ubicomp/ISWC demos and posters<br>
 
 **Reviewer:**<br>
-- 2025: CHI <br>
+- 2025: CHI, CSCW, HRI <br>
 - 2024: ICWSM, CHI, IUI, CSCW, IDC, DIS, CogSci<br>
 - 2023: ICWSM, CHI, IUI, IDC, MobileHCI, CogSci, CSCW, DIS, ISS, CUI, CHI PLAY, FAccT, UIST<br>
 - 2022: DIS, CHI PLAY, NordiCHI, MobileHCI, Ubicomp, ISWC, ICMI, SUI, HAI<br>
