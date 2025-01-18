@@ -95,7 +95,7 @@ The 43rd ACM Conference on Human Factors in Computing Systems (CHI), Yokohama, M
 **Zhuoran Lu**, Dakuo Wang, and Ming Yin.<br>
 The 27th ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW), San José, November 2024.<br>
 Preliminary version in the CHI Workshop on Trust and Reliance in AI-Assisted Tasks (TRAIT), Hamburg, May 2023.<br>
-<a style="background-color: #FB6571; color: black; padding: 3px; text-decoration: none;">CSCW</a> <a href="../">PDF</a>
+<a style="background-color: #FB6571; color: black; padding: 3px; border-radius: 5px; text-decoration: none;">CSCW</a> <a href="../">PDF</a>
 
 <strong>[PEARL: Personalizing Large Language Model Writing Assistants with Generation-Calibrated Retrievers](https://arxiv.org/abs/2311.09180) </strong><br>
 Sheshera Mysore, **Zhuoran Lu**, Mengting Wan, Longqi Yang, Steve Menezes, Tina Baghaee, Emmanuel Barajas Gonzalez, Jennifer Neville, Tara Safavi.<br>
