@@ -89,6 +89,14 @@ The 43rd ACM Conference on Human Factors in Computing Systems (CHI), Yokohama, M
 <a style="background-color: #D9939B; color: black; padding: 3px; border-radius: 5px; text-decoration: none;">CHI</a> <a href="../">PDF</a>
 
 
+<strong>[Understanding the Effects of Large Language Model (LLM)-driven Adversarial Social Influences in Online Information Spread.](https://zhuoranlu.github.io/)</strong><br>
+**Zhuoran Lu**\*, Gionnieve Lim*, and Ming Yin.<br>
+Late-Breaking Work (LBW) of the 43rd ACM Conference on Human Factors in Computing Systems (CHI), Yokohama, May 2025.<br>
+<a style="background-color: #D9939B; color: black; padding: 3px; border-radius: 5px; text-decoration: none;">CHI</a> <a href="../">PDF</a>
+
+
+
+
 ## 2024
 
 <strong>[Does More Advice Help? The Effects of Second Opinions in AI-Assisted Decision Making](https://dl.acm.org/doi/10.1145/3653708)</strong><br>
