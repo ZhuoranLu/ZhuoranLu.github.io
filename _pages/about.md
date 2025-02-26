@@ -92,7 +92,7 @@ The 43rd ACM Conference on Human Factors in Computing Systems (CHI), Yokohama, M
 <strong>[Understanding the Effects of Large Language Model (LLM)-driven Adversarial Social Influences in Online Information Spread.](https://zhuoranlu.github.io/)</strong><br>
 **Zhuoran Lu**\*, Gionnieve Lim*, and Ming Yin.<br>
 Late-Breaking Work (LBW) of the 43rd ACM Conference on Human Factors in Computing Systems (CHI), Yokohama, May 2025.<br>
-<a style="background-color: #D9939B; color: black; padding: 3px; border-radius: 5px; text-decoration: none;">CHI</a> <a href="../">PDF</a>
+<a style="background-color: #D9939B; color: black; padding: 3px; border-radius: 5px; text-decoration: none;">CHI-LBW</a> <a href="../">PDF</a>
 
 
 
