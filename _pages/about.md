@@ -215,14 +215,14 @@ The 39th ACM Conference on Human Factors in Computing Systems (CHI), Online, May
 # Service
 
 **Program Committee/Associate Chair**<br>
+- 2025: CHI Late-Breaking Work, FAccT<br>
 - 2024: CHI Late-Breaking Work, FAccT<br>
-- 2024: CHI Late-Breaking Work, FAccT, ICWSM<br>
 - 2023: Ubicomp/ISWC demos and posters<br>
 
 **Reviewer:**<br>
-- 2025: CHI, CSCW, HRI <br>
-- 2024: ICWSM, CHI, IUI, CSCW, IDC, DIS, CogSci<br>
-- 2023: ICWSM, CHI, IUI, IDC, MobileHCI, CogSci, CSCW, DIS, ISS, CUI, CHI PLAY, FAccT, UIST<br>
+- 2025: ICWSM, CHI, CogSci, CSCW, HRI <br>
+- 2024: ICWSM, CHI, CogSci, CSCW, IUI, IDC, DIS, <br>
+- 2023: ICWSM, CHI, CogSci, CSCW, IUI, IDC, DIS, MobileHCI, ISS, CUI, CHI PLAY, FAccT, UIST<br>
 - 2022: DIS, CHI PLAY, NordiCHI, MobileHCI, Ubicomp, ISWC, ICMI, SUI, HAI<br>
 - Journal: IJHCI, TiiS, IPM, TKDD<br>
 
