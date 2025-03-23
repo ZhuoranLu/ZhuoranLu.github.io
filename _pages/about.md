@@ -81,13 +81,12 @@ Preliminary version in the CHI Workshop on Trust and Reliance in AI-Assisted Tas
 <strong>[Understanding the Effects of AI-based Credibility Indicators When People Are Influenced By Both Peers and Experts](https://zhuoranlu.github.io/)</strong><br>
 **Zhuoran Lu**, Patrick Li, Weilong Wang, and Ming Yin.<br>
 The 43rd ACM Conference on Human Factors in Computing Systems (CHI), Yokohama, May 2025.<br>
-<a style="background-color: #D9939B; color: black; padding: 3px; border-radius: 5px; text-decoration: none;">CHI</a> <a href="../">PDF</a>
+<a style="background-color: #D9939B; color: black; padding: 3px; border-radius: 5px; text-decoration: none;">CHI</a> <a href="https://camps.aptaracorp.com/ACM_PMS/PMS/ACM/CHI25/784/5b747fc9-da77-11ef-ada9-16bb50361d1f/OUT/chi25-784.html/">PDF</a>
 
 <strong>[WhatELSE: Shaping Narrative Space at Configurable Level of Abstraction for AI-bridged Interactive Storytelling.](https://zhuoranlu.github.io/)</strong><br>
 **Zhuoran Lu**, Qian Zhou, and Yi Wang.<br>
 The 43rd ACM Conference on Human Factors in Computing Systems (CHI), Yokohama, May 2025.<br>
-<a style="background-color: #D9939B; color: black; padding: 3px; border-radius: 5px; text-decoration: none;">CHI</a> <a href="../">PDF</a>
-
+<a style="background-color: #D9939B; color: black; padding: 3px; border-radius: 5px; text-decoration: none;">CHI</a> <a href="https://arxiv.org/abs/2502.18641">PDF</a>
 
 <strong>[Understanding the Effects of Large Language Model (LLM)-driven Adversarial Social Influences in Online Information Spread.](https://zhuoranlu.github.io/)</strong><br>
 **Zhuoran Lu**\*, Gionnieve Lim*, and Ming Yin.<br>
