@@ -35,7 +35,7 @@ Specifically, my research aims to empower humans to engage more effectively and 
 
 I am also broadly interested in applied machine learning, computational social science, crowdsourcing, and behavioral science.
 
-- **<span style="color:red">  I am on the job market this year (2024-25). Please feel free to contact me regarding any relevant opportunities! </span>**
+- **<span style="color:red">  I am on the job market this year (2025-26). Please feel free to contact me regarding any relevant opportunities! </span>**
 
 
 <!-- 
@@ -43,7 +43,7 @@ My research interest includes neural machine translation and computer vision. I 
 
 
 # News
-- *2025.01*: &nbsp; **2** first-authored papers accepted by CHI 2025! See you in Yokohama!
+- *2025.01*: &nbsp; 3 papers accepted by CHI 2025! See you in Yokohama!
 - *2024.11*: &nbsp; I will present our paper on [Second Opinions in Human-AI Decision-making](https://dl.acm.org/doi/10.1145/3653708) at CSCW 2024! See you in Costa Rica!
 - *2024.01*: &nbsp; I’m selected as a recipient of the [Bilsland Dissertation Fellowship]()!
 - *2023.11*: &nbsp; Received a special recognition for outstanding reviews at CHI.
@@ -77,6 +77,11 @@ Preliminary version in the CHI Workshop on Trust and Reliance in AI-Assisted Tas
 <div class='paper-box-text' markdown="1">
 
 ## 2025
+
+<strong>[From Text to Trust: Empowering AI-assisted Decision Making with Adaptive LLM-powered Analysis](https://zhuoranlu.github.io/)</strong><br>
+Zhuoyan Li, Hangxiao Zhu, **Zhuoran Lu**, Ziang Xiao, and Ming Yin.<br>
+The 43rd ACM Conference on Human Factors in Computing Systems (CHI), Yokohama, May 2025.<br>
+<a style="background-color: #D9939B; color: black; padding: 3px; border-radius: 5px; text-decoration: none;">CHI</a> <a href="https://dl.acm.org/doi/10.1145/3706598.3713133">PDF</a>
 
 <strong>[Understanding the Effects of AI-based Credibility Indicators When People Are Influenced By Both Peers and Experts](https://zhuoranlu.github.io/)</strong><br>
 **Zhuoran Lu**, Patrick Li, Weilong Wang, and Ming Yin.<br>
