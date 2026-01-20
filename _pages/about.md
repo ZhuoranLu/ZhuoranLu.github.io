@@ -76,7 +76,10 @@ Preliminary version in the CHI Workshop on Trust and Reliance in AI-Assisted Tas
 
 <div class='paper-box-text' markdown="1">
 
-## 2025
+<strong>[Large Language Model (LLM)-driven Adversarial Social Influences in Online Information Spread: Risks and Interventions.](https://zhuoranlu.github.io/)</strong><br>
+**Zhuoran Lu**\*, Gionnieve Lim*, and Ming Yin.<br>
+The 44th ACM Conference on Human Factors in Computing Systems (CHI), Barcelona, May 2026.<br>
+<a style="background-color: #D9939B; color: black; padding: 3px; border-radius: 5px; text-decoration: none;">CHI</a> <a href="../">PDF</a>
 
 <strong>[From Text to Trust: Empowering AI-assisted Decision Making with Adaptive LLM-powered Analysis](https://zhuoranlu.github.io/)</strong><br>
 Zhuoyan Li, Hangxiao Zhu, **Zhuoran Lu**, Ziang Xiao, and Ming Yin.<br>
@@ -98,10 +101,6 @@ The 43rd ACM Conference on Human Factors in Computing Systems (CHI), Yokohama, M
 Late-Breaking Work (LBW) of the 43rd ACM Conference on Human Factors in Computing Systems (CHI), Yokohama, May 2025.<br>
 <a style="background-color: #D9939B; color: black; padding: 3px; border-radius: 5px; text-decoration: none;">CHI-LBW</a> <a href="../">PDF</a>
 
-
-
-
-## 2024
 
 <strong>[Does More Advice Help? The Effects of Second Opinions in AI-Assisted Decision Making](https://dl.acm.org/doi/10.1145/3653708)</strong><br>
 **Zhuoran Lu**, Dakuo Wang, and Ming Yin.<br>
@@ -139,8 +138,6 @@ Zhuoyan Li, **Zhuoran Lu**, and Ming Yin.<br>
 The 38th Conference on Artificial Intelligence (AAAI), Vancouver, February 2024.<br>
 <a style="background-color: #A2BFE1; color: black; padding: 3px; border-radius: 5px; text-decoration: none;">AAAI</a> <a href="../">PDF</a>
 
-## 2023
-
 <strong>[Synthetic Data Generation with Large Language Models for Text Classification: Potential and Limitations](https://arxiv.org/abs/2310.07849)</strong><br>
 Zhuoyan Li, Hangxiao Zhu, **Zhuoran Lu**, and Ming Yin.<br>
 The Empirical Methods in Natural Language Processing (EMNLP), Singapore, December 2023.<br>
@@ -161,8 +158,6 @@ The 41st ACM Conference on Human Factors in Computing Systems (CHI), Hamburg, Ma
 The 37th Conference on Artificial Intelligence (AAAI), Washington, D.C., February 2023.<br>
 <a style="background-color: #A2BFE1; color: black; padding: 3px; border-radius: 5px; text-decoration: none;">AAAI</a> <a href="../">PDF</a>
 
-## 2022
-
 <strong>[The Effects of AI-based Credibility Indicators on the Detection and Spread of Misinformation under Social Influence](https://dl.acm.org/doi/10.1145/3555562)</strong><span style="color:red"> [Best Paper Award]</span><br>
 **Zhuoran Lu**, Patrick Li, Weilong Wang, and Ming Yin.<br>
 The 25th ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW), Online, November 2022<br>
@@ -177,8 +172,6 @@ The 5th AAAI/ACM Conference on Artificial Intelligence, Ethics, and Society (AIE
 **Zhuoran Lu**\*, Xinru Wang\*, and Ming Yin <br>
 The Web Conference (WWW), Online, April 2022.<br>
 <a style="background-color: #B2D1D3; color: black; padding: 3px; border-radius: 5px; text-decoration: none;">WWW</a> <a href="../">PDF</a>
-
-## 2021
 
 <strong>[Human Reliance on Machine Learning Models When Performance Feedback is Limited: Heuristics and Risks](https://dl.acm.org/doi/10.1145/3411764.3445562)</strong><br>
 **Zhuoran Lu** and Ming Yin.<br>
