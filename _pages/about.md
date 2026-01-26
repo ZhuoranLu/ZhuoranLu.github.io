@@ -81,6 +81,12 @@ Preliminary version in the CHI Workshop on Trust and Reliance in AI-Assisted Tas
 The 44th ACM Conference on Human Factors in Computing Systems (CHI), Barcelona, May 2026.<br>
 <a style="background-color: #D9939B; color: black; padding: 3px; border-radius: 5px; text-decoration: none;">CHI</a> <a href="../">PDF</a>
 
+<strong> [Human-LLM Collaborative Feature Engineering for Tabular Data](https://zhuoranlu.github.io/)</strong><br>
+Zhuoyan Li, Aditya Bansal, Jinzhao Li, Shishuang He, **Zhuoran Lu**, Mutian Zhang, Qin Liu, Yiwei Yang, Swati Jain, Ming Yin, and Yunyao Li. <br>
+The Fourteenth International Conference on Learning Representations (ICLR), Rio de Janeiro, April 2026. <br>
+<a style="background-color: #94A378; color: black; padding: 3px; border-radius: 5px; text-decoration: none;">ICLR</a> <a href="../">PDF</a>
+
+
 <strong>[From Text to Trust: Empowering AI-assisted Decision Making with Adaptive LLM-powered Analysis](https://zhuoranlu.github.io/)</strong><br>
 Zhuoyan Li, Hangxiao Zhu, **Zhuoran Lu**, Ziang Xiao, and Ming Yin.<br>
 The 43rd ACM Conference on Human Factors in Computing Systems (CHI), Yokohama, May 2025.<br>
