@@ -46,8 +46,18 @@
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    border-bottom: 1px #efefef solid;
-    padding: 2em 0 2em 0;
+    border-bottom: 1px #E5E7EB solid;
+    padding: 2.5em 0 2.5em 0;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: #F9FAFB;
+        padding-left: 1em;
+        padding-right: 1em;
+        margin-left: -1em;
+        margin-right: -1em;
+        border-radius: 12px;
+    }
     
 
     .paper-box-image{
@@ -57,8 +67,15 @@
         order: 2;
         img {
             max-width: 400px;
-            box-shadow: 3px 3px 6px #888;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
             object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            
+            &:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+            }
         }
     }
     
@@ -66,6 +83,21 @@
         max-width: 100%;
         order: 1;
         padding-left: 10em;
+        
+        strong {
+            color: #1F2937;
+            font-weight: 700;
+            font-size: 1.05em;
+            line-height: 1.5;
+        }
+        
+        a {
+            transition: all 0.2s ease;
+            
+            &:hover {
+                color: #2563EB;
+            }
+        }
     }
     
     @include breakpoint($medium) {
@@ -105,6 +137,88 @@ h1:before, .anchor:before {
     margin-top: .5em;
     margin-left: -.5em;
     color: white;
-    background-color: #00369f;
+    background-color: #7E93AD;
     font-size: .8em;
+    border-radius: 6px;
+    font-weight: 600;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Modern publication tags */
+.paper-box-text a[style*="background-color"] {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 8ch;
+    padding: 0.4em 0;
+    margin: 0.2em 0.3em 0.2em 0;
+    font-size: 0.85em;
+    font-weight: 600;
+    text-decoration: none !important;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+    filter: saturate(55%);
+    
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+        opacity: 0.9;
+        filter: saturate(65%);
+    }
+}
+
+/* Modern news section styling */
+#news + ul {
+    li {
+        padding: 0.75em 0;
+        border-bottom: 1px solid #E9ECEF;
+        transition: all 0.2s ease;
+        
+        &:hover {
+            padding-left: 0.5em;
+            background-color: #F4F6F8;
+            border-radius: 6px;
+        }
+        
+        strong {
+            font-weight: 700;
+            color: #2D3440;
+        }
+    }
+}
+
+/* Compact publication award tags (e.g., Oral Presentation, Best Paper Award) */
+.paper-box-text > span[style*="color:red"] {
+    display: inline-block;
+    padding: 0.1em 0.5em;
+    margin-left: 0.35em;
+    border-radius: 999px;
+    background: #F2E3E3;
+    color: #7E5757 !important;
+    font-size: 0.76em;
+    font-weight: 600;
+    line-height: 1.25;
+    vertical-align: baseline;
+}
+
+/* Job market notice styling */
+li strong span[style*="color:red"] {
+    display: inline-block;
+    padding: 0.75em 1.25em;
+    background: linear-gradient(135deg, #F3EDDC 0%, #E7DDBF 100%);
+    border-left: 4px solid #B49F79;
+    border-radius: 8px;
+    color: #6E5E44 !important;
+    font-weight: 600;
+    margin: 1em 0;
+    box-shadow: 0 2px 8px rgba(109, 96, 73, 0.14);
+}
+
+/* Improve strong text visibility */
+strong {
+    font-weight: 700;
+    color: #2D3440;
 }

@@ -42,6 +42,7 @@ I am also broadly interested in applied machine learning, computational social s
 My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>). -->
 
 
+<span class='anchor' id='news'></span>
 # News
 - *2025.01*: &nbsp; 3 papers accepted by CHI 2025! See you in Yokohama!
 - *2024.11*: &nbsp; I will present our paper on [Second Opinions in Human-AI Decision-making](https://dl.acm.org/doi/10.1145/3653708) at CSCW 2024! See you in Costa Rica!
@@ -51,6 +52,7 @@ My research interest includes neural machine translation and computer vision. I 
 - *2022.10*: &nbsp; Our paper on [AI & Misinformation](https://dl.acm.org/doi/10.1145/3555562) received the [best paper award](https://programs.sigchi.org/cscw/2022/awards/best-papers) at CSCW 2022!
 
 
+<span class='anchor' id='publications'></span>
 # Selected Publications 
 
 <!-- <div class='paper-box'> -->
@@ -159,12 +161,12 @@ Chun-Wei Chiang, **Zhuoran Lu**, Zhuoyan Li, and Ming Yin.<br>
 The 41st ACM Conference on Human Factors in Computing Systems (CHI), Hamburg, May 2023.<br>
 <a style="background-color: #D9939B; color: black; padding: 3px; border-radius: 5px; text-decoration: none;">CHI</a> <a href="../">PDF</a>
 
-<strong>[Modeling Human Trust and Reliance in AI-assisted Decision Making: A Markovian Approach](../files/TrustModel.pdf)</strong><span style="color:red"> [Oral Presentation]</span><br>
+<strong>[Modeling Human Trust and Reliance in AI-assisted Decision Making: A Markovian Approach](../files/TrustModel.pdf)</strong><span style="color:red"><br> <b>[Oral Presentation]</b></span><br>
 **Zhuoran Lu**\*, Zhuoyan Li\*, and Ming Yin.<br>
 The 37th Conference on Artificial Intelligence (AAAI), Washington, D.C., February 2023.<br>
 <a style="background-color: #A2BFE1; color: black; padding: 3px; border-radius: 5px; text-decoration: none;">AAAI</a> <a href="../">PDF</a>
 
-<strong>[The Effects of AI-based Credibility Indicators on the Detection and Spread of Misinformation under Social Influence](https://dl.acm.org/doi/10.1145/3555562)</strong><span style="color:red"> [Best Paper Award]</span><br>
+<strong>[The Effects of AI-based Credibility Indicators on the Detection and Spread of Misinformation under Social Influence](https://dl.acm.org/doi/10.1145/3555562)</strong><span style="color:red"> <br> <b>[Best Paper Award]</b></span><br>
 **Zhuoran Lu**, Patrick Li, Weilong Wang, and Ming Yin.<br>
 The 25th ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW), Online, November 2022<br>
 <a style="background-color: #FB6571; color: black; padding: 3px; border-radius: 5px; text-decoration: none;">CSCW</a> <a href="../">PDF</a>
@@ -204,6 +206,7 @@ The 39th ACM Conference on Human Factors in Computing Systems (CHI), Online, May
 - *2021.06*, Zhuoran ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 - *2021.03*, Zhuoran ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/) -->
 
+<span class='anchor' id='industry-experiences'></span>
 # Industry Experiences
 *2024.05 - 2024.08*, [Autodesk Research](https://www.research.autodesk.com/), Toronto, ON. <br>
 - [From Intent to Experience](https://www.research.autodesk.com/), work with Yi Wang and Qian Zhou<br>
@@ -215,6 +218,7 @@ The 39th ACM Conference on Human Factors in Computing Systems (CHI), Online, May
 - [Human-centered Intelligence Group](https://usa.honda-ri.com/human-factors-ergonomics), work with Shashank Mehrotra<br>
 
 
+<span class='anchor' id='service'></span>
 # Service
 
 **Program Committee/Associate Chair**<br>

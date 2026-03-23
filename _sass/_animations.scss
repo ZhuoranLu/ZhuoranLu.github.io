@@ -2,7 +2,34 @@
    ANIMATIONS
    ========================================================================== */
 
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
 @-webkit-keyframes intro {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes intro {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
   }
@@ -11,7 +38,7 @@
   }
 }
 
-@keyframes intro {
+@keyframes fadeIn {
   0% {
     opacity: 0;
   }

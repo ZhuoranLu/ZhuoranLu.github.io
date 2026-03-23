@@ -237,6 +237,18 @@
     white-space: nowrap;
   }
 
+  li.author__location {
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+
+    @include breakpoint($large) {
+      white-space: nowrap;
+      overflow-wrap: normal;
+      word-break: normal;
+    }
+  }
+
   a {
     display: block;
     margin-bottom: 5px;
