@@ -27,7 +27,7 @@ Prof. [Richard Sowers](http://publish.illinois.edu/r-sowers/).
 
 ## Research Interests
 
-My research interests are in the intersection of HCI and AI, mainly focusing on human-AI interaction and human-centered AI. 
+My research interests lay in the intersection of HCI and AI, mainly focusing on human-AI interaction and human-centered AI. 
 
 Specifically, my research aims to empower humans to engage more effectively and appropriately with AI, with a focus on the paradigm of **human-AI decision-making**. I understand human-AI interaction and design human-centered AI based on two perspectives:
 - Human decision makers' cognitive process of engaging with AI, which potentially has a bias.

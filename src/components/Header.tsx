@@ -12,22 +12,22 @@ export function Header() {
   }
 
   return (
-    <header className="sticky top-0 z-50 border-b border-brand-border bg-brand-bg">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 lg:px-12">
+    <header className="sticky top-0 z-50 border-b border-brand-border bg-white/85 backdrop-blur-md">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 lg:px-8">
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="text-lg font-bold text-brand-heading"
+          className="text-base font-semibold tracking-tight text-brand-heading"
         >
           {profile.name}
         </button>
 
         {/* Desktop nav */}
-        <nav className="hidden md:flex md:gap-6">
+        <nav className="hidden md:flex md:gap-7">
           {navItems.map((item) => (
             <button
               key={item.id}
               onClick={() => go(item.id)}
-              className="text-sm font-medium text-brand-text transition-colors hover:text-brand-primary"
+              className="text-sm font-medium text-brand-muted transition-colors hover:text-brand-primary"
             >
               {item.label}
             </button>
@@ -51,7 +51,7 @@ export function Header() {
             <button
               key={item.id}
               onClick={() => go(item.id)}
-              className="py-2 text-left text-sm font-medium text-brand-text hover:text-brand-primary"
+              className="py-2.5 text-left text-sm font-medium text-brand-muted hover:text-brand-primary"
             >
               {item.label}
             </button>

@@ -17,32 +17,34 @@ export function PublicationsSection() {
   const [focus, setFocus] = useState<Focus | 'all'>('all')
   const [goal, setGoal] = useState<Goal | 'all'>('all')
 
-  const visible = useMemo(
-    () =>
-      publications.filter(
-        (p) =>
-          (venue === 'all' || p.venueGroup === venue) &&
-          (focus === 'all' || p.focus === focus) &&
-          (goal === 'all' || p.goal === goal),
-      ),
-    [venue, focus, goal],
-  )
+  const visible = useMemo(() => {
+    const has = <T,>(field: T | T[], value: T) =>
+      Array.isArray(field) ? field.includes(value) : field === value
+    return publications.filter(
+      (p) =>
+        (venue === 'all' || p.venueGroup === venue) &&
+        (focus === 'all' || has(p.focus, focus)) &&
+        (goal === 'all' || has(p.goal, goal)),
+    )
+  }, [venue, focus, goal])
 
   return (
     <Section id="publications" title="Selected Publications & Manuscripts">
-      <p className="mb-4 text-sm text-brand-text/60">
+      <p className="mb-5 text-sm text-brand-subtle">
         * indicates equal contributions, # indicates senior author.
       </p>
 
-      <div className="mb-6 space-y-3 rounded-lg bg-brand-bg p-4">
+      <div className="mb-8 space-y-4 rounded-xl bg-brand-page p-5">
         <FilterRow label="Venue" options={VENUE_OPTIONS} value={venue} onChange={setVenue} />
         <FilterRow
+          label="Focus"
           question={FOCUS_QUESTION}
           options={FOCUS_OPTIONS}
           value={focus}
           onChange={setFocus}
         />
         <FilterRow
+          label="Goal"
           question={GOAL_QUESTION}
           options={GOAL_OPTIONS}
           value={goal}
@@ -52,7 +54,7 @@ export function PublicationsSection() {
 
       <div key={`${venue}-${focus}-${goal}`}>
         {visible.length === 0 ? (
-          <p className="py-6 text-brand-text/60">No publications match these filters.</p>
+          <p className="py-6 text-brand-subtle">No publications match these filters.</p>
         ) : (
           visible.map((pub) => <PublicationCard key={pub.id} pub={pub} />)
         )}

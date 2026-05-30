@@ -23,7 +23,7 @@ export const VENUE_COLORS: Record<string, string> = {
   CHI: '#E8A4A4',
   'CHI-LBW': '#E8A4A4',
   IUI: '#E8A4A4',
-  ICLR: '#4A75B0',
+  ICLR: '#6E9BD0',
   CSCW: '#D97373',
   HCOMP: '#7FA9D9',
   AAAI: '#7FA9D9',
@@ -41,14 +41,14 @@ export const VENUE_OPTIONS: FilterOption<VenueGroup>[] = [
   { value: 'preprint', label: 'Preprint' },
 ]
 
-export const FOCUS_QUESTION = 'What factors shape human–AI interaction?'
+export const FOCUS_QUESTION = 'What shapes human–AI collaboration?'
 export const FOCUS_OPTIONS: FilterOption<Focus>[] = [
   { value: 'all', label: 'All' },
   { value: 'cognition', label: 'Individual Cognition' },
   { value: 'social', label: 'Social Influence' },
 ]
 
-export const GOAL_QUESTION = 'How do we build human-centered AI?'
+export const GOAL_QUESTION = 'How do we enhance human–AI collaboration?'
 export const GOAL_OPTIONS: FilterOption<Goal>[] = [
   { value: 'all', label: 'All' },
   { value: 'understanding', label: 'Understanding Human-AI Interaction' },

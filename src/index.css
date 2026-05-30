@@ -5,11 +5,11 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-    scroll-padding-top: 5rem; /* offset for sticky header */
+    scroll-padding-top: 5.5rem; /* offset for sticky header (~64px) + breathing room */
   }
 
   body {
-    @apply bg-brand-page font-sans text-brand-text;
+    @apply bg-brand-page font-sans text-[15px] leading-relaxed text-brand-text;
   }
 
   h1,
@@ -21,11 +21,7 @@
 
   /* Anchor offset so section headings clear the sticky header. */
   section[id] {
-    scroll-margin-top: 5rem;
-  }
-
-  p {
-    line-height: 1.8;
+    scroll-margin-top: 5.5rem;
   }
 }
 
@@ -33,5 +29,16 @@
   /* Links inside flowing content. */
   main a {
     @apply text-brand-primary transition-colors hover:text-brand-primary-hover hover:underline;
+  }
+
+  /* Filter pill — shared by the publication filter rows. */
+  .pill {
+    @apply rounded-full px-3.5 py-1.5 text-sm transition-colors;
+  }
+  .pill-inactive {
+    @apply bg-white text-brand-text ring-1 ring-brand-border hover:bg-brand-surface;
+  }
+  .pill-active {
+    @apply bg-brand-heading text-white;
   }
 }

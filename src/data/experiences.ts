@@ -2,6 +2,15 @@ import type { Experience } from '@/types'
 
 export const experiences: Experience[] = [
   {
+    id: 'exp-accenture',
+    dates: '2025.05 - present',
+    org: 'Accenture',
+    orgUrl: 'https://www.accenture.com/us-en/services/ai-data',
+    location: '',
+    detail:
+      '[Center for Advanced AI](https://www.accenture.com/us-en/services/ai-data), work with Dr. [Michelle Zhou](https://scholar.google.com/citations?user=ycSs2QcAAAAJ&hl=en)',
+  },
+  {
     id: 'exp-autodesk',
     dates: '2024.05 - 2024.08',
     org: 'Autodesk Research',

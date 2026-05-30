@@ -22,8 +22,9 @@ export interface Publication {
   /** Optional secondary line, e.g. "Preliminary version in ...". */
   prelim?: string
   year: number
-  focus: Focus
-  goal: Goal
+  /** A paper may belong to multiple categories — single value or array. */
+  focus: Focus | Focus[]
+  goal: Goal | Goal[]
   /** e.g. "Best Paper Award", "Oral Presentation". */
   award?: string
   links: PubLink[]

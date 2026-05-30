@@ -59,7 +59,7 @@ export const publications: Publication[] = [
       'The 44th ACM Conference on Human Factors in Computing Systems (CHI), Barcelona, May 2026.',
     year: 2026,
     focus: 'social',
-    goal: 'designing',
+    goal: ['understanding', 'designing'],
     links: [{ label: 'PDF', url: 'https://doi.org/10.1145/3772318.3790442' }],
   },
   {

@@ -15,11 +15,11 @@ export function AboutSection() {
           <p key={i}>{renderInline(p)}</p>
         ))}
 
-        <h3 className="pt-2 text-xl font-semibold text-brand-heading">Research Interests</h3>
+        <h3 className="pt-3 text-lg font-semibold text-brand-heading">Research Interests</h3>
         {researchIntro.map((p, i) => (
           <p key={i}>{renderInline(p)}</p>
         ))}
-        <ul className="list-disc space-y-1 pl-6">
+        <ul className="list-disc space-y-1.5 pl-5 marker:text-brand-subtle">
           {researchBullets.map((b, i) => (
             <li key={i}>{renderInline(b)}</li>
           ))}

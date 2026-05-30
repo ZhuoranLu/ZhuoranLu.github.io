@@ -1,7 +1,7 @@
 import type { FilterOption } from '@/types'
 
 interface FilterRowProps<T extends string> {
-  label?: string
+  label: string
   question?: string
   options: FilterOption<T>[]
   value: T | 'all'
@@ -16,34 +16,27 @@ export function FilterRow<T extends string>({
   onChange,
 }: FilterRowProps<T>) {
   return (
-    <div className="flex flex-wrap items-center gap-2">
-      {label && (
-        <span className="mr-1 text-xs font-semibold uppercase tracking-wide text-brand-text/60">
+    <div>
+      <div className="mb-2 flex flex-wrap items-baseline gap-x-2 gap-y-0.5">
+        <span className="text-xs font-semibold uppercase tracking-wide text-brand-subtle">
           {label}
         </span>
-      )}
-      {question && (
-        <span className="mr-1 w-full text-sm font-medium text-brand-text/80 sm:w-auto">
-          {question}
-        </span>
-      )}
-      {options.map((opt) => {
-        const active = value === opt.value
-        return (
-          <button
-            key={opt.value}
-            onClick={() => onChange(opt.value)}
-            className={
-              'rounded-full px-3 py-1 text-sm transition-colors ' +
-              (active
-                ? 'bg-brand-heading text-white'
-                : 'bg-[#F4F6F8] text-brand-text hover:bg-[#E5E7EB]')
-            }
-          >
-            {opt.label}
-          </button>
-        )
-      })}
+        {question && <span className="text-sm text-brand-muted">{question}</span>}
+      </div>
+      <div className="flex flex-wrap gap-2">
+        {options.map((opt) => {
+          const active = value === opt.value
+          return (
+            <button
+              key={opt.value}
+              onClick={() => onChange(opt.value)}
+              className={`pill ${active ? 'pill-active' : 'pill-inactive'}`}
+            >
+              {opt.label}
+            </button>
+          )
+        })}
+      </div>
     </div>
   )
 }

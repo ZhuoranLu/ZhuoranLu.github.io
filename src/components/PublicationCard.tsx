@@ -8,11 +8,11 @@ interface Props {
 
 export function PublicationCard({ pub }: Props) {
   return (
-    <article className="animate-fade-in border-b border-brand-border py-4">
+    <article className="animate-fade-in border-b border-brand-border py-5 last:border-b-0">
       <div className="leading-relaxed">
         {pub.venue && (
           <span
-            className="mr-2 inline-block rounded px-2 py-0.5 text-xs font-medium text-black"
+            className="mr-2 inline-flex w-16 translate-y-[-1px] items-center justify-center rounded px-1 py-0.5 align-middle text-xs font-semibold text-black"
             style={{ backgroundColor: VENUE_COLORS[pub.venue] ?? '#C0C0C0' }}
           >
             {pub.venue}
@@ -31,26 +31,23 @@ export function PublicationCard({ pub }: Props) {
           <span className="font-semibold text-brand-heading">{pub.title}</span>
         )}
         {pub.award && (
-          <span className="ml-1 font-semibold text-brand-danger">
-            {' '}
-            [{pub.award}]
-          </span>
+          <span className="ml-1 font-semibold text-brand-danger">[{pub.award}]</span>
         )}
       </div>
 
-      <div className="mt-1 text-sm text-brand-text/90">{renderInline(pub.authors)}</div>
-      <div className="text-sm text-brand-text/70">{pub.venueFull}</div>
-      {pub.prelim && <div className="text-sm text-brand-text/70">{pub.prelim}</div>}
+      <div className="mt-1.5 text-sm text-brand-muted">{renderInline(pub.authors)}</div>
+      <div className="mt-0.5 text-sm text-brand-subtle">{pub.venueFull}</div>
+      {pub.prelim && <div className="text-sm text-brand-subtle">{pub.prelim}</div>}
 
       {pub.links.length > 0 && (
-        <div className="mt-1 flex gap-3 text-sm">
+        <div className="mt-2 flex gap-4 text-sm">
           {pub.links.map((link) => (
             <a
               key={link.url}
               href={link.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-brand-primary hover:underline"
+              className="font-medium text-brand-primary hover:underline"
             >
               {link.label}
             </a>
