@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem; /* offset for sticky header */
+  }
+
+  body {
+    @apply bg-brand-page font-sans text-brand-text;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply text-brand-heading;
+  }
+
+  /* Anchor offset so section headings clear the sticky header. */
+  section[id] {
+    scroll-margin-top: 5rem;
+  }
+
+  p {
+    line-height: 1.8;
+  }
+}
+
+@layer components {
+  /* Links inside flowing content. */
+  main a {
+    @apply text-brand-primary transition-colors hover:text-brand-primary-hover hover:underline;
+  }
+}

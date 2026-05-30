@@ -6,14 +6,13 @@
   @include container;
   @include clearfix;
   margin-top: 2em;
-  padding-left: 2em;
-  padding-right: 2em;
+  margin-left: 8em;
+  margin-right: 8em;
+  padding-left: 0.5em;
+  padding-right: 0;
+  max-width: none;
   animation: intro 0.5s both;
   animation-delay: 0.2s;
-
-  @include breakpoint($x-large) {
-    max-width: $x-large;
-  }
 }
 
 .page {
@@ -98,11 +97,6 @@
     &:hover {
       border-bottom-color: $primary-color;
       color: $primary-color;
-
-      img {
-        transform: scale(1.02);
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-      }
     }
   }
 

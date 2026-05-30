@@ -1,2 +1,16 @@
+# Jekyll
 _site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+vendor/
+.bundle/
 
+# Node / Vite
+node_modules/
+dist/
+*.local
+*.tsbuildinfo
+
+# Editor / OS
+.DS_Store
