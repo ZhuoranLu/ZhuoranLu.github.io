@@ -5,7 +5,7 @@ export const service: ServiceGroup[] = [
     id: 'svc-pc',
     heading: 'Program Committee / Associate Chair',
     items: [
-      '2026: CHI Associate Chair',
+      '2026: CHI Late-Breaking Work',
       '2025: CHI Late-Breaking Work, FAccT',
       '2024: CHI Late-Breaking Work, FAccT',
       '2023: Ubicomp/ISWC demos and posters',
@@ -15,7 +15,8 @@ export const service: ServiceGroup[] = [
     id: 'svc-reviewer',
     heading: 'Reviewer',
     items: [
-      '2025: ICWSM, CHI, CogSci, CSCW, HRI',
+      '2026: CHI, IUI, NeurIPS',
+      '2025: ICWSM, CHI, CogSci, CSCW, IUI, HRI',
       '2024: ICWSM, CHI, CogSci, CSCW, IUI, IDC, DIS',
       '2023: ICWSM, CHI, CogSci, CSCW, IUI, IDC, DIS, MobileHCI, ISS, CUI, CHI PLAY, FAccT, UIST',
       '2022: DIS, CHI PLAY, NordiCHI, MobileHCI, Ubicomp, ISWC, ICMI, SUI, HAI',
