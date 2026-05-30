@@ -8,7 +8,7 @@ export const experiences: Experience[] = [
     orgUrl: 'https://www.accenture.com/us-en/services/ai-data',
     location: '',
     detail:
-      '[Center for Advanced AI](https://www.accenture.com/us-en/services/ai-data), work with Dr. [Michelle Zhou](https://scholar.google.com/citations?user=ycSs2QcAAAAJ&hl=en)',
+      '[Center for Advanced AI](https://www.accenture.com/us-en/services/ai-data), work with Michelle Zhou',
   },
   {
     id: 'exp-autodesk',
