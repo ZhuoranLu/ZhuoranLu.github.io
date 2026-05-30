@@ -17,7 +17,7 @@ export const experiences: Experience[] = [
     orgUrl: 'https://www.research.autodesk.com/',
     location: 'Toronto, ON',
     detail:
-      '[From Intent to Experience](https://www.research.autodesk.com/), work with Yi Wang and Qian Zhou',
+      '[From Intent to Experience](https://www.research.autodesk.com/), worked with Yi Wang and Qian Zhou',
   },
   {
     id: 'exp-microsoft',
@@ -26,7 +26,7 @@ export const experiences: Experience[] = [
     orgUrl: 'https://www.microsoft.com/',
     location: 'Seattle, WA',
     detail:
-      '[Office of Applied Research](https://www.microsoft.com/en-us/research/group/office-of-applied-research/), work with Mengting Wan and Longqi Yang',
+      '[Office of Applied Research](https://www.microsoft.com/en-us/research/group/office-of-applied-research/), worked with Mengting Wan and Longqi Yang',
   },
   {
     id: 'exp-honda',
@@ -35,6 +35,6 @@ export const experiences: Experience[] = [
     orgUrl: 'https://usa.honda-ri.com/home',
     location: 'San Jose, CA',
     detail:
-      '[Human-centered Intelligence Group](https://usa.honda-ri.com/human-factors-ergonomics), work with Shashank Mehrotra',
+      '[Human-centered Intelligence Group](https://usa.honda-ri.com/human-factors-ergonomics), worked with Shashank Mehrotra',
   },
 ]

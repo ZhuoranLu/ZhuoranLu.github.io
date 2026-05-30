@@ -8,7 +8,7 @@ export function Sidebar() {
       <img
         src={profile.avatar}
         alt={profile.name}
-        className="h-36 w-36 rounded-full object-cover ring-1 ring-brand-border lg:h-44 lg:w-44"
+        className="h-36 w-36 rounded-full object-cover object-[center_15%] ring-1 ring-brand-border lg:h-44 lg:w-44"
       />
       <h1 className="mt-5 text-xl font-bold text-brand-heading">{profile.name}</h1>
       <p className="mt-1 whitespace-pre-line text-sm text-brand-muted">{profile.bio}</p>

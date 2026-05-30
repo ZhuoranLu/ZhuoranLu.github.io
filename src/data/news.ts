@@ -29,7 +29,7 @@ export const news: NewsItem[] = [
   {
     id: 'n-2023-07',
     date: '2023.07',
-    text: 'Our paper on Modeling Human Trust and Reliance on in AI was selected as an Oral Presentation at AAAI 2023.',
+    text: 'Our paper on [Modeling Human Trust and Reliance in AI](https://doi.org/10.1609/aaai.v37i5.25748) was selected as an Oral Presentation at AAAI 2023.',
   },
   {
     id: 'n-2022-10',

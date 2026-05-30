@@ -6,7 +6,7 @@ export const profile: Profile = {
   bio: 'Senior Research Scientist\nCenter for Advanced AI, Accenture',
   location: 'Mountain View, California',
   email: 'zhuoranlu33@gmail.com',
-  avatar: '/images/lu800.jpg',
+  avatar: '/images/headshot_1.png',
   cvUrl: '/images/ZhuoranLu_CV_public_0117.pdf',
   scholarUrl: 'https://scholar.google.com/citations?user=nWHEpdcAAAAJ',
 }
@@ -20,7 +20,7 @@ export const aboutParagraphs: string[] = [
 
 export const researchIntro: string[] = [
   'My research interests lie at the intersection of HCI and AI, with a focus on human-AI interaction and human-centered AI.',
-  'Specifically, my research aims to empower humans to engage more effectively and appropriately with AI, with a focus on the paradigm of **human-AI collaboration**. I understand human-AI interaction and design human-centered AI from two perspectives:',
+  'Specifically, my research aims to understand human-AI interaction and design human-centered AI from two perspectives:',
 ]
 
 export const researchBullets: string[] = [
