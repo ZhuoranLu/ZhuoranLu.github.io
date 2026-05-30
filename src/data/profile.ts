@@ -3,7 +3,7 @@ import type { Profile } from '@/types'
 export const profile: Profile = {
   name: 'Zhuoran Lu',
   title: 'Senior Research Scientist, Accenture',
-  bio: 'Senior Research Scientist, Center for Advanced AI, Accenture',
+  bio: 'Senior Research Scientist\nCenter for Advanced AI, Accenture',
   location: 'Mountain View, California',
   email: 'zhuoranlu33@gmail.com',
   avatar: '/images/lu800.jpg',

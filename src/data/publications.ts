@@ -172,7 +172,7 @@ export const publications: Publication[] = [
     year: 2024,
     focus: 'cognition',
     goal: 'designing',
-    links: [],
+    links: [{ label: 'PDF', url: 'https://arxiv.org/abs/2311.09180' }],
   },
   {
     id: 'pub-mix-and-match',
@@ -297,6 +297,7 @@ export const publications: Publication[] = [
   {
     id: 'pub-modeling-human-trust',
     title: 'Modeling Human Trust and Reliance in AI-assisted Decision Making: A Markovian Approach',
+    url: 'https://doi.org/10.1609/aaai.v37i5.25748',
     authors: '**Zhuoran Lu**\\*, Zhuoyan Li\\*, and Ming Yin.',
     venue: 'AAAI',
     venueGroup: 'ai',
@@ -306,7 +307,7 @@ export const publications: Publication[] = [
     focus: 'cognition',
     goal: 'understanding',
     award: 'Oral Presentation',
-    links: [],
+    links: [{ label: 'PDF', url: 'https://doi.org/10.1609/aaai.v37i5.25748' }],
   },
   {
     id: 'pub-credibility-indicators-detection',
@@ -343,6 +344,7 @@ export const publications: Publication[] = [
     id: 'pub-will-you-accept',
     title:
       'Will You Accept the AI Recommendation? Predicting Human Behavior in AI-Assisted Decision Making',
+    url: 'https://doi.org/10.1145/3485447.3512240',
     authors: '**Zhuoran Lu**\\*, Xinru Wang\\*, and Ming Yin',
     venue: 'WWW',
     venueGroup: 'ai',
@@ -350,7 +352,7 @@ export const publications: Publication[] = [
     year: 2022,
     focus: 'cognition',
     goal: 'understanding',
-    links: [],
+    links: [{ label: 'PDF', url: 'https://doi.org/10.1145/3485447.3512240' }],
   },
   {
     id: 'pub-human-reliance-ml',

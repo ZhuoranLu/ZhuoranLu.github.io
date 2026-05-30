@@ -119,7 +119,7 @@ Preprint, 2026.<br>
 
 <a style="background-color: #C0C0C0; color: black; padding: 3px; border-radius: 5px; text-decoration: none;">arXiv</a> <strong>[Tracing Generative AI in Digital Art: A Longitudinal Study of Chinese Painters' Attitudes, Practices, and Identity Negotiation](https://arxiv.org/abs/2511.03117)</strong><br>
 Yibo Meng, Ruiqi Chen, **Zhuoran Lu**\#, Shuai Ma, and Chengxi Zang.<br>
-Preprint, 2025.<br>
+Preprint, 2026.<br>
 <a href="https://arxiv.org/abs/2511.03117">PDF</a>
 
 <a style="background-color: #E8A4A4; color: black; padding: 3px; border-radius: 5px; text-decoration: none;">CHI</a> <strong>[Large Language Model (LLM)-driven Adversarial Social Influences in Online Information Spread: Risks and Interventions.](https://doi.org/10.1145/3772318.3790442)</strong><br>

@@ -39,6 +39,6 @@
     @apply bg-white text-brand-text ring-1 ring-brand-border hover:bg-brand-surface;
   }
   .pill-active {
-    @apply bg-brand-heading text-white;
+    @apply bg-brand-primary text-white;
   }
 }
