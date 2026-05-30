@@ -5,6 +5,7 @@ export const service: ServiceGroup[] = [
     id: 'svc-pc',
     heading: 'Program Committee / Associate Chair',
     items: [
+      '2026: CHI Associate Chair',
       '2025: CHI Late-Breaking Work, FAccT',
       '2024: CHI Late-Breaking Work, FAccT',
       '2023: Ubicomp/ISWC demos and posters',
