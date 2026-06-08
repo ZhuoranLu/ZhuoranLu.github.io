@@ -7,7 +7,7 @@ export const VENUE_MAP: Record<string, VenueGroup> = {
   CSCW: 'hci',
   IUI: 'hci',
   IJHCI: 'hci',
-  HCOMP: 'hci',
+  HCOMP: 'ai',
   AAAI: 'ai',
   IJCAI: 'ai',
   ICLR: 'ai',

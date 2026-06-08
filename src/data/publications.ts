@@ -19,6 +19,20 @@ export const publications: Publication[] = [
     links: [{ label: 'PDF', url: 'https://arxiv.org/abs/2605.13625' }],
   },
   {
+    id: 'pub-skillvetbench',
+    title: 'Benchmarking Security Risk Detection and Verification in Open Agentic Skill Ecosystems',
+    url: 'https://arxiv.org/abs/2606.00925',
+    authors:
+      'Ismail Hossain, Sai Puppala, **Zhuoran Lu**#, Sajedul Talukder, and Nan Jiang.',
+    venue: 'arXiv',
+    venueGroup: 'preprint',
+    venueFull: 'Preprint, 2026.',
+    year: 2026,
+    focus: 'social',
+    goal: 'designing',
+    links: [{ label: 'PDF', url: 'https://arxiv.org/abs/2606.00925' }],
+  },
+  {
     id: 'pub-autoredtrader',
     title:
       'AutoRedTrader: Autonomous Red Teaming of Trading Agents through Synthetic Misinformation Injection',
@@ -71,7 +85,7 @@ export const publications: Publication[] = [
     venue: 'ICLR',
     venueGroup: 'ai',
     venueFull:
-      'The Fourteenth International Conference on Learning Representations (ICLR), Rio de Janeiro, April 2026.',
+      'The 14th International Conference on Learning Representations (ICLR), Rio de Janeiro, April 2026.',
     year: 2026,
     focus: 'cognition',
     goal: 'designing',
@@ -181,7 +195,7 @@ export const publications: Publication[] = [
     url: 'https://ojs.aaai.org/index.php/HCOMP/article/view/31604',
     authors: '**Zhuoran Lu**, Hasan Amin, Zhuoyan Li, and Ming Yin.',
     venue: 'HCOMP',
-    venueGroup: 'hci',
+    venueGroup: 'ai',
     venueFull:
       'The 12th AAAI Conference on Human Computation and Crowdsourcing (HCOMP), Pittsburgh, October 2024.',
     year: 2024,
