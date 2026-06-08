@@ -7,7 +7,7 @@ export const profile: Profile = {
   location: 'Mountain View, California',
   email: 'zhuoranlu33@gmail.com',
   avatar: '/images/headshot_1.png',
-  cvUrl: '/images/ZhuoranLu_CV_public_0117.pdf',
+  cvUrl: '/images/ZhuoranLu_cv_0608.pdf',
   scholarUrl: 'https://scholar.google.com/citations?user=nWHEpdcAAAAJ',
 }
 
