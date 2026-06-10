@@ -19,6 +19,20 @@ export const publications: Publication[] = [
     links: [{ label: 'PDF', url: 'https://arxiv.org/abs/2605.13625' }],
   },
   {
+    id: 'pub-grounded-theory-agent-behavior',
+    title: 'Using Grounded Theory for Agent Behavior Analysis at Scale',
+    url: '',
+    authors:
+      '**Zhuoran Lu**, Jie Gao, Yangyang Yu, Zhuoyan Li, Nan Jiang, Yibo Meng, Chengxi Zang, and Ziang Xiao.',
+    venue: 'arXiv',
+    venueGroup: 'preprint',
+    venueFull: 'Preprint, 2026.',
+    year: 2026,
+    focus: 'cognition',
+    goal: 'understanding',
+    links: [],
+  },
+  {
     id: 'pub-autoredtrader',
     title:
       'AutoRedTrader: Autonomous Red Teaming of Trading Agents through Synthetic Misinformation Injection',
