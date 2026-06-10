@@ -38,22 +38,6 @@ export function PublicationCard({ pub }: Props) {
       <div className="mt-1.5 text-sm text-brand-muted">{renderInline(pub.authors)}</div>
       <div className="mt-0.5 text-sm italic text-brand-subtle">{pub.venueFull}</div>
       {pub.prelim && <div className="text-sm italic text-brand-subtle">{pub.prelim}</div>}
-
-      {pub.links.length > 0 && (
-        <div className="mt-2 flex gap-4 text-sm">
-          {pub.links.map((link) => (
-            <a
-              key={link.url}
-              href={link.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-medium text-brand-primary hover:underline"
-            >
-              {link.label}
-            </a>
-          ))}
-        </div>
-      )}
     </article>
   )
 }
