@@ -20,7 +20,7 @@ export const publications: Publication[] = [
   },
   {
     id: 'pub-grounded-theory-agent-behavior',
-    title: 'Using Grounded Theory for Agent Behavior Analysis at Scale',
+    title: 'Understanding Emergent Agent Behavior through Large-Scale Automated Qualitative Analysis',
     url: '',
     authors:
       '**Zhuoran Lu**, Jie Gao, Yangyang Yu, Zhuoyan Li, Nan Jiang, Yibo Meng, Chengxi Zang, and Ziang Xiao.',
