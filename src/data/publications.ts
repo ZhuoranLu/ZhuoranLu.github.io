@@ -76,6 +76,37 @@ export const publications: Publication[] = [
     links: [{ label: 'PDF', url: 'https://arxiv.org/abs/2511.03117' }],
   },
   {
+    id: 'pub-bayesian-cascade-credibility',
+    title:
+      'One AI Signal, Many Human Judgments: A Bayesian Cascade Analysis of AI-based Credibility Indicators in Online Information Spread',
+    url: '',
+    authors:
+      '**Zhuoran Lu**, Weilong Wang, Yangyang Yu, Xinru Wang, Zhuoyan Li, Zhiwei Liu, and Sophia Ananiadou.',
+    venue: 'HCOMP',
+    venueGroup: 'ai',
+    venueFull:
+      'The 2026 ACM Conference on Human-AI Complementarity and Alignment (HCOMP), Washington DC, September 2026.',
+    year: 2026,
+    focus: 'social',
+    goal: 'understanding',
+    links: [],
+  },
+  {
+    id: 'pub-adaptive-ai-assistance-bandits',
+    title:
+      'Adaptive Selection of Effective AI Assistance in AI-assisted Decision Making Using Multi-Armed Bandits',
+    url: '',
+    authors: 'Zhuoyan Li, Ze Ma, Shishuang He, **Zhuoran Lu**, Ziang Xiao, and Ming Yin.',
+    venue: 'HCOMP',
+    venueGroup: 'ai',
+    venueFull:
+      'The 2026 ACM Conference on Human-AI Complementarity and Alignment (HCOMP), Washington DC, September 2026.',
+    year: 2026,
+    focus: 'cognition',
+    goal: 'designing',
+    links: [],
+  },
+  {
     id: 'pub-llm-adversarial-risks-interventions',
     title:
       'Large Language Model (LLM)-driven Adversarial Social Influences in Online Information Spread: Risks and Interventions.',
