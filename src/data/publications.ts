@@ -84,7 +84,8 @@ export const publications: Publication[] = [
     authors: 'Yuxuan Du, Shuai Ma, and **Zhuoran Lu**#.',
     venue: '',
     venueGroup: 'workshop',
-    venueFull: 'ACM UbiComp/ISWC Companion, 2026.',
+    venueFull:
+      'Companion of the 2026 ACM International Joint Conference on Pervasive and Ubiquitous Computing (UbiComp Companion), Shanghai, October 2026.',
     year: 2026,
     focus: 'cognition',
     goal: 'understanding',
