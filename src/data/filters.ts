@@ -15,6 +15,8 @@ export const VENUE_MAP: Record<string, VenueGroup> = {
   AIES: 'ai',
   WWW: 'ai',
   arXiv: 'preprint',
+  'WS @ EMNLP': 'workshop',
+  'WS @ UbiComp': 'workshop',
 }
 
 /** Exact badge background colors carried over from the Jekyll site. */
@@ -32,6 +34,9 @@ export const VENUE_COLORS: Record<string, string> = {
   EMNLP: '#A5C0DE',
   AIES: '#A5C0DE',
   WWW: '#A5C0DE',
+  // Workshop badges: lightened tint of the parent conference's color family.
+  'WS @ EMNLP': '#CBDCEE',
+  'WS @ UbiComp': '#F3D3D3',
 }
 
 export const VENUE_OPTIONS: FilterOption<VenueGroup>[] = [

@@ -82,7 +82,7 @@ export const publications: Publication[] = [
       'What Personalized Agents Make Visible: A Diagnostic Framework for AI-Mediated Judgment',
     url: '',
     authors: 'Yuxuan Du, Shuai Ma, and **Zhuoran Lu**#.',
-    venue: '',
+    venue: 'WS @ UbiComp',
     venueGroup: 'workshop',
     venueFull:
       'Companion of the 2026 ACM International Joint Conference on Pervasive and Ubiquitous Computing (UbiComp Companion), Shanghai, October 2026.',
@@ -241,7 +241,7 @@ export const publications: Publication[] = [
     url: 'https://arxiv.org/abs/2311.09180',
     authors:
       'Sheshera Mysore, **Zhuoran Lu**, Mengting Wan, Longqi Yang, Steve Menezes, Tina Baghaee, Emmanuel Barajas Gonzalez, Jennifer Neville, Tara Safavi.',
-    venue: '',
+    venue: 'WS @ EMNLP',
     venueGroup: 'workshop',
     venueFull: 'EMNLP Workshop on Customizable NLP (CustomNLP4U), Miami, November 2024.',
     year: 2024,
