@@ -19,20 +19,6 @@ export const publications: Publication[] = [
     links: [{ label: 'PDF', url: 'https://arxiv.org/abs/2605.13625' }],
   },
   {
-    id: 'pub-grounded-theory-agent-behavior',
-    title: 'Understanding Emergent Agent Behavior through Large-Scale Automated Qualitative Analysis',
-    url: '',
-    authors:
-      '**Zhuoran Lu**, Jie Gao, Yangyang Yu, Zhuoyan Li, Nan Jiang, Yibo Meng, Chengxi Zang, and Ziang Xiao.',
-    venue: 'arXiv',
-    venueGroup: 'preprint',
-    venueFull: 'Preprint, 2026.',
-    year: 2026,
-    focus: 'cognition',
-    goal: 'understanding',
-    links: [],
-  },
-  {
     id: 'pub-autoredtrader',
     title:
       'AutoRedTrader: Autonomous Red Teaming of Trading Agents through Synthetic Misinformation Injection',
@@ -74,6 +60,35 @@ export const publications: Publication[] = [
     focus: 'social',
     goal: 'understanding',
     links: [{ label: 'PDF', url: 'https://arxiv.org/abs/2511.03117' }],
+  },
+  {
+    id: 'pub-grounded-theory-agent-behavior',
+    title: 'Using Grounded Theory for Agent Behavior Analysis at Scale',
+    url: '',
+    authors:
+      '**Zhuoran Lu**, Jie Gao, Yangyang Yu, Zhuoyan Li, Nan Jiang, Yibo Meng, Chengxi Zang, and Ziang Xiao.',
+    venue: 'EMNLP',
+    venueGroup: 'ai',
+    venueFull:
+      'Findings of the Empirical Methods in Natural Language Processing (EMNLP Findings), 2026.',
+    year: 2026,
+    focus: 'cognition',
+    goal: 'understanding',
+    links: [],
+  },
+  {
+    id: 'pub-personalized-agents-judgment',
+    title:
+      'What Personalized Agents Make Visible: A Diagnostic Framework for AI-Mediated Judgment',
+    url: '',
+    authors: 'Yuxuan Du, Shuai Ma, and **Zhuoran Lu**#.',
+    venue: '',
+    venueGroup: 'workshop',
+    venueFull: 'ACM UbiComp/ISWC Companion, 2026.',
+    year: 2026,
+    focus: 'cognition',
+    goal: 'understanding',
+    links: [],
   },
   {
     id: 'pub-bayesian-cascade-credibility',
@@ -226,7 +241,7 @@ export const publications: Publication[] = [
     authors:
       'Sheshera Mysore, **Zhuoran Lu**, Mengting Wan, Longqi Yang, Steve Menezes, Tina Baghaee, Emmanuel Barajas Gonzalez, Jennifer Neville, Tara Safavi.',
     venue: '',
-    venueGroup: 'other',
+    venueGroup: 'workshop',
     venueFull: 'EMNLP Workshop on Customizable NLP (CustomNLP4U), Miami, November 2024.',
     year: 2024,
     focus: 'cognition',

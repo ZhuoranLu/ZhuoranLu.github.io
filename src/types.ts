@@ -1,4 +1,4 @@
-export type VenueGroup = 'hci' | 'ai' | 'preprint' | 'other'
+export type VenueGroup = 'hci' | 'ai' | 'preprint' | 'workshop' | 'other'
 export type Focus = 'cognition' | 'social'
 export type Goal = 'understanding' | 'designing'
 

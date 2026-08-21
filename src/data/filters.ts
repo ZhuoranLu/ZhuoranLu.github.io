@@ -39,6 +39,7 @@ export const VENUE_OPTIONS: FilterOption<VenueGroup>[] = [
   { value: 'hci', label: 'HCI' },
   { value: 'ai', label: 'AI / ML' },
   { value: 'preprint', label: 'Preprint' },
+  { value: 'workshop', label: 'Workshop Papers' },
 ]
 
 export const FOCUS_QUESTION = 'What shapes human–AI collaboration?'
