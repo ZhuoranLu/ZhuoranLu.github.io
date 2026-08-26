@@ -2,10 +2,17 @@ import type { ServiceGroup } from '@/types'
 
 export const service: ServiceGroup[] = [
   {
+    id: 'svc-organizer',
+    heading: 'Organizer',
+    items: [
+      'Interpreting Agent Behavior (IAB) @ NeurIPS',
+    ],
+  },
+  {
     id: 'svc-pc',
     heading: 'Program Committee / Associate Chair',
     items: [
-      'CHI Late-Breaking Work',
+      'CHI, CHI Late-Breaking Work',
       'Ubicomp/ISWC demos and posters',
     ],
   },
