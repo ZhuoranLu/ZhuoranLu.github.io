@@ -31,7 +31,7 @@ export function PublicationsSection() {
   return (
     <Section id="publications" title="Selected Publications & Manuscripts">
       <p className="mb-5 text-sm text-brand-subtle">
-        * indicates equal contributions, # indicates senior author.
+        * indicates equal contributions, † indicates senior author.
       </p>
 
       <div className="mb-8 space-y-4 rounded-xl bg-brand-page p-5">

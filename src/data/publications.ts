@@ -9,7 +9,7 @@ export const publications: Publication[] = [
     title: 'How to Interpret Agent Behavior',
     url: 'https://arxiv.org/abs/2605.13625',
     authors:
-      'Jie Gao, Kaiser Sun, Jen-tse Huang, Katherine Van Koevering, Sijie Ji, Heyuan Huang, Weiyan Shi, **Zhuoran Lu**#, Ziang Xiao, Daniel Khashabi, and Mark Dredze.',
+      'Jie Gao, Kaiser Sun, Jen-tse Huang, Katherine Van Koevering, Sijie Ji, Heyuan Huang, Weiyan Shi, **Zhuoran Lu**†, Ziang Xiao, Daniel Khashabi, and Mark Dredze.',
     venue: 'arXiv',
     venueGroup: 'preprint',
     venueFull: 'Preprint, 2026.',
@@ -24,7 +24,7 @@ export const publications: Publication[] = [
       'AutoRedTrader: Autonomous Red Teaming of Trading Agents through Synthetic Misinformation Injection',
     url: 'https://arxiv.org/abs/2605.09185',
     authors:
-      'Zhiwei Liu, Yangyang Yu, Yupeng Cao, Yuechen Jiang, Haohang Li, **Zhuoran Lu**#, Yuyan Wang, Yixiang Zheng, Xiaorui Guo, Calvin Yixiang Cheng, and Sophia Ananiadou.',
+      'Zhiwei Liu, Yangyang Yu, Yupeng Cao, Yuechen Jiang, Haohang Li, **Zhuoran Lu**†, Yuyan Wang, Yixiang Zheng, Xiaorui Guo, Calvin Yixiang Cheng, and Sophia Ananiadou.',
     venue: 'arXiv',
     venueGroup: 'preprint',
     venueFull: 'Preprint, 2026.',
@@ -38,7 +38,7 @@ export const publications: Publication[] = [
     title: 'Benchmarking Security Risk Detection and Verification in Open Agentic Skill Ecosystems',
     url: 'https://arxiv.org/abs/2606.00925',
     authors:
-      'Ismail Hossain, Sai Puppala, **Zhuoran Lu**#, Sajedul Talukder, and Nan Jiang.',
+      'Ismail Hossain, Sai Puppala, **Zhuoran Lu**†, Sajedul Talukder, and Nan Jiang.',
     venue: 'arXiv',
     venueGroup: 'preprint',
     venueFull: 'Preprint, 2026.',
@@ -52,7 +52,7 @@ export const publications: Publication[] = [
     title:
       "Tracing Generative AI in Digital Art: A Longitudinal Study of Chinese Painters' Attitudes, Practices, and Identity Negotiation",
     url: 'https://arxiv.org/abs/2511.03117',
-    authors: 'Yibo Meng, Ruiqi Chen, **Zhuoran Lu**#, Shuai Ma, and Chengxi Zang.',
+    authors: 'Yibo Meng, Ruiqi Chen, **Zhuoran Lu**†, Shuai Ma, and Chengxi Zang.',
     venue: 'arXiv',
     venueGroup: 'preprint',
     venueFull: 'Preprint, 2025.',
@@ -81,7 +81,7 @@ export const publications: Publication[] = [
     title:
       'What Personalized Agents Make Visible: A Diagnostic Framework for AI-Mediated Judgment',
     url: '',
-    authors: 'Yuxuan Du, Shuai Ma, and **Zhuoran Lu**#.',
+    authors: 'Yuxuan Du, Shuai Ma, and **Zhuoran Lu**†.',
     venue: 'UbiComp Companion',
     venueGroup: 'workshop',
     venueFull:

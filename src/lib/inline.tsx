@@ -3,7 +3,7 @@ import type { ReactNode } from 'react'
 // Matches **bold** or [text](url).
 const TOKEN = /\*\*(.+?)\*\*|\[([^\]]+)\]\(([^)]+)\)/g
 
-// Markdown-style escapes used in the source content (\* equal-contribution, \# senior author).
+// Markdown-style escapes used in the source content (\* equal-contribution; † needs no escape).
 function unescape(s: string): string {
   return s.replace(/\\([*#])/g, '$1')
 }

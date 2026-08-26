@@ -12,7 +12,7 @@ export interface Publication {
   title: string
   /** Optional link applied to the title itself. */
   url?: string
-  /** Author string preserving markers: **bold**, \* (equal contribution), \# (senior author). */
+  /** Author string preserving markers: **bold**, \* (equal contribution), † (senior author). */
   authors: string
   /** Badge text, e.g. "CHI", "arXiv", "CHI-LBW". Empty string => no badge. */
   venue: string
