@@ -70,7 +70,7 @@ export const publications: Publication[] = [
     venue: 'EMNLP',
     venueGroup: 'ai',
     venueFull:
-      'Findings of the Empirical Methods in Natural Language Processing (EMNLP Findings), 2026.',
+      'Findings of the 2026 Conference on Empirical Methods in Natural Language Processing (EMNLP Findings), Budapest, October 2026.',
     year: 2026,
     focus: 'cognition',
     goal: 'understanding',
@@ -288,7 +288,7 @@ export const publications: Publication[] = [
     authors: 'Shan Gao, **Zhuoran Lu**, Hao Luan, Ming Yin, and Lei Wang.',
     venue: 'IJHCI',
     venueGroup: 'hci',
-    venueFull: 'International Journal of Human–Computer Interaction (IJHCI)',
+    venueFull: 'International Journal of Human–Computer Interaction (IJHCI), 2024.',
     year: 2024,
     focus: 'cognition',
     goal: 'understanding',
@@ -333,7 +333,7 @@ export const publications: Publication[] = [
     venue: 'EMNLP',
     venueGroup: 'ai',
     venueFull:
-      'The Empirical Methods in Natural Language Processing (EMNLP), Singapore, December 2023.',
+      'The 2023 Conference on Empirical Methods in Natural Language Processing (EMNLP), Singapore, December 2023.',
     year: 2023,
     focus: 'cognition',
     goal: 'designing',
@@ -348,7 +348,7 @@ export const publications: Publication[] = [
     venue: 'IJCAI',
     venueGroup: 'ai',
     venueFull:
-      'The 32nd International Joint Conference on Artificial Intelligence (IJCAI), Macao, August 2023',
+      'The 32nd International Joint Conference on Artificial Intelligence (IJCAI), Macao, August 2023.',
     year: 2023,
     focus: 'cognition',
     goal: 'understanding',
@@ -393,7 +393,7 @@ export const publications: Publication[] = [
     venue: 'CSCW',
     venueGroup: 'hci',
     venueFull:
-      'The 25th ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW), Online, November 2022',
+      'The 25th ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW), Online, November 2022.',
     year: 2022,
     focus: 'social',
     goal: 'understanding',
@@ -409,7 +409,7 @@ export const publications: Publication[] = [
     venue: 'AIES',
     venueGroup: 'ai',
     venueFull:
-      'The 5th AAAI/ACM Conference on Artificial Intelligence, Ethics, and Society (AIES), Online, August 2022',
+      'The 5th AAAI/ACM Conference on Artificial Intelligence, Ethics, and Society (AIES), Online, August 2022.',
     year: 2022,
     focus: 'cognition',
     goal: 'designing',
@@ -423,7 +423,7 @@ export const publications: Publication[] = [
     authors: '**Zhuoran Lu**\\*, Xinru Wang\\*, and Ming Yin',
     venue: 'WWW',
     venueGroup: 'ai',
-    venueFull: 'The Web Conference (WWW), Online, April 2022.',
+    venueFull: 'The 31st ACM Web Conference (WWW), Online, April 2022.',
     year: 2022,
     focus: 'cognition',
     goal: 'understanding',
