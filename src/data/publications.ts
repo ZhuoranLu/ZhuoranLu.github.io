@@ -64,9 +64,9 @@ export const publications: Publication[] = [
   {
     id: 'pub-grounded-theory-agent-behavior',
     title: 'Using Grounded Theory for Agent Behavior Analysis at Scale',
-    url: '',
+    url: 'https://arxiv.org/abs/2608.30391',
     authors:
-      '**Zhuoran Lu**, Jie Gao, Yangyang Yu, Zhuoyan Li, Nan Jiang, Yibo Meng, Chengxi Zang, and Ziang Xiao.',
+      '**Zhuoran Lu**, Yangyang Yu, Zhuoyan Li, Yibo Meng, Nan Jiang, Chengxi Zang, Jie Gao, and Ziang Xiao.',
     venue: 'EMNLP',
     venueGroup: 'ai',
     venueFull:
@@ -74,7 +74,7 @@ export const publications: Publication[] = [
     year: 2026,
     focus: 'cognition',
     goal: 'understanding',
-    links: [],
+    links: [{ label: 'PDF', url: 'https://arxiv.org/abs/2608.30391' }],
   },
   {
     id: 'pub-personalized-agents-judgment',
@@ -95,7 +95,7 @@ export const publications: Publication[] = [
     id: 'pub-bayesian-cascade-credibility',
     title:
       'One AI Signal, Many Human Judgments: A Bayesian Cascade Analysis of AI-based Credibility Indicators in Online Information Spread',
-    url: '',
+    url: 'https://arxiv.org/abs/2608.30311',
     authors:
       '**Zhuoran Lu**, Weilong Wang, Yangyang Yu, Xinru Wang, Zhuoyan Li, Zhiwei Liu, and Sophia Ananiadou.',
     venue: 'HCOMP',
@@ -105,7 +105,7 @@ export const publications: Publication[] = [
     year: 2026,
     focus: 'social',
     goal: 'understanding',
-    links: [],
+    links: [{ label: 'PDF', url: 'https://arxiv.org/abs/2608.30311' }],
   },
   {
     id: 'pub-adaptive-ai-assistance-bandits',
