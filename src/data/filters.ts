@@ -16,6 +16,7 @@ export const VENUE_MAP: Record<string, VenueGroup> = {
   WWW: 'ai',
   arXiv: 'preprint',
   'CustomNLP4U @ EMNLP': 'workshop',
+  'FinNLP @ EMNLP': 'workshop',
   'UbiComp Companion': 'workshop',
 }
 
@@ -36,6 +37,7 @@ export const VENUE_COLORS: Record<string, string> = {
   WWW: '#A5C0DE',
   // Workshop badges: lightened tint of the parent conference's color family.
   'CustomNLP4U @ EMNLP': '#CBDCEE',
+  'FinNLP @ EMNLP': '#CBDCEE',
   'UbiComp Companion': '#F3D3D3',
 }
 

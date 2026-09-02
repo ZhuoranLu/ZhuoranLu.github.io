@@ -77,6 +77,22 @@ export const publications: Publication[] = [
     links: [{ label: 'PDF', url: 'https://arxiv.org/abs/2608.30391' }],
   },
   {
+    id: 'pub-greenaudit-bench',
+    title:
+      'GreenAudit-Bench: Evidence-Grounded Auditing of Compositional Greenwashing in Corporate Sustainability Disclosures',
+    url: '',
+    authors:
+      'Shixiang You, Zeyuan Wang, Yuechen Jiang, Zhiwei Liu, Sophia Ananiadou, and **Zhuoran Lu**†.',
+    venue: 'FinNLP @ EMNLP',
+    venueGroup: 'workshop',
+    venueFull:
+      'EMNLP Workshop on Financial Technology and Natural Language Processing (FinNLP), Budapest, October 2026.',
+    year: 2026,
+    focus: 'social',
+    goal: 'designing',
+    links: [],
+  },
+  {
     id: 'pub-personalized-agents-judgment',
     title:
       'What Personalized Agents Make Visible: A Diagnostic Framework for AI-Mediated Judgment',
