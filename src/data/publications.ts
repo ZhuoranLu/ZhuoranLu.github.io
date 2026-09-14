@@ -97,7 +97,7 @@ export const publications: Publication[] = [
       'GreenAudit-Bench: Evidence-Grounded Auditing of Compositional Greenwashing in Corporate Sustainability Disclosures',
     url: '',
     authors:
-      'Shixiang You, Zeyuan Wang, Yuechen Jiang, Zhiwei Liu, Sophia Ananiadou, and **Zhuoran Lu**†.',
+      'Shixiang You, Zeyuan Wang, Yuechen Jiang, Zhiwei Liu, Jie Gao, Sophia Ananiadou, and **Zhuoran Lu**†.',
     venue: 'FinNLP @ EMNLP',
     venueGroup: 'workshop',
     venueFull:
