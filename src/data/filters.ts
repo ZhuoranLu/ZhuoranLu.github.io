@@ -2,6 +2,7 @@ import type { VenueGroup, Focus, Goal, FilterOption } from '@/types'
 
 /** Maps a venue badge label to its filter group. */
 export const VENUE_MAP: Record<string, VenueGroup> = {
+  'IEEE S&P': 'hci',
   CHI: 'hci',
   'CHI-LBW': 'hci',
   CSCW: 'hci',
@@ -22,6 +23,7 @@ export const VENUE_MAP: Record<string, VenueGroup> = {
 
 /** Exact badge background colors carried over from the Jekyll site. */
 export const VENUE_COLORS: Record<string, string> = {
+  'IEEE S&P': '#C98296',
   arXiv: '#C0C0C0',
   CHI: '#E8A4A4',
   'CHI-LBW': '#E8A4A4',

@@ -62,6 +62,20 @@ export const publications: Publication[] = [
     links: [{ label: 'PDF', url: 'https://arxiv.org/abs/2511.03117' }],
   },
   {
+    id: 'pub-digital-privacy-end-of-life-care',
+    title:
+      'Digital Privacy in End-of-Life Care: A Qualitative Study of Terminally Ill Patients, Family Caregivers, and Clinicians',
+    url: '',
+    authors: 'Yibo Meng, Bingyi Liu, Lionel Z. Wang, and **Zhuoran Lu**†.',
+    venue: 'IEEE S&P',
+    venueGroup: 'hci',
+    venueFull: 'IEEE Symposium on Security and Privacy (IEEE S&P), 2027.',
+    year: 2027,
+    focus: 'social',
+    goal: 'understanding',
+    links: [],
+  },
+  {
     id: 'pub-grounded-theory-agent-behavior',
     title: 'Using Grounded Theory for Agent Behavior Analysis at Scale',
     url: 'https://arxiv.org/abs/2608.30391',
