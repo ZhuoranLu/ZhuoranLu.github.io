@@ -69,7 +69,8 @@ export const publications: Publication[] = [
     authors: 'Yibo Meng, Bingyi Liu, Lionel Z. Wang, and **Zhuoran Lu**†.',
     venue: 'IEEE S&P',
     venueGroup: 'hci',
-    venueFull: 'IEEE Symposium on Security and Privacy (IEEE S&P), 2027.',
+    venueFull:
+      'The 48th IEEE Symposium on Security and Privacy (IEEE S&P), Montreal, May 2027.',
     year: 2027,
     focus: 'social',
     goal: 'understanding',
