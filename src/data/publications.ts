@@ -108,6 +108,22 @@ export const publications: Publication[] = [
     links: [],
   },
   {
+    id: 'pub-ubiquitous-health-data-end-of-life',
+    title:
+      "When Ubiquitous Health Data Stops Helping: Patients' Experience of Breakdowns in the Data-Interpretation-Action Loop at the End of Life",
+    url: '',
+    authors:
+      'Yibo Meng, Xinru Wang, Zhuoyan Li, Chengxi Zang, **Zhuoran Lu**, and Zhicong Lu.',
+    venue: 'IMWUT',
+    venueGroup: 'hci',
+    venueFull:
+      'Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT), 2026.',
+    year: 2026,
+    focus: 'social',
+    goal: 'understanding',
+    links: [],
+  },
+  {
     id: 'pub-personalized-agents-judgment',
     title:
       'What Personalized Agents Make Visible: A Diagnostic Framework for AI-Mediated Judgment',
