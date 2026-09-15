@@ -113,7 +113,7 @@ export const publications: Publication[] = [
       "When Ubiquitous Health Data Stops Helping: Patients' Experience of Breakdowns in the Data-Interpretation-Action Loop at the End of Life",
     url: '',
     authors:
-      'Yibo Meng, Xinru Wang, Zhuoyan Li, Chengxi Zang, **Zhuoran Lu**, and Zhicong Lu.',
+      'Yibo Meng, Xinru Wang, Zhuoyan Li, Chengxi Zang, **Zhuoran Lu**†, and Zhicong Lu.',
     venue: 'IMWUT',
     venueGroup: 'hci',
     venueFull:
