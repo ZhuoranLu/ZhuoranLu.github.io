@@ -124,6 +124,21 @@ export const publications: Publication[] = [
     links: [],
   },
   {
+    id: 'pub-diabetes-computing-systems-disappear',
+    title:
+      '“Can Computing Systems Eventually Disappear?”: A Long-Term Tracking Study on the Use of Diabetes Computing Systems by Patients with Diabetes',
+    url: '',
+    authors: 'Yibo Meng, Jinyuan Zhan, Yao Lyu, **Zhuoran Lu**†, and Chengxi Zang.',
+    venue: 'IMWUT',
+    venueGroup: 'hci',
+    venueFull:
+      'Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT), 2026.',
+    year: 2026,
+    focus: 'social',
+    goal: 'understanding',
+    links: [],
+  },
+  {
     id: 'pub-personalized-agents-judgment',
     title:
       'What Personalized Agents Make Visible: A Diagnostic Framework for AI-Mediated Judgment',
