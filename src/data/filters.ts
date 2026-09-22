@@ -20,6 +20,7 @@ export const VENUE_MAP: Record<string, VenueGroup> = {
   'CustomNLP4U @ EMNLP': 'workshop',
   'FinNLP @ EMNLP': 'workshop',
   'UbiComp Companion': 'workshop',
+  'NeurIPS Creative AI': 'workshop',
 }
 
 /** Exact badge background colors carried over from the Jekyll site. */
@@ -43,6 +44,7 @@ export const VENUE_COLORS: Record<string, string> = {
   'CustomNLP4U @ EMNLP': '#CBDCEE',
   'FinNLP @ EMNLP': '#CBDCEE',
   'UbiComp Companion': '#F3D3D3',
+  'NeurIPS Creative AI': '#CBDCEE',
 }
 
 export const VENUE_OPTIONS: FilterOption<VenueGroup>[] = [

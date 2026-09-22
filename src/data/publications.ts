@@ -77,6 +77,21 @@ export const publications: Publication[] = [
     links: [],
   },
   {
+    id: 'pub-fanverse',
+    title:
+      'FANVERSE: Exploring and Extending Branching Story Universes Across Canon and Fan Fiction',
+    url: '',
+    authors: 'Lingyi Long, Xian Li, Shuai Ma, Yi Wang, and **Zhuoran Lu**†.',
+    venue: 'NeurIPS Creative AI',
+    venueGroup: 'workshop',
+    venueFull:
+      'The 40th Conference on Neural Information Processing Systems (NeurIPS) Creative AI Track, December 2026.',
+    year: 2026,
+    focus: 'social',
+    goal: 'designing',
+    links: [],
+  },
+  {
     id: 'pub-grounded-theory-agent-behavior',
     title: 'Using Grounded Theory for Agent Behavior Analysis at Scale',
     url: 'https://arxiv.org/abs/2608.30391',
