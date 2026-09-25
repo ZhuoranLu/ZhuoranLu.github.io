@@ -5,20 +5,6 @@ import type { Publication } from '@/types'
 // The three papers that linked to missing ../files/*.pdf have those links dropped.
 export const publications: Publication[] = [
   {
-    id: 'pub-interpret-agent-behavior',
-    title: 'How to Interpret Agent Behavior',
-    url: 'https://arxiv.org/abs/2605.13625',
-    authors:
-      'Jie Gao, Kaiser Sun, Jen-tse Huang, Katherine Van Koevering, Sijie Ji, Heyuan Huang, Weiyan Shi, **Zhuoran Lu**†, Ziang Xiao, Daniel Khashabi, and Mark Dredze.',
-    venue: 'arXiv',
-    venueGroup: 'preprint',
-    venueFull: 'Preprint, 2026.',
-    year: 2026,
-    focus: 'cognition',
-    goal: 'understanding',
-    links: [{ label: 'PDF', url: 'https://arxiv.org/abs/2605.13625' }],
-  },
-  {
     id: 'pub-autoredtrader',
     title:
       'AutoRedTrader: Autonomous Red Teaming of Trading Agents through Synthetic Misinformation Injection',
@@ -75,6 +61,21 @@ export const publications: Publication[] = [
     focus: 'social',
     goal: 'understanding',
     links: [],
+  },
+  {
+    id: 'pub-interpret-agent-behavior',
+    title: 'How to Interpret Agent Behavior',
+    url: 'https://arxiv.org/abs/2605.13625',
+    authors:
+      'Jie Gao, Kaiser Sun, Jen-tse Huang, Katherine Van Koevering, Sijie Ji, Heyuan Huang, Weiyan Shi, **Zhuoran Lu**†, Ziang Xiao, Daniel Khashabi, and Mark Dredze.',
+    venue: 'NeurIPS',
+    venueGroup: 'ai',
+    venueFull:
+      'The 40th Conference on Neural Information Processing Systems (NeurIPS), Sydney, December 2026.',
+    year: 2026,
+    focus: 'cognition',
+    goal: 'understanding',
+    links: [{ label: 'PDF', url: 'https://arxiv.org/abs/2605.13625' }],
   },
   {
     id: 'pub-fanverse',
@@ -182,6 +183,7 @@ export const publications: Publication[] = [
     year: 2026,
     focus: 'social',
     goal: 'understanding',
+    award: 'Best Paper Honorable Mention',
     links: [{ label: 'PDF', url: 'https://arxiv.org/abs/2608.30311' }],
   },
   {
@@ -197,6 +199,7 @@ export const publications: Publication[] = [
     year: 2026,
     focus: 'cognition',
     goal: 'designing',
+    award: 'Best Paper Honorable Mention',
     links: [],
   },
   {
