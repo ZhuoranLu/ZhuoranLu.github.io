@@ -6,6 +6,10 @@ interface Props {
   pub: Publication
 }
 
+function AwardIcon({ award }: { award: string }) {
+  return <span aria-hidden>{/oral/i.test(award) ? '🗣️' : '🏆'}</span>
+}
+
 export function PublicationCard({ pub }: Props) {
   return (
     <article className="animate-fade-in border-b border-brand-border py-5 last:border-b-0">
@@ -31,7 +35,10 @@ export function PublicationCard({ pub }: Props) {
           <span className="font-semibold text-brand-heading">{pub.title}</span>
         )}
         {pub.award && (
-          <span className="ml-1 font-semibold text-brand-danger">[{pub.award}]</span>
+          <span className="ml-1.5 inline-flex items-center gap-1 whitespace-nowrap align-baseline font-semibold text-brand-danger">
+            <AwardIcon award={pub.award} />
+            {pub.award}
+          </span>
         )}
       </div>
 

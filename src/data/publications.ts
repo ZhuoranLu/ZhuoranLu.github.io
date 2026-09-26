@@ -203,6 +203,21 @@ export const publications: Publication[] = [
     links: [],
   },
   {
+    id: 'pub-xagen',
+    title:
+      'XAgen: Designing Explainability Support for Failure Detection and Correction in Multi-Agent Workflows',
+    url: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6968221',
+    authors:
+      'Xinru Wang, **Zhuoran Lu**, Shuai Ma, Ming Yin, Eunyee Koh, and Mustafa Doga Dogan.',
+    venue: 'DAAI',
+    venueGroup: 'hci',
+    venueFull: 'Design and Artificial Intelligence (DAAI), 2026.',
+    year: 2026,
+    focus: 'cognition',
+    goal: 'designing',
+    links: [{ label: 'PDF', url: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6968221' }],
+  },
+  {
     id: 'pub-llm-adversarial-risks-interventions',
     title:
       'Large Language Model (LLM)-driven Adversarial Social Influences in Online Information Spread: Risks and Interventions.',

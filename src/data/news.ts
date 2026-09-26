@@ -2,11 +2,6 @@ import type { NewsItem } from '@/types'
 
 export const news: NewsItem[] = [
   {
-    id: 'n-2026-09-neurips',
-    date: '2026.09',
-    text: 'Our paper [How to Interpret Agent Behavior](https://arxiv.org/abs/2605.13625) was accepted to NeurIPS 2026! See you in Sydney!',
-  },
-  {
     id: 'n-2026-09-hcomp',
     date: '2026.09',
     text: 'Both of our HCOMP 2026 papers — [One AI Signal, Many Human Judgments](https://arxiv.org/abs/2608.30311) and Adaptive Selection of Effective AI Assistance — received the Best Paper Honorable Mention!',
