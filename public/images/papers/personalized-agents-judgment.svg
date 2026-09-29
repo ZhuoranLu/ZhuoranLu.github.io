@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" font-family="Helvetica, Arial, sans-serif">
+  <style>.cap{font-size:18px;font-weight:700;fill:#222;text-anchor:middle}</style>
+  <rect width="240" height="240" fill="#fff"/>
+  <g id="art" transform="translate(-4.8 -4.0) scale(1.040)">
+  <!-- user -->
+  <g transform="translate(46,70)">
+    <circle cx="0" cy="-14" r="14" fill="#F2A541"/>
+    <path d="M-26 30 Q0 -8 26 30 Z" fill="#F2A541"/>
+  </g>
+  <!-- personalized agent (mirrors user color) -->
+  <g transform="translate(194,58)">
+    <rect x="-26" y="-18" width="52" height="42" rx="10" fill="#4A7BB7"/>
+    <line x1="0" y1="-18" x2="0" y2="-28" stroke="#4A7BB7" stroke-width="3"/><circle cx="0" cy="-30" r="4" fill="#F2A541"/>
+    <circle cx="-10" cy="0" r="5" fill="#fff"/><circle cx="10" cy="0" r="5" fill="#fff"/>
+    <path d="M-9 12 Q0 16 9 12" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <rect x="-26" y="18" width="52" height="6" fill="#F2A541"/>
+  </g>
+  <path d="M82 64 C110 40 136 40 160 56" stroke="#999" stroke-width="3" fill="none" stroke-dasharray="5 4"/>
+  <path d="M154 48 L162 57 L151 60" stroke="#999" stroke-width="3" fill="none" stroke-linejoin="round"/>
+  <!-- balance scale -->
+  <g transform="translate(120,144)" stroke="#555" stroke-width="4" stroke-linecap="round" fill="none">
+    <line x1="0" y1="-30" x2="0" y2="30"/><line x1="-18" y1="30" x2="18" y2="30"/>
+    <line x1="-46" y1="-20" x2="46" y2="-30"/>
+    <path d="M-58 4 L-46 -20 L-34 4"/><path d="M34 -6 L46 -30 L58 -6"/>
+    <path d="M-62 4 Q-46 18 -30 4 Z" fill="#E6F2EC" stroke="#5BA888"/>
+    <path d="M30 -6 Q46 8 62 -6 Z" fill="#FBEAEA" stroke="#D9534F"/>
+  </g>
+  <!-- eye: making visible -->
+  <g transform="translate(120,100)">
+    <path d="M-20 0 Q0 -16 20 0 Q0 16 -20 0 Z" fill="#fff" stroke="#8E6CC9" stroke-width="3"/>
+    <circle r="6" fill="#8E6CC9"/>
+  </g>
+  </g>
+  <text x="120" y="207" class="cap">AI-Mediated</text>
+  <text x="120" y="228" class="cap">Judgment</text>
+</svg>

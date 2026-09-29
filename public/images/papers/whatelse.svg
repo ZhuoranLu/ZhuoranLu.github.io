@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" font-family="Helvetica, Arial, sans-serif">
+  <style>.cap{font-size:18px;font-weight:700;fill:#222;text-anchor:middle}</style>
+  <rect width="240" height="240" fill="#fff"/>
+  <g id="art" transform="translate(2.5 8.5) scale(0.963)">
+  <!-- layers of abstraction -->
+  <g>
+    <path d="M60 36 L180 36 L200 60 L40 60 Z" fill="#E9E1F6" stroke="#8E6CC9" stroke-width="2.5"/>
+    <path d="M60 82 L180 82 L200 106 L40 106 Z" fill="#EAF1F9" stroke="#6E9BD0" stroke-width="2.5"/>
+    <path d="M60 128 L180 128 L200 152 L40 152 Z" fill="#E6F2EC" stroke="#5BA888" stroke-width="2.5"/>
+  </g>
+  <!-- story points -->
+  <g stroke="#555" stroke-width="2" stroke-dasharray="3 3">
+    <line x1="120" y1="48" x2="96" y2="94"/><line x1="120" y1="48" x2="146" y2="94"/>
+    <line x1="96" y1="94" x2="80" y2="140"/><line x1="96" y1="94" x2="110" y2="140"/>
+    <line x1="146" y1="94" x2="136" y2="140"/><line x1="146" y1="94" x2="164" y2="140"/>
+  </g>
+  <g>
+    <circle cx="120" cy="48" r="7" fill="#8E6CC9"/>
+    <circle cx="96" cy="94" r="6" fill="#4A7BB7"/><circle cx="146" cy="94" r="6" fill="#4A7BB7"/>
+    <circle cx="80" cy="140" r="5" fill="#5BA888"/><circle cx="110" cy="140" r="5" fill="#5BA888"/>
+    <circle cx="136" cy="140" r="5" fill="#5BA888"/><circle cx="164" cy="140" r="5" fill="#5BA888"/>
+  </g>
+  <!-- slider -->
+  <g transform="translate(222,48)">
+    <line x1="0" y1="0" x2="0" y2="104" stroke="#bbb" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="0" cy="46" r="8" fill="#fff" stroke="#4A7BB7" stroke-width="3"/>
+  </g>
+  <g font-size="12" font-weight="700" fill="#888">
+    <text x="14" y="52">abstract</text>
+    <text x="14" y="146">concrete</text>
+  </g>
+  </g>
+  <text x="120" y="207" class="cap">Configurable</text>
+  <text x="120" y="228" class="cap">Narrative Space</text>
+</svg>

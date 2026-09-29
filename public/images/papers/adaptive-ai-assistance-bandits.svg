@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" font-family="Helvetica, Arial, sans-serif">
+  <style>.cap{font-size:18px;font-weight:700;fill:#222;text-anchor:middle}</style>
+  <rect width="240" height="240" fill="#fff"/>
+  <g id="art" transform="translate(0.1 -6.4) scale(0.994)">
+  <!-- three arms -->
+  <g font-weight="700" text-anchor="middle">
+    <g transform="translate(46,60)">
+      <rect x="-30" y="-34" width="60" height="68" rx="10" fill="#F4F4F4" stroke="#bbb" stroke-width="2.5"/>
+      <path d="M0 -20 a12 12 0 0 1 7 22 v6 h-14 v-6 a12 12 0 0 1 7 -22z" fill="#F2A541"/>
+      <rect x="-6" y="11" width="12" height="4" fill="#999"/>
+      <text y="30" font-size="10" fill="#888">explain</text>
+    </g>
+    <g transform="translate(120,60)">
+      <rect x="-30" y="-34" width="60" height="68" rx="10" fill="#EAF1F9" stroke="#4A7BB7" stroke-width="3.5"/>
+      <text y="4" font-size="22" fill="#4A7BB7">87%</text>
+      <text y="30" font-size="10" fill="#4A7BB7">confidence</text>
+    </g>
+    <g transform="translate(194,60)">
+      <rect x="-30" y="-34" width="60" height="68" rx="10" fill="#F4F4F4" stroke="#bbb" stroke-width="2.5"/>
+      <path d="M-10 4 L-2 12 L12 -8" fill="none" stroke="#5BA888" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text y="30" font-size="10" fill="#888">recommend</text>
+    </g>
+  </g>
+  <!-- selection arrow -->
+  <path d="M120 100 V124" stroke="#4A7BB7" stroke-width="4" stroke-linecap="round"/>
+  <path d="M112 118 L120 127 L128 118" stroke="#4A7BB7" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- bandit reward bars -->
+  <g transform="translate(20,150)">
+    <rect x="16" y="14" width="20" height="22" fill="#ccc"/>
+    <rect x="90" y="0" width="20" height="36" fill="#4A7BB7"/>
+    <rect x="164" y="20" width="20" height="16" fill="#ccc"/>
+    <line x1="0" y1="36" x2="200" y2="36" stroke="#999" stroke-width="2"/>
+  </g>
+  </g>
+  <text x="120" y="207" class="cap">Adaptive</text>
+  <text x="120" y="228" class="cap">AI Assistance</text>
+</svg>

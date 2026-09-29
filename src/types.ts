@@ -27,6 +27,8 @@ export interface Publication {
   goal: Goal | Goal[]
   /** e.g. "Best Paper Award", "Oral Presentation". */
   award?: string
+  /** Schematic thumbnail shown left of the entry, e.g. "/images/papers/foo.png". */
+  thumb?: string
   links: PubLink[]
 }
 

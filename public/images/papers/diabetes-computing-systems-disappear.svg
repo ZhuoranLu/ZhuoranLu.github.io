@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" font-family="Helvetica, Arial, sans-serif">
+  <style>.cap{font-size:18px;font-weight:700;fill:#222;text-anchor:middle}</style>
+  <rect width="240" height="240" fill="#fff"/>
+  <g id="art" transform="translate(-7.3 -31.0) scale(1.061)">
+  <!-- three devices fading -->
+  <g id="dev">
+  </g>
+  <g transform="translate(46,86)">
+    <rect x="-24" y="-40" width="48" height="80" rx="9" fill="#4A7BB7"/>
+    <rect x="-17" y="-30" width="34" height="42" rx="3" fill="#fff"/>
+    <text x="0" y="-8" font-size="15" font-weight="700" fill="#4A7BB7" text-anchor="middle">126</text>
+    <path d="M-12 2 L-4 -2 L4 4 L12 -3" fill="none" stroke="#D9534F" stroke-width="2"/>
+    <circle cx="0" cy="26" r="6" fill="#fff"/>
+  </g>
+  <g transform="translate(120,86)" opacity="0.45">
+    <rect x="-24" y="-40" width="48" height="80" rx="9" fill="#4A7BB7"/>
+    <rect x="-17" y="-30" width="34" height="42" rx="3" fill="#fff"/>
+    <text x="0" y="-8" font-size="15" font-weight="700" fill="#4A7BB7" text-anchor="middle">118</text>
+    <circle cx="0" cy="26" r="6" fill="#fff"/>
+  </g>
+  <g transform="translate(194,86)">
+    <rect x="-24" y="-40" width="48" height="80" rx="9" fill="none" stroke="#bbb" stroke-width="3" stroke-dasharray="6 5"/>
+    <text x="0" y="8" font-size="26" font-weight="700" fill="#bbb" text-anchor="middle">?</text>
+  </g>
+  <!-- blood drop -->
+  <path d="M120 150 C120 150 108 164 108 172 A12 12 0 0 0 132 172 C132 164 120 150 120 150 Z" fill="#D9534F"/>
+  <!-- timeline -->
+  <g>
+    <line x1="22" y1="192" x2="214" y2="192" stroke="#999" stroke-width="3"/>
+    <path d="M208 185 L218 192 L208 199" fill="none" stroke="#999" stroke-width="3" stroke-linejoin="round"/>
+    <circle cx="46" cy="192" r="5" fill="#4A7BB7"/><circle cx="120" cy="192" r="5" fill="#9DB9DC"/><circle cx="194" cy="192" r="5" fill="#ccc"/>
+  </g>
+  </g>
+  <text x="120" y="207" class="cap">Can Systems</text>
+  <text x="120" y="228" class="cap">Disappear?</text>
+</svg>

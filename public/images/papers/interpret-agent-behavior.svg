@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" font-family="Helvetica, Arial, sans-serif">
+  <style>.cap{font-size:18px;font-weight:700;fill:#222;text-anchor:middle}</style>
+  <rect width="240" height="240" fill="#fff"/>
+  <g id="art" transform="translate(9.3 6.1) scale(0.988)">
+  <!-- agent -->
+  <g transform="translate(28,32)">
+    <rect x="0" y="10" width="46" height="38" rx="9" fill="#4A7BB7"/>
+    <line x1="23" y1="10" x2="23" y2="2" stroke="#4A7BB7" stroke-width="3"/><circle cx="23" cy="2" r="4" fill="#4A7BB7"/>
+    <circle cx="14" cy="27" r="4.5" fill="#fff"/><circle cx="32" cy="27" r="4.5" fill="#fff"/>
+    <path d="M15 38 h16" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <!-- trajectory -->
+  <g stroke="#999" stroke-width="3" fill="none">
+    <path d="M76 58 L108 58"/><path d="M130 58 C150 58 150 104 170 104"/><path d="M130 58 C150 58 150 20 172 20" stroke-dasharray="5 4"/>
+    <path d="M180 116 L150 150"/>
+  </g>
+  <g>
+    <rect x="108" y="46" width="24" height="24" rx="5" fill="#EAF1F9" stroke="#4A7BB7" stroke-width="2.5"/>
+    <rect x="172" y="8" width="24" height="24" rx="5" fill="#F4F4F4" stroke="#bbb" stroke-width="2.5"/>
+    <rect x="170" y="92" width="24" height="24" rx="5" fill="#EAF1F9" stroke="#4A7BB7" stroke-width="2.5"/>
+    <rect x="130" y="146" width="24" height="24" rx="5" fill="#FBEAEA" stroke="#D9534F" stroke-width="2.5"/>
+    <text x="142" y="164" font-size="15" font-weight="700" fill="#D9534F" text-anchor="middle">?</text>
+  </g>
+  <!-- magnifier -->
+  <g transform="translate(76,142)">
+    <circle r="30" fill="none" stroke="#555" stroke-width="5"/>
+    <line x1="-21" y1="21" x2="-38" y2="38" stroke="#555" stroke-width="8" stroke-linecap="round"/>
+    <path d="M-14 8 L-4 -6 L6 2 L16 -12" fill="none" stroke="#F2A541" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="-14" cy="8" r="3.5" fill="#F2A541"/><circle cx="16" cy="-12" r="3.5" fill="#F2A541"/>
+  </g>
+  </g>
+  <text x="120" y="207" class="cap">Interpreting</text>
+  <text x="120" y="228" class="cap">Agent Behavior</text>
+</svg>

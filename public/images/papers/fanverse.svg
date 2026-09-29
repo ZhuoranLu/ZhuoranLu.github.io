@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" font-family="Helvetica, Arial, sans-serif">
+  <style>.cap{font-size:18px;font-weight:700;fill:#222;text-anchor:middle}</style>
+  <rect width="240" height="240" fill="#fff"/>
+  <g id="art" transform="translate(2.0 -9.0) scale(1.000)">
+  <!-- canon book -->
+  <g transform="translate(14,78)">
+    <path d="M0 6 Q20 0 38 8 V58 Q20 50 0 56 Z" fill="#4A7BB7"/>
+    <path d="M38 8 Q56 0 76 6 V56 Q56 50 38 58 Z" fill="#6E9BD0"/>
+    <line x1="38" y1="8" x2="38" y2="58" stroke="#fff" stroke-width="2"/>
+    <path d="M8 18 Q20 15 30 19 M8 28 Q20 25 30 29 M46 19 Q56 15 68 18 M46 29 Q56 25 68 28" stroke="#fff" stroke-width="2" fill="none"/>
+  </g>
+  <!-- branches -->
+  <g fill="none" stroke-width="4" stroke-linecap="round">
+    <path d="M92 108 H122" stroke="#4A7BB7"/>
+    <path d="M122 108 C140 108 140 50 162 50" stroke="#4A7BB7"/>
+    <path d="M122 108 H166" stroke="#8E6CC9"/>
+    <path d="M122 108 C140 108 140 166 162 166" stroke="#8E6CC9"/>
+    <path d="M176 50 H206" stroke="#4A7BB7"/>
+    <path d="M176 108 C192 108 192 84 208 84" stroke="#8E6CC9" stroke-dasharray="5 5"/>
+    <path d="M176 108 C192 108 192 132 208 132" stroke="#8E6CC9"/>
+    <path d="M176 166 H206" stroke="#8E6CC9" stroke-dasharray="5 5"/>
+  </g>
+  <g stroke="#fff" stroke-width="3">
+    <circle cx="122" cy="108" r="9" fill="#4A7BB7"/>
+    <circle cx="168" cy="50" r="9" fill="#4A7BB7"/>
+    <circle cx="170" cy="108" r="9" fill="#8E6CC9"/>
+    <circle cx="168" cy="166" r="9" fill="#8E6CC9"/>
+    <circle cx="214" cy="50" r="8" fill="#4A7BB7"/>
+    <circle cx="214" cy="84" r="8" fill="#C9B6EA"/>
+    <circle cx="214" cy="132" r="8" fill="#8E6CC9"/>
+    <circle cx="214" cy="166" r="8" fill="#C9B6EA"/>
+  </g>
+  </g>
+  <text x="120" y="219" class="cap">Canon + Fan Fiction</text>
+</svg>

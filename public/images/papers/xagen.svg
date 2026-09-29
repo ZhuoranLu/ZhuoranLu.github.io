@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" font-family="Helvetica, Arial, sans-serif">
+  <style>.cap{font-size:18px;font-weight:700;fill:#222;text-anchor:middle}</style>
+  <rect width="240" height="240" fill="#fff"/>
+  <g id="art" transform="translate(-3.7 -9.4) scale(1.095)">
+  <!-- workflow -->
+  <g stroke="#999" stroke-width="3" fill="none">
+    <path d="M58 44 H92"/><path d="M130 44 C150 44 150 96 166 96"/><path d="M130 44 H168"/>
+    <path d="M186 64 V78"/>
+  </g>
+  <g>
+    <g transform="translate(38,44)"><rect x="-20" y="-16" width="40" height="32" rx="8" fill="#4A7BB7"/><circle cx="-7" r="4" fill="#fff"/><circle cx="7" r="4" fill="#fff"/></g>
+    <g transform="translate(112,44)"><rect x="-20" y="-16" width="40" height="32" rx="8" fill="#4A7BB7"/><circle cx="-7" r="4" fill="#fff"/><circle cx="7" r="4" fill="#fff"/></g>
+    <g transform="translate(188,44)"><rect x="-20" y="-16" width="40" height="32" rx="8" fill="#4A7BB7"/><circle cx="-7" r="4" fill="#fff"/><circle cx="7" r="4" fill="#fff"/></g>
+    <g transform="translate(186,98)"><rect x="-20" y="-16" width="40" height="32" rx="8" fill="#D9534F"/><path d="M-9 -4 l6 6 m0 -6 l-6 6 M3 -4 l6 6 m0 -6 l-6 6" stroke="#fff" stroke-width="2.5"/></g>
+  </g>
+  <!-- warning callout -->
+  <g transform="translate(140,110)">
+    <path d="M0 -12 L12 10 H-12 Z" fill="#F2A541"/><text y="7" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">!</text>
+  </g>
+  <!-- magnifier (explain) -->
+  <g transform="translate(74,124)">
+    <circle r="24" fill="#fff" stroke="#555" stroke-width="5"/>
+    <line x1="17" y1="17" x2="30" y2="30" stroke="#555" stroke-width="7" stroke-linecap="round"/>
+    <path d="M-12 -6 H12 M-12 2 H6 M-12 10 H10" stroke="#8E6CC9" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <!-- fixed -->
+  <g transform="translate(168,150)">
+    <circle r="20" fill="#5BA888"/>
+    <path d="M-9 0 L-2 7 L10 -7" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <path d="M186 118 C194 128 190 136 184 140" stroke="#999" stroke-width="3" fill="none" stroke-dasharray="4 4"/>
+  </g>
+  <text x="120" y="207" class="cap">Explain &amp; Fix</text>
+  <text x="120" y="228" class="cap">Multi-Agent Failures</text>
+</svg>

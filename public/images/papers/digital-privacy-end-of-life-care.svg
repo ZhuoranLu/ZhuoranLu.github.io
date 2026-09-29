@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" font-family="Helvetica, Arial, sans-serif">
+  <style>.cap{font-size:18px;font-weight:700;fill:#222;text-anchor:middle}</style>
+  <rect width="240" height="240" fill="#fff"/>
+  <g id="art" transform="translate(13.8 10.5) scale(0.885)">
+  <!-- links -->
+  <g stroke="#ccc" stroke-width="3" stroke-dasharray="6 5">
+    <line x1="120" y1="48" x2="120" y2="92"/><line x1="52" y1="160" x2="96" y2="124"/><line x1="188" y1="160" x2="144" y2="124"/>
+  </g>
+  <!-- patient (bed) top -->
+  <g transform="translate(120,32)">
+    <circle r="28" fill="#FBEAEA"/>
+    <rect x="-18" y="2" width="36" height="8" rx="2" fill="#D9534F"/>
+    <line x1="-18" y1="-10" x2="-18" y2="14" stroke="#D9534F" stroke-width="3"/>
+    <line x1="18" y1="4" x2="18" y2="14" stroke="#D9534F" stroke-width="3"/>
+    <circle cx="-9" cy="-4" r="5" fill="#D9534F"/>
+    <path d="M-15 -8 h6" stroke="#D9534F" stroke-width="0"/>
+  </g>
+  <!-- caregiver left -->
+  <g transform="translate(46,168)">
+    <circle r="28" fill="#FDF3DC"/>
+    <circle cx="0" cy="-8" r="8" fill="#F2A541"/>
+    <path d="M-14 16 Q0 -4 14 16 Z" fill="#F2A541"/>
+    <path d="M8 -20 c3 -4 9 -2 8 3 c-1 4 -8 8 -8 8 c0 0 -7 -4 -8 -8 c-1 -5 5 -7 8 -3z" fill="#D9534F" transform="translate(6,2) scale(0.7)"/>
+  </g>
+  <!-- clinician right -->
+  <g transform="translate(194,168)">
+    <circle r="28" fill="#E6F2EC"/>
+    <circle cx="0" cy="-8" r="8" fill="#5BA888"/>
+    <path d="M-14 16 Q0 -4 14 16 Z" fill="#5BA888"/>
+    <path d="M-6 6 h12 M0 0 v12" stroke="#fff" stroke-width="3"/>
+  </g>
+  <!-- center lock -->
+  <g transform="translate(120,118)">
+    <path d="M-12 -8 V-16 A12 12 0 0 1 12 -16 V-8" fill="none" stroke="#4A7BB7" stroke-width="5"/>
+    <rect x="-20" y="-9" width="40" height="32" rx="5" fill="#4A7BB7"/>
+    <circle cx="0" cy="4" r="4" fill="#fff"/><rect x="-1.5" y="5" width="3" height="9" fill="#fff"/>
+  </g>
+  </g>
+  <text x="120" y="207" class="cap">Privacy at</text>
+  <text x="120" y="228" class="cap">End of Life</text>
+</svg>

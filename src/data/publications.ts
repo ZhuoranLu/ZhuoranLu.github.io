@@ -17,6 +17,7 @@ export const publications: Publication[] = [
     year: 2026,
     focus: 'social',
     goal: 'designing',
+    thumb: '/images/papers/autoredtrader.svg',
     links: [{ label: 'PDF', url: 'https://arxiv.org/abs/2605.09185' }],
   },
   {
@@ -31,6 +32,7 @@ export const publications: Publication[] = [
     year: 2026,
     focus: 'social',
     goal: 'designing',
+    thumb: '/images/papers/skillvetbench.svg',
     links: [{ label: 'PDF', url: 'https://arxiv.org/abs/2606.00925' }],
   },
   {
@@ -45,6 +47,7 @@ export const publications: Publication[] = [
     year: 2025,
     focus: 'social',
     goal: 'understanding',
+    thumb: '/images/papers/tracing-genai-art.svg',
     links: [{ label: 'PDF', url: 'https://arxiv.org/abs/2511.03117' }],
   },
   {
@@ -60,6 +63,7 @@ export const publications: Publication[] = [
     year: 2027,
     focus: 'social',
     goal: 'understanding',
+    thumb: '/images/papers/digital-privacy-end-of-life-care.svg',
     links: [],
   },
   {
@@ -75,6 +79,7 @@ export const publications: Publication[] = [
     year: 2026,
     focus: 'cognition',
     goal: 'understanding',
+    thumb: '/images/papers/interpret-agent-behavior.svg',
     links: [{ label: 'PDF', url: 'https://arxiv.org/abs/2605.13625' }],
   },
   {
@@ -90,6 +95,7 @@ export const publications: Publication[] = [
     year: 2026,
     focus: 'social',
     goal: 'designing',
+    thumb: '/images/papers/fanverse.svg',
     links: [],
   },
   {
@@ -105,6 +111,7 @@ export const publications: Publication[] = [
     year: 2026,
     focus: 'cognition',
     goal: 'understanding',
+    thumb: '/images/papers/grounded-theory-agent-behavior.svg',
     links: [{ label: 'PDF', url: 'https://arxiv.org/abs/2608.30391' }],
   },
   {
@@ -121,6 +128,7 @@ export const publications: Publication[] = [
     year: 2026,
     focus: 'social',
     goal: 'designing',
+    thumb: '/images/papers/greenaudit-bench.svg',
     links: [],
   },
   {
@@ -137,6 +145,7 @@ export const publications: Publication[] = [
     year: 2026,
     focus: 'social',
     goal: 'understanding',
+    thumb: '/images/papers/ubiquitous-health-data-end-of-life.svg',
     links: [],
   },
   {
@@ -152,6 +161,7 @@ export const publications: Publication[] = [
     year: 2026,
     focus: 'social',
     goal: 'understanding',
+    thumb: '/images/papers/diabetes-computing-systems-disappear.svg',
     links: [],
   },
   {
@@ -167,6 +177,7 @@ export const publications: Publication[] = [
     year: 2026,
     focus: 'cognition',
     goal: 'understanding',
+    thumb: '/images/papers/personalized-agents-judgment.svg',
     links: [],
   },
   {
@@ -184,6 +195,7 @@ export const publications: Publication[] = [
     focus: 'social',
     goal: 'understanding',
     award: 'Best Paper Honorable Mention',
+    thumb: '/images/papers/bayesian-cascade-credibility.svg',
     links: [{ label: 'PDF', url: 'https://arxiv.org/abs/2608.30311' }],
   },
   {
@@ -200,6 +212,7 @@ export const publications: Publication[] = [
     focus: 'cognition',
     goal: 'designing',
     award: 'Best Paper Honorable Mention',
+    thumb: '/images/papers/adaptive-ai-assistance-bandits.svg',
     links: [],
   },
   {
@@ -215,6 +228,7 @@ export const publications: Publication[] = [
     year: 2026,
     focus: 'cognition',
     goal: 'designing',
+    thumb: '/images/papers/xagen.svg',
     links: [{ label: 'PDF', url: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6968221' }],
   },
   {
@@ -230,6 +244,7 @@ export const publications: Publication[] = [
     year: 2026,
     focus: 'social',
     goal: ['understanding', 'designing'],
+    thumb: '/images/papers/llm-adversarial-risks-interventions.png',
     links: [{ label: 'PDF', url: 'https://doi.org/10.1145/3772318.3790442' }],
   },
   {
@@ -245,6 +260,7 @@ export const publications: Publication[] = [
     year: 2026,
     focus: 'cognition',
     goal: 'designing',
+    thumb: '/images/papers/human-llm-feature-engineering.png',
     links: [{ label: 'PDF', url: 'https://arxiv.org/abs/2601.21060' }],
   },
   {
@@ -260,6 +276,7 @@ export const publications: Publication[] = [
     year: 2025,
     focus: 'cognition',
     goal: 'designing',
+    thumb: '/images/papers/from-text-to-trust.png',
     links: [{ label: 'PDF', url: 'https://dl.acm.org/doi/10.1145/3706598.3713133' }],
   },
   {
@@ -275,6 +292,7 @@ export const publications: Publication[] = [
     year: 2025,
     focus: 'social',
     goal: 'understanding',
+    thumb: '/images/papers/credibility-peers-experts.png',
     links: [
       {
         label: 'PDF',
@@ -295,6 +313,7 @@ export const publications: Publication[] = [
     year: 2025,
     focus: 'cognition',
     goal: 'designing',
+    thumb: '/images/papers/whatelse.svg',
     links: [{ label: 'PDF', url: 'https://arxiv.org/abs/2502.18641' }],
   },
   {
@@ -310,6 +329,7 @@ export const publications: Publication[] = [
     year: 2025,
     focus: 'social',
     goal: 'understanding',
+    thumb: '/images/papers/llm-adversarial-risks-interventions.png',
     links: [{ label: 'PDF', url: 'https://dl.acm.org/doi/full/10.1145/3706599.3720019' }],
   },
   {
@@ -327,6 +347,7 @@ export const publications: Publication[] = [
     year: 2024,
     focus: 'social',
     goal: 'understanding',
+    thumb: '/images/papers/does-more-advice-help.png',
     links: [{ label: 'PDF', url: 'https://dl.acm.org/doi/10.1145/3653708' }],
   },
   {
@@ -342,6 +363,7 @@ export const publications: Publication[] = [
     year: 2024,
     focus: 'cognition',
     goal: 'designing',
+    thumb: '/images/papers/pearl.svg',
     links: [{ label: 'PDF', url: 'https://arxiv.org/abs/2311.09180' }],
   },
   {
@@ -357,6 +379,7 @@ export const publications: Publication[] = [
     year: 2024,
     focus: 'cognition',
     goal: 'understanding',
+    thumb: '/images/papers/mix-and-match.png',
     links: [{ label: 'PDF', url: 'https://ojs.aaai.org/index.php/HCOMP/article/view/31604' }],
   },
   {
@@ -374,6 +397,7 @@ export const publications: Publication[] = [
     year: 2024,
     focus: 'cognition',
     goal: 'designing',
+    thumb: '/images/papers/behavior-aware-ai.png',
     links: [{ label: 'PDF', url: 'https://www.ijcai.org/proceedings/2024/344' }],
   },
   {
@@ -387,6 +411,7 @@ export const publications: Publication[] = [
     year: 2024,
     focus: 'cognition',
     goal: 'understanding',
+    thumb: '/images/papers/ai-pilot-cockpit.svg',
     links: [
       { label: 'PDF', url: 'https://www.tandfonline.com/doi/full/10.1080/10447318.2024.2301856' },
     ],
@@ -403,6 +428,7 @@ export const publications: Publication[] = [
     year: 2024,
     focus: 'social',
     goal: 'designing',
+    thumb: '/images/papers/devils-advocate.png',
     links: [{ label: 'PDF', url: 'https://dl.acm.org/doi/10.1145/3640543.3645199' }],
   },
   {
@@ -417,6 +443,7 @@ export const publications: Publication[] = [
     year: 2024,
     focus: 'cognition',
     goal: 'understanding',
+    thumb: '/images/papers/decoding-ai-nudge.png',
     links: [{ label: 'PDF', url: 'https://arxiv.org/abs/2401.05840' }],
   },
   {
@@ -432,6 +459,7 @@ export const publications: Publication[] = [
     year: 2023,
     focus: 'cognition',
     goal: 'designing',
+    thumb: '/images/papers/synthetic-data-generation.png',
     links: [{ label: 'PDF', url: 'https://arxiv.org/abs/2310.07849' }],
   },
   {
@@ -447,6 +475,7 @@ export const publications: Publication[] = [
     year: 2023,
     focus: 'cognition',
     goal: 'understanding',
+    thumb: '/images/papers/strategic-adversarial-attacks.png',
     links: [{ label: 'PDF', url: 'https://www.ijcai.org/proceedings/2023/337' }],
   },
   {
@@ -462,6 +491,7 @@ export const publications: Publication[] = [
     year: 2023,
     focus: 'social',
     goal: 'understanding',
+    thumb: '/images/papers/two-heads.png',
     links: [{ label: 'PDF', url: 'https://dl.acm.org/doi/10.1145/3544548.3581015' }],
   },
   {
@@ -477,6 +507,7 @@ export const publications: Publication[] = [
     focus: 'cognition',
     goal: 'understanding',
     award: 'Oral Presentation',
+    thumb: '/images/papers/modeling-human-trust.png',
     links: [{ label: 'PDF', url: 'https://doi.org/10.1609/aaai.v37i5.25748' }],
   },
   {
@@ -493,6 +524,7 @@ export const publications: Publication[] = [
     focus: 'social',
     goal: 'understanding',
     award: 'Best Paper Award',
+    thumb: '/images/papers/credibility-indicators-detection.png',
     links: [{ label: 'PDF', url: 'https://dl.acm.org/doi/10.1145/3555562' }],
   },
   {
@@ -508,6 +540,7 @@ export const publications: Publication[] = [
     year: 2022,
     focus: 'cognition',
     goal: 'designing',
+    thumb: '/images/papers/biased-language.png',
     links: [{ label: 'PDF', url: 'https://dl.acm.org/doi/10.1145/3514094.3534142' }],
   },
   {
@@ -522,6 +555,7 @@ export const publications: Publication[] = [
     year: 2022,
     focus: 'cognition',
     goal: 'understanding',
+    thumb: '/images/papers/will-you-accept.png',
     links: [{ label: 'PDF', url: 'https://doi.org/10.1145/3485447.3512240' }],
   },
   {
@@ -537,6 +571,7 @@ export const publications: Publication[] = [
     year: 2021,
     focus: 'cognition',
     goal: 'understanding',
+    thumb: '/images/papers/human-reliance-ml.jpg',
     links: [{ label: 'PDF', url: 'https://dl.acm.org/doi/10.1145/3411764.3445562' }],
   },
 ]
