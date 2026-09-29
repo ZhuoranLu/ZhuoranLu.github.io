@@ -184,7 +184,7 @@ export const publications: Publication[] = [
     id: 'pub-bayesian-cascade-credibility',
     title:
       'One AI Signal, Many Human Judgments: A Bayesian Cascade Analysis of AI-based Credibility Indicators in Online Information Spread',
-    url: 'https://arxiv.org/abs/2608.30311',
+    url: 'https://doi.org/10.1145/3834580.3838736',
     authors:
       '**Zhuoran Lu**, Weilong Wang, Yangyang Yu, Xinru Wang, Zhuoyan Li, Zhiwei Liu, and Sophia Ananiadou.',
     venue: 'HCOMP',
@@ -196,13 +196,13 @@ export const publications: Publication[] = [
     goal: 'understanding',
     award: 'Best Paper Honorable Mention',
     thumb: '/images/papers/bayesian-cascade-credibility.svg',
-    links: [{ label: 'PDF', url: 'https://arxiv.org/abs/2608.30311' }],
+    links: [{ label: 'PDF', url: 'https://doi.org/10.1145/3834580.3838736' }],
   },
   {
     id: 'pub-adaptive-ai-assistance-bandits',
     title:
       'Adaptive Selection of Effective AI Assistance in AI-assisted Decision Making Using Multi-Armed Bandits',
-    url: '',
+    url: 'https://doi.org/10.1145/3834580.3838738',
     authors: 'Zhuoyan Li, Ze Ma, Shishuang He, **Zhuoran Lu**, Ziang Xiao, and Ming Yin.',
     venue: 'HCOMP',
     venueGroup: 'ai',
@@ -213,13 +213,13 @@ export const publications: Publication[] = [
     goal: 'designing',
     award: 'Best Paper Honorable Mention',
     thumb: '/images/papers/adaptive-ai-assistance-bandits.svg',
-    links: [],
+    links: [{ label: 'PDF', url: 'https://doi.org/10.1145/3834580.3838738' }],
   },
   {
     id: 'pub-xagen',
     title:
       'XAgen: Designing Explainability Support for Failure Detection and Correction in Multi-Agent Workflows',
-    url: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6968221',
+    url: 'https://doi.org/10.1016/j.daai.2026.100105',
     authors:
       'Xinru Wang, **Zhuoran Lu**, Shuai Ma, Ming Yin, Eunyee Koh, and Mustafa Doga Dogan.',
     venue: 'DAAI',
@@ -229,7 +229,7 @@ export const publications: Publication[] = [
     focus: 'cognition',
     goal: 'designing',
     thumb: '/images/papers/xagen.svg',
-    links: [{ label: 'PDF', url: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6968221' }],
+    links: [{ label: 'PDF', url: 'https://doi.org/10.1016/j.daai.2026.100105' }],
   },
   {
     id: 'pub-llm-adversarial-risks-interventions',
@@ -250,7 +250,7 @@ export const publications: Publication[] = [
   {
     id: 'pub-human-llm-feature-engineering',
     title: 'Human-LLM Collaborative Feature Engineering for Tabular Data',
-    url: 'https://arxiv.org/abs/2601.21060',
+    url: 'https://openreview.net/forum?id=ohVOD2ixBH',
     authors:
       'Zhuoyan Li, Aditya Bansal, Jinzhao Li, Shishuang He, **Zhuoran Lu**, Mutian Zhang, Qin Liu, Yiwei Yang, Swati Jain, Ming Yin, and Yunyao Li.',
     venue: 'ICLR',
@@ -261,7 +261,7 @@ export const publications: Publication[] = [
     focus: 'cognition',
     goal: 'designing',
     thumb: '/images/papers/human-llm-feature-engineering.png',
-    links: [{ label: 'PDF', url: 'https://arxiv.org/abs/2601.21060' }],
+    links: [{ label: 'PDF', url: 'https://openreview.net/forum?id=ohVOD2ixBH' }],
   },
   {
     id: 'pub-from-text-to-trust',
@@ -304,7 +304,7 @@ export const publications: Publication[] = [
     id: 'pub-whatelse',
     title:
       'WhatELSE: Shaping Narrative Space at Configurable Level of Abstraction for AI-bridged Interactive Storytelling.',
-    url: 'https://arxiv.org/abs/2502.18641',
+    url: 'https://doi.org/10.1145/3706598.3713363',
     authors: '**Zhuoran Lu**, Qian Zhou, and Yi Wang.',
     venue: 'CHI',
     venueGroup: 'hci',
@@ -314,7 +314,7 @@ export const publications: Publication[] = [
     focus: 'cognition',
     goal: 'designing',
     thumb: '/images/papers/whatelse.svg',
-    links: [{ label: 'PDF', url: 'https://arxiv.org/abs/2502.18641' }],
+    links: [{ label: 'PDF', url: 'https://doi.org/10.1145/3706598.3713363' }],
   },
   {
     id: 'pub-llm-adversarial-lbw',
@@ -354,7 +354,7 @@ export const publications: Publication[] = [
     id: 'pub-pearl',
     title:
       'PEARL: Personalizing Large Language Model Writing Assistants with Generation-Calibrated Retrievers',
-    url: 'https://arxiv.org/abs/2311.09180',
+    url: 'https://aclanthology.org/2024.customnlp4u-1.16/',
     authors:
       'Sheshera Mysore, **Zhuoran Lu**, Mengting Wan, Longqi Yang, Steve Menezes, Tina Baghaee, Emmanuel Barajas Gonzalez, Jennifer Neville, Tara Safavi.',
     venue: 'CustomNLP4U @ EMNLP',
@@ -364,7 +364,7 @@ export const publications: Publication[] = [
     focus: 'cognition',
     goal: 'designing',
     thumb: '/images/papers/pearl.svg',
-    links: [{ label: 'PDF', url: 'https://arxiv.org/abs/2311.09180' }],
+    links: [{ label: 'PDF', url: 'https://aclanthology.org/2024.customnlp4u-1.16/' }],
   },
   {
     id: 'pub-mix-and-match',
@@ -435,7 +435,7 @@ export const publications: Publication[] = [
     id: 'pub-decoding-ai-nudge',
     title:
       "Decoding AI's Nudge: A Unified Framework to Predict Human Behavior in AI-assisted Decision Making",
-    url: 'https://arxiv.org/abs/2401.05840',
+    url: 'https://doi.org/10.1609/aaai.v38i9.28872',
     authors: 'Zhuoyan Li, **Zhuoran Lu**, and Ming Yin.',
     venue: 'AAAI',
     venueGroup: 'ai',
@@ -444,13 +444,13 @@ export const publications: Publication[] = [
     focus: 'cognition',
     goal: 'understanding',
     thumb: '/images/papers/decoding-ai-nudge.png',
-    links: [{ label: 'PDF', url: 'https://arxiv.org/abs/2401.05840' }],
+    links: [{ label: 'PDF', url: 'https://doi.org/10.1609/aaai.v38i9.28872' }],
   },
   {
     id: 'pub-synthetic-data-generation',
     title:
       'Synthetic Data Generation with Large Language Models for Text Classification: Potential and Limitations',
-    url: 'https://arxiv.org/abs/2310.07849',
+    url: 'https://aclanthology.org/2023.emnlp-main.647/',
     authors: 'Zhuoyan Li, Hangxiao Zhu, **Zhuoran Lu**, and Ming Yin.',
     venue: 'EMNLP',
     venueGroup: 'ai',
@@ -460,7 +460,7 @@ export const publications: Publication[] = [
     focus: 'cognition',
     goal: 'designing',
     thumb: '/images/papers/synthetic-data-generation.png',
-    links: [{ label: 'PDF', url: 'https://arxiv.org/abs/2310.07849' }],
+    links: [{ label: 'PDF', url: 'https://aclanthology.org/2023.emnlp-main.647/' }],
   },
   {
     id: 'pub-strategic-adversarial-attacks',

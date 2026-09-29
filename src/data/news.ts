@@ -4,7 +4,7 @@ export const news: NewsItem[] = [
   {
     id: 'n-2026-09-hcomp',
     date: '2026.09',
-    text: 'Both of our HCOMP 2026 papers — [One AI Signal, Many Human Judgments](https://arxiv.org/abs/2608.30311) and Adaptive Selection of Effective AI Assistance — received the Best Paper Honorable Mention!',
+    text: 'Both of our HCOMP 2026 papers — [One AI Signal, Many Human Judgments](https://doi.org/10.1145/3834580.3838736) and [Adaptive Selection of Effective AI Assistance](https://doi.org/10.1145/3834580.3838738) — received the Best Paper Honorable Mention!',
   },
   {
     id: 'n-2026-04',
