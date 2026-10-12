@@ -6,8 +6,7 @@ import type { Publication } from '@/types'
 export const publications: Publication[] = [
   {
     id: 'pub-single-user-assistants-others',
-    title:
-      'When Single-User-Oriented LLM-based Assistants Involve Others: A Scoping Review of Pathways, Risks, and Responses',
+    title: 'How LLM Assistants Come to Involve People Beyond Their User',
     url: 'https://arxiv.org/abs/2609.14062',
     authors: 'Yulin Chen, Yang Zhan, **Zhuoran Lu**†, and Qiao Jin.',
     venue: 'arXiv',
