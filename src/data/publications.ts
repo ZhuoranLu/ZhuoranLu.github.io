@@ -5,6 +5,21 @@ import type { Publication } from '@/types'
 // The three papers that linked to missing ../files/*.pdf have those links dropped.
 export const publications: Publication[] = [
   {
+    id: 'pub-single-user-assistants-others',
+    title:
+      'When Single-User-Oriented LLM-based Assistants Involve Others: A Scoping Review of Pathways, Risks, and Responses',
+    url: 'https://arxiv.org/abs/2609.14062',
+    authors: 'Yulin Chen, Yang Zhan, **Zhuoran Lu**†, and Qiao Jin.',
+    venue: 'arXiv',
+    venueGroup: 'preprint',
+    venueFull: 'Preprint, 2026.',
+    year: 2026,
+    focus: 'social',
+    goal: 'understanding',
+    thumb: '/images/papers/single-user-assistants-others.svg',
+    links: [{ label: 'PDF', url: 'https://arxiv.org/abs/2609.14062' }],
+  },
+  {
     id: 'pub-autoredtrader',
     title:
       'AutoRedTrader: Autonomous Red Teaming of Trading Agents through Synthetic Misinformation Injection',

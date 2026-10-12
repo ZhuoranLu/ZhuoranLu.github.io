@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" font-family="Helvetica, Arial, sans-serif">
+  <style>.cap{font-size:18px;font-weight:700;fill:#222;text-anchor:middle}</style>
+  <rect width="240" height="240" fill="#fff"/>
+  <g id="art">
+  <!-- primary user -->
+  <g transform="translate(44,84)">
+    <circle cx="0" cy="-14" r="14" fill="#F2A541"/>
+    <path d="M-26 30 Q0 -8 26 30 Z" fill="#F2A541"/>
+  </g>
+  <!-- assistant -->
+  <g transform="translate(120,76)">
+    <rect x="-26" y="-18" width="52" height="42" rx="10" fill="#4A7BB7"/>
+    <line x1="0" y1="-18" x2="0" y2="-28" stroke="#4A7BB7" stroke-width="3"/><circle cx="0" cy="-30" r="4" fill="#F2A541"/>
+    <circle cx="-10" cy="0" r="5" fill="#fff"/><circle cx="10" cy="0" r="5" fill="#fff"/>
+    <path d="M-9 12 Q0 16 9 12" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+  <!-- link user <-> assistant -->
+  <line x1="74" y1="80" x2="90" y2="80" stroke="#555" stroke-width="3" stroke-linecap="round"/>
+  <!-- others reached indirectly -->
+  <g transform="translate(196,56)">
+    <circle cx="0" cy="-10" r="10" fill="#B3B3B3"/>
+    <path d="M-19 22 Q0 -6 19 22 Z" fill="#B3B3B3"/>
+  </g>
+  <g transform="translate(200,124)">
+    <circle cx="0" cy="-10" r="10" fill="#B3B3B3"/>
+    <path d="M-19 22 Q0 -6 19 22 Z" fill="#B3B3B3"/>
+  </g>
+  <!-- dashed pathways to others -->
+  <path d="M148 66 C162 58 170 54 178 50" stroke="#999" stroke-width="3" fill="none" stroke-dasharray="5 4"/>
+  <path d="M172 44 L180 49 L173 55" stroke="#999" stroke-width="3" fill="none" stroke-linejoin="round"/>
+  <path d="M148 90 C162 100 170 106 178 112" stroke="#999" stroke-width="3" fill="none" stroke-dasharray="5 4"/>
+  <path d="M171 106 L180 113 L170 116" stroke="#999" stroke-width="3" fill="none" stroke-linejoin="round"/>
+  <!-- risk: warning triangle -->
+  <g transform="translate(120,146)">
+    <path d="M0 -16 L18 14 L-18 14 Z" fill="#FBEAEA" stroke="#D9534F" stroke-width="3" stroke-linejoin="round"/>
+    <line x1="0" y1="-4" x2="0" y2="5" stroke="#D9534F" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="0" cy="10" r="1.8" fill="#D9534F"/>
+  </g>
+  </g>
+  <text x="120" y="207" class="cap">Assistants</text>
+  <text x="120" y="228" class="cap">Involving Others</text>
+</svg>
