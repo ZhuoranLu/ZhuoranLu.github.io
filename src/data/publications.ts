@@ -35,6 +35,21 @@ export const publications: Publication[] = [
     links: [{ label: 'PDF', url: 'https://arxiv.org/abs/2605.09185' }],
   },
   {
+    id: 'pub-likelihood-not-authorship',
+    title:
+      'Likelihood Is Not Authorship: Can We Reliably Measure Human Contribution in AI-Assisted Writing?',
+    url: 'https://arxiv.org/abs/2610.19767',
+    authors: 'Hasan Amin, **Zhuoran Lu**, and Ming Yin.',
+    venue: 'arXiv',
+    venueGroup: 'preprint',
+    venueFull: 'Preprint, 2026.',
+    year: 2026,
+    focus: 'cognition',
+    goal: 'understanding',
+    thumb: '/images/papers/likelihood-not-authorship.svg',
+    links: [{ label: 'PDF', url: 'https://arxiv.org/abs/2610.19767' }],
+  },
+  {
     id: 'pub-skillvetbench',
     title: 'Benchmarking Security Risk Detection and Verification in Open Agentic Skill Ecosystems',
     url: 'https://arxiv.org/abs/2606.00925',
