@@ -82,7 +82,7 @@ export const publications: Publication[] = [
   {
     id: 'pub-digital-privacy-end-of-life-care',
     title:
-      'Digital Privacy in End-of-Life Care: A Qualitative Study of Terminally Ill Patients, Family Caregivers, and Clinicians',
+      'When Care Expands and Control Declines: Understanding Digital Privacy in End-of-Life Care',
     url: '',
     authors: 'Yibo Meng, Bingyi Liu, Lionel Z. Wang, and **Zhuoran Lu**†.',
     venue: 'IEEE S&P',
