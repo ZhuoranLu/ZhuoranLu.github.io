@@ -45,7 +45,7 @@ export function ResearchMap({ publications, visible, selection, onSelectionChang
               return (
                 <button key={item.id} type="button" aria-pressed={active} aria-controls={`${mapId}-results`}
                   onClick={() => onSelectionChange({ foundation: active ? null : item.id, domain })}
-                  className={`min-w-0 rounded-xl border bg-white px-1.5 py-4 text-center transition-colors sm:px-3 ${active ? 'border-brand-primary ring-2 ring-brand-primary' : 'border-brand-border hover:border-brand-primary'}`}>
+                  className={`min-w-0 rounded-xl border bg-white px-1 py-4 text-center transition-colors sm:px-3 ${active ? 'border-brand-primary ring-2 ring-brand-primary' : 'border-brand-border hover:border-brand-primary'}`}>
                   <span aria-hidden="true" className="mx-auto mb-3 block h-2.5 w-2.5 rounded-full" style={{ backgroundColor: item.color }} />
                   <span className="block break-words text-[11px] font-semibold text-brand-heading sm:text-base">{item.label}</span>
                   <span className="mt-2 hidden min-h-10 text-xs leading-5 text-brand-muted sm:block">{item.description}</span>
@@ -81,7 +81,7 @@ export function ResearchMap({ publications, visible, selection, onSelectionChang
                 <button key={item.id} type="button" aria-pressed={active} aria-controls={`${mapId}-results`} title={item.description}
                   onClick={() => onSelectionChange({ foundation, domain: active ? null : item.id })}
                   className={`min-w-0 rounded-xl border px-2 py-3 text-left transition-colors sm:px-3 ${active ? 'border-brand-primary bg-white ring-2 ring-brand-primary' : total ? 'border-brand-border bg-white hover:border-brand-primary' : 'border-dashed border-brand-border hover:bg-white'}`}>
-                  <span className="block break-words text-xs font-semibold text-brand-heading">{item.label}</span>
+                  <span className="block break-words text-[11px] font-semibold text-brand-heading sm:text-xs">{item.label}</span>
                   <span className="mt-1.5 block text-[10px] leading-4 text-brand-muted">{total ? paperCount(count) : 'No papers yet'}</span>
                 </button>
               )
@@ -99,7 +99,7 @@ export function ResearchMap({ publications, visible, selection, onSelectionChang
           <p role="status" className="text-sm font-semibold text-brand-heading">
             {hasSelection ? `${selectionLabel} · ${paperCount(selectedPapers.length)}` : 'Choose an area to explore its papers.'}
           </p>
-          {hasSelection && <button type="button" className="rounded px-2 py-2 text-sm text-brand-primary hover:underline"
+          {hasSelection && <button type="button" className="rounded px-2 py-2 text-sm text-brand-heading hover:underline"
             onClick={() => onSelectionChange({ foundation: null, domain: null })}>Clear map selection</button>}
         </div>
         {hasSelection && (selectedPapers.length
