@@ -1,72 +1,53 @@
+# Zhuoran Lu's personal website
 
-<h1 align="center">
-AcadHomepage
-</h1>
+An academic homepage built with React, TypeScript, Vite, and Tailwind CSS.
 
-<div align="center">
+[中文维护说明](docs/README-zh.md)
 
-[![](https://img.shields.io/github/stars/RayeRen/acad-homepage.github.io)](https://github.com/RayeRen/acad-homepage.github.io)
-[![](https://img.shields.io/github/forks/RayeRen/acad-homepage.github.io)](https://github.com/RayeRen/acad-homepage.github.io)
-[![](https://img.shields.io/github/issues/RayeRen/acad-homepage.github.io)](https://github.com/RayeRen/acad-homepage.github.io)
-[![](https://img.shields.io/github/license/RayeRen/acad-homepage.github.io)](https://github.com/RayeRen/acad-homepage.github.io/blob/main/LICENSE)  | [中文文档](./docs/README-zh.md) 
-</div>
+## Local development
 
-<p align="center">A Modern and Responsive Academic Personal Homepage</p>
+Use Node.js 22.12 or newer and npm.
 
-<p align="center">
-    <br>
-    <img src="docs/screenshot.png" width="100%"/>
-    <br>
-</p>
+```sh
+npm ci
+npm run dev
+```
 
-Some examples:
-- [Demo Page](https://rayeren.github.io/acad-homepage.github.io/)
-- [Personal Homepage of the author](https://rayeren.github.io/)
+Open the local URL printed by Vite. To inspect a production build:
 
-## Key Features
-- **Automatically update google scholar citations**: using the google scholar crawler and github action, this REPO can update the author citations and publication citations automatically.
-- **Support Google analytics**: you can trace the traffics of your homepage by easy configuration.
-- **Responsive**: this homepage automatically adjust for different screen sizes and viewports.
-- **Beautiful and Simple Design**: this homepage is beautiful and simple, which is very suitable for academic personal homepage.
-- **SEO**: search Engine Optimization (SEO) helps search engines find the information you publish on your homepage easily, then rank it against similar websites.
+```sh
+npm run check
+npm run preview
+```
 
-## Quick Start
+`npm test` runs behavior and content-integrity checks. `npm run check` runs those checks, TypeScript checking, and the production build. Generated output lives in `dist/` and is not committed.
 
-1. Fork this REPO and rename to `USERNAME.github.io`, where `USERNAME` is your github USERNAME.
-1. Configure the google scholar citation crawler:
-    1. Find your google scholar ID in the url of your google scholar page (e.g., https://scholar.google.com/citations?user=SCHOLAR_ID), where `SCHOLAR_ID` is your google scholar ID.
-    1. Set GOOGLE_SCHOLAR_ID variable to your google scholar ID in `Settings -> Secrets -> Actions -> New repository secret` of the REPO website with `name=GOOGLE_SCHOLAR_ID` and `value=SCHOLAR_ID`.
-    1. Click the `Action` of the REPO website and enable the workflows by clicking *"I understand my workflows, go ahead and enable them"*. This github action will generate google scholar citation stats data `gs_data.json` in `google-scholar-stats` branch of your REPO. When you update your main branch, this action will be triggered. This action will also be trigger 08:00 UTC everyday.
-1. Generate favicon using [favicon-generator](https://redketchup.io/favicon-generator) and download all generated files to `REPO/images`.
-1. Modify the configuration of your homepage `_config.yml`:
-    1. `title`: the title of your homepage
-    1. `description`: the description of your homepage
-    1. `repository`: USER_NAME/REPO_NAME  
-    1. `google_analytics_id` (optional): google analytics ID
-    1. SEO Related keys (optional): get these keys from search engine consoles (e.g. Google, Bing and Baidu) and paste here.
-    1. `author`: the author information of this homepage, including some other websites, emails, city and univeristy.
-    1. More configuration details are described in the comments.
-1. Add your homepage content in `_pages/about.md`.
-    1. You can use html+markdown syntax just same as jekyll.
-    1. You can use a `<span>` tag with class `show_paper_citations` and attribute `data` to display the citations of your paper. Set the data to the google scholar paper ID. For
-        ```html
-        <span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span>
-        ``` 
-        > Q: How to get the google scholar paper ID?   
-        > A: Enter your google scholar homepage and click the paper name. Then you can see the paper ID from `citation_for_view=XXXX`, where `XXXX` is the required paper ID.
-1. Your page will be published at `https://USERNAME.github.io`.
+## Updating content
 
-## Debug Locally
+`src/data/` is the sole source of website content. Edit these files directly:
 
-1. Clone your REPO to local using `git clone`.
-1. Install Jekyll building environment, including `Ruby`, `RubyGems`, `GCC` and `Make` following [the installation guide](https://jekyllrb.com/docs/installation/#requirements).
-1. Run `bash run_server.sh` to start Jekyll livereload server.
-1. Open http://127.0.0.1:4000 in your browser.
-1. If you change the source code of the website, the livereload server will automatically refresh.
-1. When you finish the modification of your homepage, `commit` your changings and `push` to your remote REPO using `git` command.
+| Content | Location |
+| --- | --- |
+| Profile, biography, research interests, CV link | `src/data/profile.ts` |
+| Papers, authors, awards, thumbnails, display order | `src/data/publications.ts` |
+| Venue groups and badge colors | `src/data/venues.ts` |
+| Filter labels | `src/data/filters.ts` |
+| News | `src/data/news.ts` |
+| Experience and service | `src/data/experiences.ts`, `src/data/service.ts` |
+| Navigation | `src/data/nav.ts` |
 
-# Acknowledges
+Publication order follows the array; it is not automatically sorted. Give each paper a unique ID, choose a venue from the venue configuration, and use arrays for `focus` and `goal`, even for a single tag. Omit `url` when no public link is available; the title is the link when one is provided. Authors support `**bold**`, contribution markers, and the small inline-markup subset in `src/lib/inline.tsx`.
 
-- AcadHomepage incorporates Font Awesome, which is distributed under the terms of the SIL OFL 1.1 and MIT License.
-- AcadHomepage is influenced by the github repo [mmistakes/minimal-mistakes](https://github.com/mmistakes/minimal-mistakes), which is distributed under the MIT License.
-- AcadHomepage is influenced by the github repo [academicpages/academicpages.github.io](https://github.com/academicpages/academicpages.github.io), which is distributed under the MIT License.
+Place public files in `public/`. For example, `public/images/papers/example.svg` is served at `/images/papers/example.svg`. To update the CV, add the PDF and change `profile.cvUrl`. Keep existing public filenames available so previously shared links continue to work. Historic PDFs and images outside `public/` are retained as source assets; Vite does not publish them automatically.
+
+## Structure and deployment
+
+`src/pages/` composes the homepage from `src/components/`. Publication filtering lives in `src/lib/`; content and behavior checks are colocated with the relevant code. Styles and theme tokens live in `src/index.css` and `tailwind.config.ts`.
+
+GitHub Actions checks pull requests. Pushes to `master`, or manual runs of the deployment workflow, check and build the site and deploy `dist/` to GitHub Pages. Development branches are not automatically deployed. The site is served at the domain root, with hash routing retained.
+
+The previous Jekyll implementation is available in Git history. It is no longer a content source or a supported build path; Ruby and the old Scholar crawler are not required.
+
+## Acknowledgments
+
+This site originated from [AcadHomepage](https://github.com/RayeRen/acad-homepage.github.io), influenced by [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes) and [Academic Pages](https://github.com/academicpages/academicpages.github.io). The original MIT license and attribution are preserved in `LICENSE`.
