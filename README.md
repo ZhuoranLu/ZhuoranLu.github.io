@@ -32,11 +32,14 @@ npm run preview
 | Papers, authors, awards, thumbnails, display order | `src/data/publications.ts` |
 | Venue groups and badge colors | `src/data/venues.ts` |
 | Filter labels | `src/data/filters.ts` |
+| Research Map foundations, domains, and paper assignments | `src/data/research.ts` |
 | News | `src/data/news.ts` |
 | Experience and service | `src/data/experiences.ts`, `src/data/service.ts` |
 | Navigation | `src/data/nav.ts` |
 
 Publication order follows the array; it is not automatically sorted. Give each paper a unique ID, choose a venue from the venue configuration, and use arrays for `focus` and `goal`, even for a single tag. Omit `url` when no public link is available; the title is the link when one is provided. Authors support `**bold**`, contribution markers, and the small inline-markup subset in `src/lib/inline.tsx`.
+
+The publication section defaults to List. Research Map separates Human / AI / Interaction foundations from application domains. Selecting one of each shows their intersection, within the existing publication filters; switching views preserves selections. Every paper needs a `RESEARCH_PLACEMENTS` entry keyed by its ID, with at least one foundation and zero or more domains. The initial assignments are an editorial draft for author review, not inferred similarity or citation relationships. A task used in an experiment does not by itself establish a domain. Education remains visible as an empty domain. Integrity checks catch missing or stale assignments and invalid tags.
 
 Place public files in `public/`. For example, `public/images/papers/example.svg` is served at `/images/papers/example.svg`. To update the CV, add the PDF and change `profile.cvUrl`. Keep existing public filenames available so previously shared links continue to work. Historic PDFs and images outside `public/` are retained as source assets; Vite does not publish them automatically.
 

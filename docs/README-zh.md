@@ -30,11 +30,14 @@ npm run preview
 | 论文、作者、奖项、缩略图、展示顺序 | `src/data/publications.ts` |
 | Venue 分类与徽章颜色 | `src/data/venues.ts` |
 | 筛选标签 | `src/data/filters.ts` |
+| Research Map 主线、领域与论文归类 | `src/data/research.ts` |
 | 新闻 | `src/data/news.ts` |
 | 经历与学术服务 | `src/data/experiences.ts`、`src/data/service.ts` |
 | 导航 | `src/data/nav.ts` |
 
 论文按数组顺序展示，不自动排序。每篇论文使用唯一 ID，venue 从配置表选择，`focus` 和 `goal` 即使只有一个标签也使用数组。没有公开链接时省略 `url`；有链接时点击标题即可访问。作者支持 `**加粗**`、贡献标记，以及 `src/lib/inline.tsx` 中定义的少量行内语法。
+
+论文区默认使用 List。Research Map 将 Human / AI / Interaction 基础研究主线与垂直应用领域分开；分别选中一项可查看交集，并继续受已有论文筛选条件约束，切换视图保留选择。每篇论文需在 `RESEARCH_PLACEMENTS` 中以 ID 登记至少一条主线和零个或多个领域。当前归类是待作者审阅的编辑初稿，不表示推断的相似度或引用关系；仅作为实验任务的场景不自动认定为应用领域。Education 保留为空节点。完整性检查会发现缺失或失效的论文 ID 及非法标签。
 
 公开资源放在 `public/`：例如 `public/images/papers/example.svg` 对应 `/images/papers/example.svg`。更新 CV 时添加 PDF，再修改 `profile.cvUrl`。保留已有公开文件名，避免以前分享的链接失效。`public/` 之外的历史 PDF、图片作为源资产保留，Vite 不会自动发布它们。
 
