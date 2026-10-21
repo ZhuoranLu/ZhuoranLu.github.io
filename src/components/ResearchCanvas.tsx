@@ -78,7 +78,7 @@ export default function ResearchCanvas({ graph, activePaper, onSelect, onPaper }
   return (
     <ReactFlow<ResearchNode> nodes={decoratedNodes} edges={edges} onNodesChange={onNodesChange}
       onInit={setFlow} nodeTypes={nodeTypes} fitView fitViewOptions={{ padding: 0.14, maxZoom: 1 }}
-      minZoom={0.35} maxZoom={1.8} nodesConnectable={false} nodesFocusable={false} edgesFocusable={false}
+      minZoom={0.1} maxZoom={1.8} nodesConnectable={false} nodesFocusable={false} edgesFocusable={false}
       elementsSelectable={false} deleteKeyCode={null} zoomOnScroll={false} panOnScroll={false}
       preventScrolling={false} zoomOnDoubleClick={false}
       aria-label="Interactive research map. Drag nodes or the background; use zoom controls to explore.">

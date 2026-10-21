@@ -54,14 +54,16 @@ describe('research map selection lifecycle', () => {
     expect(host.querySelector('aside')).toBeNull()
   })
 
-  it('does not reopen a paper removed from the current page by a responsive layout change', async () => {
+  it('keeps all papers and the selected details available across responsive layout changes', async () => {
     await render(publications)
     await openPaper(humanPapers[2].id)
     expect(host.querySelector('aside')).not.toBeNull()
     await act(async () => { media.matches = true; mediaChange() })
-    expect(host.querySelector('aside')).toBeNull()
+    expect(host.querySelector('aside')).not.toBeNull()
+    expect(host.querySelectorAll('[data-paper]')).toHaveLength(humanPapers.length)
     await act(async () => { media.matches = false; mediaChange() })
-    expect(host.querySelector('aside')).toBeNull()
+    expect(host.querySelector('aside')).not.toBeNull()
+    expect(host.querySelectorAll('[data-paper]')).toHaveLength(humanPapers.length)
   })
 
   it('hands off focus when a topic expands and returns it when paper details close', async () => {

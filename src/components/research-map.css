@@ -2,8 +2,8 @@
 .research-toolbar { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding: 18px 20px; border-bottom: 1px solid #e3eaf0; background: #fff; }
 .research-toolbar h3 { font-size: 17px; letter-spacing: -.03em; font-weight: 650; }
 .research-toolbar p { font-size: 12px; color: #5b6c7d; margin-top: 3px; }
-.research-toolbar button, .research-pagination button { font-size: 12px; padding: 9px 12px; border: 1px solid #dce4ea; border-radius: 8px; background: #fff; color: #29435a; }
-.research-toolbar button:hover, .research-pagination button:hover:not(:disabled) { background: #edf3f7; }
+.research-toolbar button { font-size: 12px; padding: 9px 12px; border: 1px solid #dce4ea; border-radius: 8px; background: #fff; color: #29435a; }
+.research-toolbar button:hover { background: #edf3f7; }
 .research-toolbar select { max-width: 100%; min-height: 40px; font-size: 12px; background: #f5f8fa; color: #29435a; border: 1px solid #dce4ea; border-radius: 8px; padding: 8px; }
 .research-stage { height: 560px; position: relative; background: radial-gradient(ellipse at 15% 30%, #f5e9e55c, transparent 40%), radial-gradient(ellipse at 85% 40%, #e0f0ed80, transparent 45%), #f7fafc; }
 .research-stage.is-expanded { height: 640px; }
@@ -42,8 +42,6 @@
 .research-stage .react-flow__attribution { font-size: 9px; background: #ffffffbb; }
 .research-stage .react-flow__attribution a { color: #536b80; }
 .research-map-foot { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; padding: 12px 20px; background: #fff; border-top: 1px solid #e3eaf0; font-size: 11px; color: #536b80; }
-.research-pagination { display: flex; align-items: center; gap: 8px; }
-.research-pagination button:disabled { opacity: .4; cursor: not-allowed; }
 .research-inspector { position: absolute; z-index: 10; right: 12px; top: 12px; bottom: 12px; width: 300px; max-width: calc(100% - 24px); overflow-y: auto; border: 1px solid #dce4ea; border-radius: 14px; box-shadow: 0 10px 40px #243e5620; background: #fff; padding: 20px; }
 .research-inspector h4 a { color: #29435a; }
 .research-empty { position: absolute; left: 15%; right: 15%; top: 47%; text-align: center; color: #536b80; font-size: 14px; pointer-events: none; }

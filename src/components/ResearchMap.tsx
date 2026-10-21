@@ -17,11 +17,10 @@ interface ResearchMapProps {
 }
 
 export function ResearchMap({ publications, visible, selection, onSelectionChange }: ResearchMapProps) {
-  const [page, setPage] = useState(0)
   const [compact, setCompact] = useState(false)
   useEffect(() => {
     const media = window.matchMedia('(max-width: 639px)')
-    const update = () => { setCompact(media.matches); setPage(0) }
+    const update = () => setCompact(media.matches)
     update()
     media.addEventListener('change', update)
     return () => media.removeEventListener('change', update)
@@ -32,9 +31,8 @@ export function ResearchMap({ publications, visible, selection, onSelectionChang
   const foundationPicker = useRef<HTMLSelectElement>(null)
   const restoreTopicFocus = useRef(false)
   const paperTrigger = useRef<HTMLElement | null>(null)
-  const graph = useMemo(() => buildResearchGraph(visible, selection, page, compact), [visible, selection, page, compact])
-  const pagePapers = graph.papers.slice(graph.page * graph.pageSize, (graph.page + 1) * graph.pageSize)
-  const selectedPaper = pagePapers.find((paper) => paper.id === activePaper)
+  const graph = useMemo(() => buildResearchGraph(visible, selection, compact), [visible, selection, compact])
+  const selectedPaper = graph.papers.find((paper) => paper.id === activePaper)
   useEffect(() => {
     if (activePaper && !selectedPaper) setActivePaper(null)
   }, [activePaper, selectedPaper])
@@ -57,18 +55,18 @@ export function ResearchMap({ publications, visible, selection, onSelectionChang
 
   function select(next: ResearchSelection, restoreFocus = false) {
     restoreTopicFocus.current = restoreFocus
-    setPage(0)
     setActivePaper(null)
     onSelectionChange(next)
-  }
-  function changePage(next: number) {
-    setPage(next)
-    setActivePaper(null)
   }
 
   function closeDetails() {
     setActivePaper(null)
     paperTrigger.current?.focus({ preventScroll: true })
+  }
+
+  function openPaper(id: string) {
+    paperTrigger.current = document.activeElement instanceof HTMLElement ? document.activeElement : null
+    setActivePaper(id)
   }
 
   return (
@@ -89,17 +87,19 @@ export function ResearchMap({ publications, visible, selection, onSelectionChang
             {RESEARCH_DOMAINS.map((item) => <option key={item.id} value={item.id}>{item.label}</option>)}
           </select>
           <span role="status" className="self-center text-xs text-brand-muted">
-            {graph.expanded ? `${graph.papers.length} matching ${graph.papers.length === 1 ? 'paper' : 'papers'}` : 'Click a node to explore'}
+            {graph.expanded ? `${graph.papers.length} ${graph.papers.length === 1 ? 'paper' : 'papers'} · all shown` : 'Click a node to explore'}
           </span>
+          {graph.expanded && graph.papers.length > 0 && <select aria-label="Find a paper" className="w-full" value={selectedPaper?.id ?? ''}
+            onChange={(event) => { if (event.target.value) openPaper(event.target.value) }}>
+            <option value="">Find a paper…</option>
+            {graph.papers.map((paper) => <option key={paper.id} value={paper.id}>{paper.title}</option>)}
+          </select>}
         </div>
       </div>
       <div className={`research-stage ${graph.expanded ? 'is-expanded' : ''}`}>
         {(!graph.expanded || graph.papers.length > 0) && <Suspense fallback={<p className="p-6 text-sm text-brand-muted">Loading interactive map…</p>}>
           <ResearchCanvas graph={graph} activePaper={selectedPaper?.id ?? null} onSelect={(next) => select(next, true)}
-            onPaper={(paper) => {
-              paperTrigger.current = document.activeElement instanceof HTMLElement ? document.activeElement : null
-              setActivePaper(paper.id)
-            }} />
+            onPaper={(paper) => openPaper(paper.id)} />
         </Suspense>}
         {graph.expanded && graph.papers.length === 0 && <div className="research-empty" role="status">
           <p className="mb-2 font-semibold text-brand-heading">{selection.domain && !domainHasPapers ? 'No papers yet' : 'No matching papers'}</p>
@@ -126,11 +126,7 @@ export function ResearchMap({ publications, visible, selection, onSelectionChang
       </div>
       <div className="research-map-foot">
         <span>Drag to explore · + / − to zoom · hover to trace connections</span>
-        {graph.expanded && graph.pageCount > 1 && <div className="research-pagination">
-          <button type="button" aria-label="Previous papers" disabled={graph.page === 0} onClick={() => changePage(graph.page - 1)}>←</button>
-          <span>Page {graph.page + 1} / {graph.pageCount}</span>
-          <button type="button" aria-label="Next papers" disabled={graph.page === graph.pageCount - 1} onClick={() => changePage(graph.page + 1)}>→</button>
-        </div>}
+
       </div>
     </div>
   )

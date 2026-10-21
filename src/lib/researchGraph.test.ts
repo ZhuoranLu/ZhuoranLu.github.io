@@ -22,23 +22,24 @@ describe('interactive research graph', () => {
     expect(graph.edges.some((edge) => edge.target === 'domain:education')).toBe(false)
   })
 
-  it('exposes all matching papers exactly once across pages in original order on desktop and mobile', () => {
-    for (const compact of [false, true]) {
-      const selection = { foundation: 'human' as const, domain: null }
-      const initial = buildResearchGraph(publications, selection, 0, compact)
-      const displayed = Array.from({ length: initial.pageCount }, (_, page) =>
-        buildResearchGraph(publications, selection, page, compact).nodes.filter((node) => node.data.kind === 'paper').map((node) => node.id)).flat()
-      expect(displayed).toEqual(selectResearchPapers(publications, selection).map((paper) => paper.id))
+  it('puts every matching paper on one canvas, in order, for every foundation on desktop and mobile', () => {
+    for (const compact of [false, true]) for (const foundation of RESEARCH_FOUNDATIONS) {
+      const selection = { foundation: foundation.id, domain: null }
+      const graph = buildResearchGraph(publications, selection, compact)
+      const displayed = graph.nodes.filter((node) => node.data.kind === 'paper').map((node) => node.id)
+      const matching = selectResearchPapers(publications, selection).map((paper) => paper.id)
+      expect(displayed).toEqual(matching)
+      expect(displayed.length).toBeGreaterThan(6)
       expect(new Set(displayed).size).toBe(displayed.length)
+      expect(graph.edges.map((edge) => edge.target)).toEqual(matching)
     }
   })
 
-  it('clamps stale pages after filtering and handles empty intersections', () => {
-    expect(buildResearchGraph([publications[0]], { foundation: 'human', domain: null }, 99).page).toBe(0)
-    const empty = buildResearchGraph(publications, { foundation: 'ai', domain: 'health' }, 99)
+  it('handles filtered subsets and empty intersections', () => {
+    expect(buildResearchGraph([publications[0]], { foundation: 'human', domain: null }).papers).toEqual([publications[0]])
+    const empty = buildResearchGraph(publications, { foundation: 'ai', domain: 'health' })
     expect(empty.papers).toEqual([])
     expect(empty.edges).toEqual([])
-    expect(empty.page).toBe(0)
   })
 
   it('highlights only a hovered node and its direct neighbors without modifying the graph', () => {

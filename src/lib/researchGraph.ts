@@ -2,7 +2,6 @@ import type { Node, Edge } from '@xyflow/react'
 import type { Publication } from '@/types'
 import { RESEARCH_DOMAINS, RESEARCH_FOUNDATIONS, selectResearchPapers, type ResearchSelection } from '@/data/research'
 
-export const PAPERS_PER_PAGE = 6
 export type ResearchNodeData = {
   kind: 'root' | 'foundation' | 'domain' | 'paper'
   label: string
@@ -20,13 +19,10 @@ export type ResearchNodeData = {
 export type ResearchNode = Node<ResearchNodeData, 'research'>
 
 /** Edges encode editorial membership/shared papers, never citation or causation. */
-export function buildResearchGraph(publications: readonly Publication[], selection: ResearchSelection, requestedPage = 0, compact = false) {
+export function buildResearchGraph(publications: readonly Publication[], selection: ResearchSelection, compact = false) {
   const nodes: ResearchNode[] = []
   const edges: Edge[] = []
   const papers = selectResearchPapers(publications, selection)
-  const pageSize = compact ? 2 : PAPERS_PER_PAGE
-  const pageCount = Math.max(1, Math.ceil(papers.length / pageSize))
-  const page = Math.min(Math.max(0, requestedPage), pageCount - 1)
   const expanded = Boolean(selection.foundation || selection.domain)
   const addEdge = (source: string, target: string, color: string, count?: number) => edges.push({
     id: `${source}--${target}`, source, target, type: 'default',
@@ -69,18 +65,20 @@ export function buildResearchGraph(publications: readonly Publication[], selecti
     const foundation = RESEARCH_FOUNDATIONS.find((item) => item.id === selection.foundation)
     const domain = RESEARCH_DOMAINS.find((item) => item.id === selection.domain)
     const color = foundation?.color ?? '#6F88A6'
-    addNode('selection', compact ? 20 : 295, 0, {
+    const columns = Math.max(1, Math.min(compact ? 3 : 5, Math.ceil(Math.sqrt(papers.length))))
+    const gridWidth = (columns - 1) * 285 + 230
+    addNode('selection', (gridWidth - 190) / 2, 0, {
       kind: 'root', label: [foundation?.label, domain?.label].filter(Boolean).join(' × '),
       description: `${papers.length} ${papers.length === 1 ? 'paper' : 'papers'} · select one to read`, color,
     })
-    papers.slice(page * pageSize, (page + 1) * pageSize).forEach((paper, index) => {
-      addNode(paper.id, compact ? 0 : (index % 3) * 285, compact ? 140 + index * 230 : 170 + Math.floor(index / 3) * 230, {
+    papers.forEach((paper, index) => {
+      addNode(paper.id, (index % columns) * 285, 170 + Math.floor(index / columns) * 230, {
         kind: 'paper', label: paper.title, description: `${paper.venue} · ${paper.year}`, color, paper,
       })
       addEdge('selection', paper.id, color)
     })
   }
-  return { nodes, edges, papers, page, pageCount, pageSize, expanded }
+  return { nodes, edges, papers, expanded }
 }
 
 export function graphNeighborhood(id: string | null, edges: readonly Edge[]) {
