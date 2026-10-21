@@ -1,11 +1,14 @@
-import { useId } from 'react'
+import { lazy, Suspense, useEffect, useMemo, useRef, useState } from 'react'
 import type { Publication } from '@/types'
 import {
   RESEARCH_DOMAINS, RESEARCH_FOUNDATIONS, selectResearchPapers,
   type ResearchSelection,
 } from '@/data/research'
-import { PublicationCard } from './PublicationCard'
+import { buildResearchGraph } from '@/lib/researchGraph'
+import { renderInline } from '@/lib/inline'
+import './research-map.css'
 
+const ResearchCanvas = lazy(() => import('./ResearchCanvas'))
 interface ResearchMapProps {
   publications: readonly Publication[]
   visible: readonly Publication[]
@@ -13,102 +16,121 @@ interface ResearchMapProps {
   onSelectionChange: (selection: ResearchSelection) => void
 }
 
-const paperCount = (count: number) => `${count} ${count === 1 ? 'paper' : 'papers'}`
-
 export function ResearchMap({ publications, visible, selection, onSelectionChange }: ResearchMapProps) {
-  const mapId = useId()
-  const { foundation, domain } = selection
-  const selectedPapers = selectResearchPapers(visible, selection)
-  const foundationLabel = RESEARCH_FOUNDATIONS.find((item) => item.id === foundation)?.label
-  const domainLabel = RESEARCH_DOMAINS.find((item) => item.id === domain)?.label
-  const selectionLabel = [foundationLabel, domainLabel].filter(Boolean).join(' × ')
-  const hasSelection = Boolean(foundation || domain)
-  const domainHasPapers = domain && selectResearchPapers(publications, { foundation: null, domain }).length > 0
+  const [page, setPage] = useState(0)
+  const [compact, setCompact] = useState(false)
+  useEffect(() => {
+    const media = window.matchMedia('(max-width: 639px)')
+    const update = () => { setCompact(media.matches); setPage(0) }
+    update()
+    media.addEventListener('change', update)
+    return () => media.removeEventListener('change', update)
+  }, [])
+  const [activePaper, setActivePaper] = useState<string | null>(null)
+  const detailClose = useRef<HTMLButtonElement>(null)
+  const overviewButton = useRef<HTMLButtonElement>(null)
+  const foundationPicker = useRef<HTMLSelectElement>(null)
+  const restoreTopicFocus = useRef(false)
+  const paperTrigger = useRef<HTMLElement | null>(null)
+  const graph = useMemo(() => buildResearchGraph(visible, selection, page, compact), [visible, selection, page, compact])
+  const pagePapers = graph.papers.slice(graph.page * graph.pageSize, (graph.page + 1) * graph.pageSize)
+  const selectedPaper = pagePapers.find((paper) => paper.id === activePaper)
+  useEffect(() => {
+    if (activePaper && !selectedPaper) setActivePaper(null)
+  }, [activePaper, selectedPaper])
+  useEffect(() => {
+    if (restoreTopicFocus.current) {
+      (overviewButton.current ?? foundationPicker.current)?.focus({ preventScroll: true })
+      restoreTopicFocus.current = false
+    }
+  }, [selection])
+  useEffect(() => {
+    if (selectedPaper) {
+      detailClose.current?.closest('aside')?.scrollIntoView({ block: 'center', behavior: 'instant' })
+      detailClose.current?.focus({ preventScroll: true })
+    }
+  }, [selectedPaper])
+  const foundationLabel = RESEARCH_FOUNDATIONS.find((item) => item.id === selection.foundation)?.label
+  const domainLabel = RESEARCH_DOMAINS.find((item) => item.id === selection.domain)?.label
+  const title = [foundationLabel, domainLabel].filter(Boolean).join(' × ')
+  const domainHasPapers = selection.domain && selectResearchPapers(publications, { foundation: null, domain: selection.domain }).length > 0
+
+  function select(next: ResearchSelection, restoreFocus = false) {
+    restoreTopicFocus.current = restoreFocus
+    setPage(0)
+    setActivePaper(null)
+    onSelectionChange(next)
+  }
+  function changePage(next: number) {
+    setPage(next)
+    setActivePaper(null)
+  }
+
+  function closeDetails() {
+    setActivePaper(null)
+    paperTrigger.current?.focus({ preventScroll: true })
+  }
 
   return (
-    <div>
-      <div className="rounded-2xl border border-brand-border bg-brand-page p-4 sm:p-6">
-        <div className="text-center">
-          <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-brand-muted">Research landscape</p>
-          <h3 className="mt-2 text-2xl font-semibold tracking-tight">Human–AI</h3>
-          <p className="mx-auto mt-2 max-w-lg text-sm text-brand-muted">
-            Understanding the human, the AI, and their interaction — and bringing these questions into real-world domains.
-          </p>
-        </div>
-
-        <fieldset className="mt-7 min-w-0">
-          <legend className="mb-3 text-xs font-semibold uppercase tracking-widest text-brand-muted">Foundations</legend>
-          <div className="grid grid-cols-3 gap-2 sm:gap-3">
-            {RESEARCH_FOUNDATIONS.map((item) => {
-              const count = selectResearchPapers(visible, { foundation: item.id, domain }).length
-              const active = foundation === item.id
-              return (
-                <button key={item.id} type="button" aria-pressed={active} aria-controls={`${mapId}-results`}
-                  onClick={() => onSelectionChange({ foundation: active ? null : item.id, domain })}
-                  className={`min-w-0 rounded-xl border bg-white px-1 py-4 text-center transition-colors sm:px-3 ${active ? 'border-brand-primary ring-2 ring-brand-primary' : 'border-brand-border hover:border-brand-primary'}`}>
-                  <span aria-hidden="true" className="mx-auto mb-3 block h-2.5 w-2.5 rounded-full" style={{ backgroundColor: item.color }} />
-                  <span className="block break-words text-[11px] font-semibold text-brand-heading sm:text-base">{item.label}</span>
-                  <span className="mt-2 hidden min-h-10 text-xs leading-5 text-brand-muted sm:block">{item.description}</span>
-                  <span className="mt-2 block text-[10px] text-brand-muted sm:text-xs">{paperCount(count)}</span>
-                </button>
-              )
-            })}
-          </div>
-        </fieldset>
-
-        <div className="relative h-24" aria-hidden="true">
-          <svg viewBox="0 0 600 96" preserveAspectRatio="none" className="absolute inset-0 h-full w-full">
-            {RESEARCH_FOUNDATIONS.map((item, index) => (
-              <path key={item.id} d={`M${100 + index * 200} 0 V14 Q${100 + index * 200} 34 300 34 V50`}
-                fill="none" stroke={item.color} strokeWidth={foundation === item.id ? 2 : 1}
-                opacity={foundation && foundation !== item.id ? 0.15 : 0.6} />
-            ))}
-            <path d="M300 70 V96" stroke="#6F88A6" fill="none" />
-          </svg>
-          <span className="absolute inset-x-0 top-[47px] text-center text-[10px] font-semibold uppercase tracking-[0.18em] text-brand-muted">
-            <span className="bg-brand-page px-3">In context</span>
+    <div className="research-explorer">
+      <div className="research-toolbar">
+        <div><h3>{graph.expanded ? title : 'Explore my research'}</h3>
+          <p>{graph.expanded ? 'Select a paper to open its details.' : 'Follow a question. Discover the work behind it.'}</p></div>
+        {graph.expanded && <button ref={overviewButton} type="button" onClick={() => select({ foundation: null, domain: null }, true)}>← Overview</button>}
+        <div className="flex w-full flex-wrap gap-2">
+          <select ref={foundationPicker} aria-label="Research foundation" value={selection.foundation ?? ''}
+            onChange={(event) => select({ ...selection, foundation: event.target.value as ResearchSelection['foundation'] || null })}>
+            <option value="">All foundations</option>
+            {RESEARCH_FOUNDATIONS.map((item) => <option key={item.id} value={item.id}>{item.label}</option>)}
+          </select>
+          <select aria-label="Application domain" value={selection.domain ?? ''}
+            onChange={(event) => select({ ...selection, domain: event.target.value as ResearchSelection['domain'] || null })}>
+            <option value="">All domains</option>
+            {RESEARCH_DOMAINS.map((item) => <option key={item.id} value={item.id}>{item.label}</option>)}
+          </select>
+          <span role="status" className="self-center text-xs text-brand-muted">
+            {graph.expanded ? `${graph.papers.length} matching ${graph.papers.length === 1 ? 'paper' : 'papers'}` : 'Click a node to explore'}
           </span>
         </div>
-
-        <fieldset className="min-w-0">
-          <legend className="mb-3 text-xs font-semibold uppercase tracking-widest text-brand-muted">Vertical domains</legend>
-          <div className="grid grid-cols-2 gap-2 sm:grid-cols-4 sm:gap-3">
-            {RESEARCH_DOMAINS.map((item) => {
-              const count = selectResearchPapers(visible, { foundation, domain: item.id }).length
-              const total = selectResearchPapers(publications, { foundation: null, domain: item.id }).length
-              const active = domain === item.id
-              return (
-                <button key={item.id} type="button" aria-pressed={active} aria-controls={`${mapId}-results`} title={item.description}
-                  onClick={() => onSelectionChange({ foundation, domain: active ? null : item.id })}
-                  className={`min-w-0 rounded-xl border px-2 py-3 text-left transition-colors sm:px-3 ${active ? 'border-brand-primary bg-white ring-2 ring-brand-primary' : total ? 'border-brand-border bg-white hover:border-brand-primary' : 'border-dashed border-brand-border hover:bg-white'}`}>
-                  <span className="block break-words text-[11px] font-semibold text-brand-heading sm:text-xs">{item.label}</span>
-                  <span className="mt-1.5 block text-[10px] leading-4 text-brand-muted">{total ? paperCount(count) : 'No papers yet'}</span>
-                </button>
-              )
-            })}
-          </div>
-        </fieldset>
-        <p className="mt-5 text-xs leading-5 text-brand-muted">
-          Choose a foundation, a domain, or their intersection. Papers may span multiple areas;
-          foundational work can stand on its own without an application domain.
-        </p>
       </div>
-
-      <div id={`${mapId}-results`} className="mt-6">
-        <div className="flex flex-wrap items-center justify-between gap-3">
-          <p role="status" className="text-sm font-semibold text-brand-heading">
-            {hasSelection ? `${selectionLabel} · ${paperCount(selectedPapers.length)}` : 'Choose an area to explore its papers.'}
-          </p>
-          {hasSelection && <button type="button" className="rounded px-2 py-2 text-sm text-brand-heading hover:underline"
-            onClick={() => onSelectionChange({ foundation: null, domain: null })}>Clear map selection</button>}
-        </div>
-        {hasSelection && (selectedPapers.length
-          ? selectedPapers.map((paper) => <PublicationCard key={paper.id} pub={paper} />)
-          : <p className="py-5 text-sm text-brand-muted">
-              {domain && !domainHasPapers
-                ? `No publications are assigned to ${domainLabel} yet.`
-                : 'No publications match this intersection and the current filters. Try another area or clear the filters above.'}
-            </p>)}
+      <div className={`research-stage ${graph.expanded ? 'is-expanded' : ''}`}>
+        {(!graph.expanded || graph.papers.length > 0) && <Suspense fallback={<p className="p-6 text-sm text-brand-muted">Loading interactive map…</p>}>
+          <ResearchCanvas graph={graph} activePaper={selectedPaper?.id ?? null} onSelect={(next) => select(next, true)}
+            onPaper={(paper) => {
+              paperTrigger.current = document.activeElement instanceof HTMLElement ? document.activeElement : null
+              setActivePaper(paper.id)
+            }} />
+        </Suspense>}
+        {graph.expanded && graph.papers.length === 0 && <div className="research-empty" role="status">
+          <p className="mb-2 font-semibold text-brand-heading">{selection.domain && !domainHasPapers ? 'No papers yet' : 'No matching papers'}</p>
+          <p>{selection.domain && !domainHasPapers
+            ? `No publications are assigned to ${domainLabel} yet.`
+            : 'No publications match this intersection and the current filters. Try another area or clear the filters above.'}</p>
+        </div>}
+        {selectedPaper && <aside className="research-inspector" aria-label="Selected paper"
+          onKeyDown={(event) => { if (event.key === 'Escape') { event.stopPropagation(); closeDetails() } }}>
+          <div className="mb-4 flex items-center justify-between gap-3 text-xs text-brand-muted">
+            <span>Paper details · {selectedPaper.year}</span>
+            <button ref={detailClose} className="rounded px-3 py-2 text-brand-heading hover:bg-brand-page" type="button" onClick={closeDetails}>Close</button>
+          </div>
+          {selectedPaper.thumb && <img className="mb-4 h-32 w-full rounded-lg bg-brand-page object-contain p-3" src={selectedPaper.thumb} alt="" />}
+          <p className="mb-2 text-xs font-semibold text-brand-muted">{selectedPaper.venue}</p>
+          <h4 className="text-base font-semibold leading-relaxed">{selectedPaper.url
+            ? <a href={selectedPaper.url} target="_blank" rel="noopener noreferrer">{selectedPaper.title} ↗</a>
+            : selectedPaper.title}</h4>
+          <p className="mt-3 text-xs leading-relaxed text-brand-muted">{renderInline(selectedPaper.authors)}</p>
+          <p className="mt-3 text-xs italic leading-relaxed text-brand-muted">{selectedPaper.venueFull}</p>
+          {selectedPaper.award && <p className="mt-3 text-xs font-semibold text-brand-heading">{selectedPaper.award}</p>}
+          {selectedPaper.prelim && <p className="mt-3 text-xs text-brand-muted">{selectedPaper.prelim}</p>}
+        </aside>}
+      </div>
+      <div className="research-map-foot">
+        <span>Drag to explore · + / − to zoom · hover to trace connections</span>
+        {graph.expanded && graph.pageCount > 1 && <div className="research-pagination">
+          <button type="button" aria-label="Previous papers" disabled={graph.page === 0} onClick={() => changePage(graph.page - 1)}>←</button>
+          <span>Page {graph.page + 1} / {graph.pageCount}</span>
+          <button type="button" aria-label="Next papers" disabled={graph.page === graph.pageCount - 1} onClick={() => changePage(graph.page + 1)}>→</button>
+        </div>}
       </div>
     </div>
   )

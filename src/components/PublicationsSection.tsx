@@ -32,6 +32,26 @@ export function PublicationsSection({ publications, id, title }: PublicationsSec
     [publications, venue, focus, goal],
   )
 
+  const filters = (
+    <div className="space-y-4 rounded-xl bg-brand-page p-5">
+      <FilterRow label="Venue" options={VENUE_OPTIONS} value={venue} onChange={setVenue} />
+      <FilterRow
+        label="Focus"
+        question={FOCUS_QUESTION}
+        options={FOCUS_OPTIONS}
+        value={focus}
+        onChange={setFocus}
+      />
+      <FilterRow
+        label="Goal"
+        question={GOAL_QUESTION}
+        options={GOAL_OPTIONS}
+        value={goal}
+        onChange={setGoal}
+      />
+    </div>
+  )
+
   return (
     <Section id={id} title={title}>
       <div className="mb-5 flex flex-wrap items-center justify-between gap-3">
@@ -49,25 +69,14 @@ export function PublicationsSection({ publications, id, title }: PublicationsSec
         </div>
       </div>
 
-      <div className="mb-8 space-y-4 rounded-xl bg-brand-page p-5">
-        <FilterRow label="Venue" options={VENUE_OPTIONS} value={venue} onChange={setVenue} />
-        <FilterRow
-          label="Focus"
-          question={FOCUS_QUESTION}
-          options={FOCUS_OPTIONS}
-          value={focus}
-          onChange={setFocus}
-        />
-        <FilterRow
-          label="Goal"
-          question={GOAL_QUESTION}
-          options={GOAL_OPTIONS}
-          value={goal}
-          onChange={setGoal}
-        />
-      </div>
+      {view === 'map' ? (
+        <details className="mb-4 rounded-lg border border-brand-border">
+          <summary className="cursor-pointer px-4 py-3 text-xs text-brand-muted">Refine papers · {visible.length} of {publications.length} included</summary>
+          {filters}
+        </details>
+      ) : filters}
 
-      <p role="status" className="mb-3 text-xs text-brand-muted">{visible.length} of {publications.length} papers</p>
+      {view === 'list' && <p role="status" className="mb-3 mt-5 text-xs text-brand-muted">{visible.length} of {publications.length} papers</p>}
       <div>
         {view === 'map' ? (
           <ResearchMap publications={publications} visible={visible} selection={mapSelection} onSelectionChange={setMapSelection} />
