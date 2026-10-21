@@ -1,6 +1,6 @@
 import type { Publication } from '@/types'
 import { renderInline } from '@/lib/inline'
-import { VENUE_COLORS } from '@/data/filters'
+import { VENUES } from '@/data/venues'
 
 interface Props {
   pub: Publication
@@ -29,7 +29,7 @@ export function PublicationCard({ pub }: Props) {
           {pub.venue && (
             <span
               className="mr-2 inline-flex min-w-16 translate-y-[-1px] items-center justify-center whitespace-nowrap rounded px-1.5 py-0.5 align-middle text-xs font-semibold text-black"
-              style={{ backgroundColor: VENUE_COLORS[pub.venue] ?? '#C0C0C0' }}
+              style={{ backgroundColor: VENUES[pub.venue].color }}
             >
               {pub.venue}
             </span>

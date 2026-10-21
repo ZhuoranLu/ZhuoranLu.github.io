@@ -1,11 +1,8 @@
+import type { Venue } from '@/data/venues'
+
 export type VenueGroup = 'hci' | 'ai' | 'preprint' | 'workshop' | 'other'
 export type Focus = 'cognition' | 'social'
 export type Goal = 'understanding' | 'designing'
-
-export interface PubLink {
-  label: string // e.g. "PDF"
-  url: string
-}
 
 export interface Publication {
   id: string
@@ -14,22 +11,20 @@ export interface Publication {
   url?: string
   /** Author string preserving markers: **bold**, \* (equal contribution), † (senior author). */
   authors: string
-  /** Badge text, e.g. "CHI", "arXiv", "CHI-LBW". Empty string => no badge. */
-  venue: string
-  venueGroup: VenueGroup
+  /** Badge label; group and color are defined in the venue configuration. */
+  venue: Venue
   /** Full venue line, e.g. "The 44th ACM CHI, Barcelona, May 2026." */
   venueFull: string
   /** Optional secondary line, e.g. "Preliminary version in ...". */
   prelim?: string
   year: number
-  /** A paper may belong to multiple categories — single value or array. */
-  focus: Focus | Focus[]
-  goal: Goal | Goal[]
+  /** A paper may belong to multiple categories. */
+  focus: Focus[]
+  goal: Goal[]
   /** e.g. "Best Paper Award", "Oral Presentation". */
   award?: string
   /** Schematic thumbnail shown left of the entry, e.g. "/images/papers/foo.png". */
   thumb?: string
-  links: PubLink[]
 }
 
 export interface NewsItem {
@@ -73,6 +68,12 @@ export interface Profile {
 }
 
 export type FilterType = 'venue' | 'focus' | 'goal'
+
+export interface PublicationFilters {
+  venue: VenueGroup | 'all'
+  focus: Focus | 'all'
+  goal: Goal | 'all'
+}
 
 export interface FilterOption<T extends string> {
   value: T | 'all'

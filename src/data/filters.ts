@@ -1,56 +1,5 @@
 import type { VenueGroup, Focus, Goal, FilterOption } from '@/types'
 
-/** Maps a venue badge label to its filter group. */
-export const VENUE_MAP: Record<string, VenueGroup> = {
-  'IEEE S&P': 'hci',
-  CHI: 'hci',
-  'CHI-LBW': 'hci',
-  CSCW: 'hci',
-  IUI: 'hci',
-  IJHCI: 'hci',
-  IMWUT: 'hci',
-  DAAI: 'hci',
-  HCOMP: 'ai',
-  AAAI: 'ai',
-  IJCAI: 'ai',
-  ICLR: 'ai',
-  NeurIPS: 'ai',
-  EMNLP: 'ai',
-  AIES: 'ai',
-  WWW: 'ai',
-  arXiv: 'preprint',
-  'CustomNLP4U @ EMNLP': 'workshop',
-  'FinNLP @ EMNLP': 'workshop',
-  'UbiComp Companion': 'workshop',
-  'NeurIPS Creative AI': 'workshop',
-}
-
-/** Exact badge background colors carried over from the Jekyll site. */
-export const VENUE_COLORS: Record<string, string> = {
-  'IEEE S&P': '#C98296',
-  arXiv: '#C0C0C0',
-  CHI: '#E8A4A4',
-  'CHI-LBW': '#E8A4A4',
-  IUI: '#E8A4A4',
-  ICLR: '#6E9BD0',
-  NeurIPS: '#6E9BD0',
-  CSCW: '#D97373',
-  HCOMP: '#7FA9D9',
-  AAAI: '#7FA9D9',
-  IJCAI: '#5B8AC4',
-  IJHCI: '#EBA89A',
-  IMWUT: '#D995AD',
-  DAAI: '#EBA89A',
-  EMNLP: '#A5C0DE',
-  AIES: '#A5C0DE',
-  WWW: '#A5C0DE',
-  // Workshop badges: lightened tint of the parent conference's color family.
-  'CustomNLP4U @ EMNLP': '#CBDCEE',
-  'FinNLP @ EMNLP': '#CBDCEE',
-  'UbiComp Companion': '#F3D3D3',
-  'NeurIPS Creative AI': '#CBDCEE',
-}
-
 export const VENUE_OPTIONS: FilterOption<VenueGroup>[] = [
   { value: 'all', label: 'All' },
   { value: 'hci', label: 'HCI' },

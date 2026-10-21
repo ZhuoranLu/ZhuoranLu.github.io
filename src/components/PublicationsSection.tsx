@@ -1,9 +1,9 @@
 import { useMemo, useState } from 'react'
-import type { VenueGroup, Focus, Goal } from '@/types'
+import type { VenueGroup, Focus, Goal, Publication } from '@/types'
 import { Section } from './Section'
 import { FilterRow } from './FilterBar'
 import { PublicationCard } from './PublicationCard'
-import { publications } from '@/data/publications'
+import { filterPublications } from '@/lib/publications'
 import {
   VENUE_OPTIONS,
   FOCUS_OPTIONS,
@@ -12,24 +12,24 @@ import {
   GOAL_QUESTION,
 } from '@/data/filters'
 
-export function PublicationsSection() {
+interface PublicationsSectionProps {
+  publications: readonly Publication[]
+  id: string
+  title: string
+}
+
+export function PublicationsSection({ publications, id, title }: PublicationsSectionProps) {
   const [venue, setVenue] = useState<VenueGroup | 'all'>('all')
   const [focus, setFocus] = useState<Focus | 'all'>('all')
   const [goal, setGoal] = useState<Goal | 'all'>('all')
 
-  const visible = useMemo(() => {
-    const has = <T,>(field: T | T[], value: T) =>
-      Array.isArray(field) ? field.includes(value) : field === value
-    return publications.filter(
-      (p) =>
-        (venue === 'all' || p.venueGroup === venue) &&
-        (focus === 'all' || has(p.focus, focus)) &&
-        (goal === 'all' || has(p.goal, goal)),
-    )
-  }, [venue, focus, goal])
+  const visible = useMemo(
+    () => filterPublications(publications, { venue, focus, goal }),
+    [publications, venue, focus, goal],
+  )
 
   return (
-    <Section id="publications" title="Selected Publications & Manuscripts">
+    <Section id={id} title={title}>
       <p className="mb-5 text-sm text-brand-subtle">
         * indicates equal contributions, † indicates senior author.
       </p>
@@ -52,7 +52,7 @@ export function PublicationsSection() {
         />
       </div>
 
-      <div key={`${venue}-${focus}-${goal}`}>
+      <div>
         {visible.length === 0 ? (
           <p className="py-6 text-brand-subtle">No publications match these filters.</p>
         ) : (
