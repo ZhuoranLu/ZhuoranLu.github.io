@@ -7,7 +7,7 @@ interface Props {
 }
 
 function AwardIcon({ award }: { award: string }) {
-  return <span aria-hidden>{/oral/i.test(award) ? '🗣️' : '🏆'}</span>
+  return <span className="shrink-0" aria-hidden>{/oral/i.test(award) ? '🗣️' : '🏆'}</span>
 }
 
 export function PublicationCard({ pub }: Props) {
@@ -47,7 +47,7 @@ export function PublicationCard({ pub }: Props) {
             <span className="font-semibold text-brand-heading">{pub.title}</span>
           )}
           {pub.award && (
-            <span className="ml-1.5 inline-flex items-center gap-1 whitespace-nowrap align-baseline font-semibold text-brand-danger">
+            <span className="ml-1.5 inline-flex max-w-full items-center gap-1 whitespace-normal align-baseline font-semibold text-brand-danger sm:whitespace-nowrap">
               <AwardIcon award={pub.award} />
               {pub.award}
             </span>

@@ -6,7 +6,7 @@ An academic homepage built with React, TypeScript, Vite, and Tailwind CSS.
 
 ## Local development
 
-Use Node.js 22.12 or newer and npm.
+Use npm with Node.js 22.12+ (22.x), 24.x, or 26+. CI uses Node.js 22.
 
 ```sh
 npm ci

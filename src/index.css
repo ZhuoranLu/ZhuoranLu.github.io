@@ -19,9 +19,18 @@
     @apply text-brand-heading;
   }
 
-  /* Anchor offset so section headings clear the sticky header. */
-  section[id] {
-    scroll-margin-top: 5.5rem;
+  :focus-visible {
+    @apply outline outline-2 outline-offset-4 outline-brand-primary;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .animate-fade-in {
+    animation: none;
   }
 }
 

@@ -1,3 +1,4 @@
+import { useId } from 'react'
 import type { FilterOption } from '@/types'
 
 interface FilterRowProps<T extends string> {
@@ -15,13 +16,15 @@ export function FilterRow<T extends string>({
   value,
   onChange,
 }: FilterRowProps<T>) {
+  const labelId = useId()
+  const questionId = useId()
   return (
-    <div>
+    <div role="group" aria-labelledby={labelId} aria-describedby={question ? questionId : undefined}>
       <div className="mb-2 flex flex-wrap items-baseline gap-x-2 gap-y-0.5">
-        <span className="text-xs font-semibold uppercase tracking-wide text-brand-subtle">
+        <span id={labelId} className="text-xs font-semibold uppercase tracking-wide text-brand-subtle">
           {label}
         </span>
-        {question && <span className="text-sm text-brand-muted">{question}</span>}
+        {question && <span id={questionId} className="text-sm text-brand-muted">{question}</span>}
       </div>
       <div className="flex flex-wrap gap-2">
         {options.map((opt) => {
@@ -29,6 +32,8 @@ export function FilterRow<T extends string>({
           return (
             <button
               key={opt.value}
+              type="button"
+              aria-pressed={active}
               onClick={() => onChange(opt.value)}
               className={`pill ${active ? 'pill-active' : 'pill-inactive'}`}
             >

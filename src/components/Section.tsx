@@ -6,11 +6,12 @@ interface SectionProps {
   children: ReactNode
 }
 
-/** A page section with an anchor id (scroll-margin handled in index.css). */
+/** A programmatically focusable navigation target. Scroll offset lives on html. */
 export function Section({ id, title, children }: SectionProps) {
   return (
     <section
       id={id}
+      tabIndex={-1}
       className="border-t border-brand-border py-9 first:border-t-0 first:pt-7"
     >
       {title && (

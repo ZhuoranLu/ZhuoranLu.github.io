@@ -4,7 +4,7 @@
 
 ## 开发与检查
 
-使用 Node.js 22.12 或更新版本及 npm：
+使用 npm 和 Node.js 22.12+（22.x）、24.x 或 26+；CI 使用 Node.js 22：
 
 ```sh
 npm ci
