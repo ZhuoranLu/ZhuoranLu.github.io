@@ -35,6 +35,19 @@
 }
 
 @layer components {
+  .publication-view {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 180ms ease-out, transform 180ms ease-out;
+  }
+
+  .publication-view-leaving {
+    opacity: 0;
+    transform: translateY(-6px);
+    transition-duration: 120ms;
+    pointer-events: none;
+  }
+
   /* Links inside flowing content. */
   main a {
     @apply text-brand-primary transition-colors hover:text-brand-primary-hover hover:underline;
@@ -49,5 +62,12 @@
   }
   .pill-active {
     @apply bg-brand-primary text-white;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .publication-view {
+    transition: none;
+    transform: none;
   }
 }
