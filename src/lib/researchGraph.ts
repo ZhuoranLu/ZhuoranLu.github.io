@@ -51,8 +51,11 @@ export function buildResearchGraph(publications: readonly Publication[], selecti
     RESEARCH_DOMAINS.forEach((item, index) => {
       const id = `domain:${item.id}`
       const count = selectResearchPapers(publications, { foundation: null, domain: item.id }).length
-      addNode(id, compact ? 20 + (index % 2) * 215 : index < 4 ? 15 + index * 215 : 120 + (index - 4) * 215,
-        compact ? 350 + Math.floor(index / 2) * 100 : index < 4 ? 390 : 510, {
+      const columns = compact ? 2 : 4
+      const row = Math.floor(index / columns)
+      const rowSize = Math.min(columns, RESEARCH_DOMAINS.length - row * columns)
+      addNode(id, (compact ? 20 : 15) + ((columns - rowSize) / 2 + index % columns) * 215,
+        compact ? 350 + row * 100 : 390 + row * 120, {
         kind: 'domain', label: item.label, description: item.description, color: '#61778d', count,
         empty: item.id === 'education' && count === 0,
         selection: { foundation: null, domain: item.id },

@@ -6,14 +6,14 @@ export const RESEARCH_FOUNDATIONS = [
   { id: 'interaction', label: 'Interaction', description: 'Collaboration, assistance & interface design', color: '#6F9683' },
 ] as const
 
+// Keep domains at a broad application level; describe subtopics within them.
 export const RESEARCH_DOMAINS = [
   { id: 'entertainment', label: 'Entertainment', description: 'Storytelling & creative practice' },
   { id: 'social-media', label: 'Social Media', description: 'Information spread & social influence' },
   { id: 'health', label: 'Health', description: 'Care, health data & privacy' },
   { id: 'education', label: 'Education', description: 'Learning & teaching' },
-  { id: 'finance', label: 'Finance', description: 'Trading agents & financial information' },
-  { id: 'sustainability', label: 'Sustainability', description: 'Environmental claims & disclosure' },
-  { id: 'aviation', label: 'Aviation', description: 'Public acceptance of AI pilots' },
+  { id: 'finance', label: 'Finance', description: 'Trading, financial information & sustainability disclosures' },
+  { id: 'transportation', label: 'Transportation', description: 'AI in transportation, including aviation' },
 ] as const
 
 export type ResearchFoundation = typeof RESEARCH_FOUNDATIONS[number]['id']
@@ -37,7 +37,7 @@ export const RESEARCH_PLACEMENTS: Record<string, ResearchPlacement> = {
   'pub-interpret-agent-behavior': { foundations: ['ai'], domains: [] },
   'pub-fanverse': { foundations: ['interaction'], domains: ['entertainment'] },
   'pub-grounded-theory-agent-behavior': { foundations: ['ai'], domains: [] },
-  'pub-greenaudit-bench': { foundations: ['ai'], domains: ['sustainability'] },
+  'pub-greenaudit-bench': { foundations: ['ai'], domains: ['finance'] },
   'pub-ubiquitous-health-data-end-of-life': { foundations: ['human', 'interaction'], domains: ['health'] },
   'pub-diabetes-computing-systems-disappear': { foundations: ['human', 'interaction'], domains: ['health'] },
   'pub-personalized-agents-judgment': { foundations: ['human', 'interaction'], domains: [] },
@@ -54,7 +54,7 @@ export const RESEARCH_PLACEMENTS: Record<string, ResearchPlacement> = {
   'pub-pearl': { foundations: ['ai', 'interaction'], domains: [] },
   'pub-mix-and-match': { foundations: ['human'], domains: [] },
   'pub-behavior-aware-ai': { foundations: ['human', 'ai', 'interaction'], domains: [] },
-  'pub-ai-pilot-cockpit': { foundations: ['human'], domains: ['aviation'] },
+  'pub-ai-pilot-cockpit': { foundations: ['human'], domains: ['transportation'] },
   'pub-devils-advocate': { foundations: ['interaction'], domains: [] },
   'pub-decoding-ai-nudge': { foundations: ['human'], domains: [] },
   'pub-synthetic-data-generation': { foundations: ['ai'], domains: [] },
