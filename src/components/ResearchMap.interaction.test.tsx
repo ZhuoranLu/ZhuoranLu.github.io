@@ -4,6 +4,7 @@ import { createRoot, type Root } from 'react-dom/client'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import { ResearchMap } from './ResearchMap'
 import { publications } from '@/data/publications'
+import { publicationAbstracts } from '@/data/publicationAbstracts'
 import { selectResearchPapers, type ResearchSelection } from '@/data/research'
 import type { buildResearchGraph } from '@/lib/researchGraph'
 import type { Publication } from '@/types'
@@ -99,5 +100,41 @@ describe('research map selection lifecycle', () => {
     await act(async () => { document.activeElement!.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape', bubbles: true })) })
     expect(host.querySelector('aside')).toBeNull()
     expect(document.activeElement?.getAttribute('data-paper')).toBe(humanPapers[0].id)
+  })
+
+  it('shows the verified abstract and source instead of taxonomy labels', async () => {
+    await render(publications)
+    await openPaper('pub-mix-and-match')
+    const abstract = host.querySelector('[aria-label="Abstract"]')!
+    expect(abstract.textContent).toContain(publicationAbstracts['pub-mix-and-match']!.text)
+    expect(abstract.querySelector('a')?.getAttribute('href')).toBe(publicationAbstracts['pub-mix-and-match']!.source)
+    expect(host.querySelector('[aria-label="Paper foundations"]')).toBeNull()
+    expect(host.querySelector('[aria-label="Paper application areas"]')).toBeNull()
+    expect(host.querySelector('aside')?.textContent).not.toContain('Application areas')
+  })
+
+  it('omits the abstract section when no verified text is available', async () => {
+    await render(publications)
+    await openPaper('pub-personalized-agents-judgment')
+    expect(host.querySelector('aside')).not.toBeNull()
+    expect(host.querySelector('[aria-label="Abstract"]')).toBeNull()
+  })
+
+  it('returns from an empty area and uses Escape to close details before leaving the area', async () => {
+    const back = vi.fn()
+    await act(async () => root.render(<ResearchMap publications={publications} visible={[]} selection={{ foundation: null, domain: 'education' }}
+      onSelectionChange={() => {}} onOverview={back} />))
+    expect(host.textContent).toContain('Coming soon')
+    const button = [...host.querySelectorAll('button')].find((item) => item.textContent === '← Back to map')!
+    await act(async () => button.click())
+    expect(back).toHaveBeenCalledTimes(1)
+    await act(async () => root.render(<ResearchMap publications={publications} visible={publications} selection={human}
+      onSelectionChange={() => {}} onOverview={back} />))
+    await openPaper(humanPapers[0].id)
+    await act(async () => document.activeElement!.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape', bubbles: true })))
+    expect(back).toHaveBeenCalledTimes(1)
+    expect(host.querySelector('aside')).toBeNull()
+    await act(async () => document.activeElement!.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape', bubbles: true })))
+    expect(back).toHaveBeenCalledTimes(2)
   })
 })

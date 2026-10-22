@@ -8,12 +8,14 @@ import type { Publication } from '@/types'
 import { selectResearchPapers, type ResearchSelection } from '@/data/research'
 
 vi.mock('./ResearchCanvas', () => ({ default: () => null }))
-vi.mock('./ResearchMap', () => ({ ResearchMap: ({ visible, showPapers, onSelectionChange }: {
+vi.mock('./ResearchMap', () => ({ ResearchMap: ({ visible, showPapers, onSelectionChange, onOverview }: {
   visible: readonly Publication[]
   showPapers: boolean
   onSelectionChange: (selection: ResearchSelection) => void
+  onOverview: () => void
 }) => <div data-map data-show-papers={showPapers}>
   <button onClick={() => onSelectionChange({ foundation: 'human', domain: null })}>Explore Human</button>
+  <button onClick={onOverview}>Back to map</button>
   {visible.map((paper) => <div key={paper.id} data-publication-id={paper.id} />)}
 </div> }))
 let root: Root
@@ -141,6 +143,24 @@ describe('publication view transitions', () => {
     await settle()
     await click('Clear filters')
     expect(host.querySelector<HTMLInputElement>('[aria-label="Search publications"]')!.value).toBe('')
+    expect(host.querySelector('[data-map]')?.getAttribute('data-show-papers')).toBe('false')
+  })
+
+  it('clears search and prior filters when returning to the overview', async () => {
+    await click('HCI')
+    await click('Research Map')
+    await settle()
+    await click('Explore Human')
+    const search = host.querySelector<HTMLInputElement>('[aria-label="Search publications"]')!
+    await act(async () => {
+      Object.getOwnPropertyDescriptor(HTMLInputElement.prototype, 'value')!.set!.call(search, 'Mix and Match')
+      search.dispatchEvent(new Event('input', { bubbles: true }))
+    })
+    const ids = () => [...host.querySelectorAll('[data-publication-id]')].map((node) => node.getAttribute('data-publication-id'))
+    await click('Back to map')
+    expect(search.value).toBe('')
+    expect(host.querySelector<HTMLSelectElement>('[aria-label="Research foundation"]')!.value).toBe('')
+    expect(ids()).toEqual(publications.map((paper) => paper.id))
     expect(host.querySelector('[data-map]')?.getAttribute('data-show-papers')).toBe('false')
   })
 })

@@ -37,7 +37,7 @@ describe('interactive research graph', () => {
 
   it('handles filtered subsets and empty intersections', () => {
     expect(buildResearchGraph([publications[0]], { foundation: 'human', domain: null }).papers).toEqual([publications[0]])
-    const empty = buildResearchGraph(publications, { foundation: 'ai', domain: 'relationships' })
+    const empty = buildResearchGraph(publications.filter((paper) => paper.id === 'pub-digital-privacy-end-of-life-care'), { foundation: 'ai', domain: 'health' })
     expect(empty.papers).toEqual([])
     expect(empty.edges).toEqual([])
   })

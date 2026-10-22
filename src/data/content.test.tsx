@@ -4,6 +4,7 @@ import { renderToStaticMarkup } from 'react-dom/server'
 import { describe, expect, it } from 'vitest'
 import { Home } from '@/pages/Home'
 import { publications } from './publications'
+import { publicationAbstracts } from './publicationAbstracts'
 import { profile } from './profile'
 import { news } from './news'
 import { experiences } from './experiences'
@@ -22,6 +23,15 @@ function expectUnique(values: string[]) {
 }
 
 describe('site content integrity', () => {
+  it('attaches sourced plain-text abstracts only to existing papers', () => {
+    const ids = new Set(publications.map((paper) => paper.id))
+    for (const [id, abstract] of Object.entries(publicationAbstracts)) {
+      expect(ids.has(id), id).toBe(true)
+      expect(abstract?.text.trim().length, id).toBeGreaterThan(100)
+      expect(abstract?.text, id).not.toMatch(/[\uFFFD\uFFFF\u0000-\u0008]|<\/?(?:p|div|script|jats:)[\s>]/)
+      expect(new URL(abstract!.source).protocol, id).toBe('https:')
+    }
+  })
   it('uses unique nonempty IDs in each content collection and the rendered page', () => {
     for (const collection of [publications, news, experiences, service, navItems]) {
       expectUnique(collection.map((item) => item.id))

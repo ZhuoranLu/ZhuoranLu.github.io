@@ -68,6 +68,16 @@ export function PublicationsSection({ publications, id, title }: PublicationsSec
     [publications, venue, focus, goal, mapSelection, query],
   )
 
+  function resetFilters(selection: ResearchSelection = { foundation: null, domain: null }) {
+    setMapSelection(selection)
+    setQuery('')
+    setVenue('all')
+    setFocus('all')
+    setGoal('all')
+  }
+
+  const hasActiveFilters = Boolean(mapSelection.foundation || mapSelection.domain || query || venue !== 'all' || focus !== 'all' || goal !== 'all')
+
   const filters = (
     <>
       <FilterRow label="Venue" options={VENUE_OPTIONS} value={venue} onChange={setVenue} />
@@ -94,14 +104,18 @@ export function PublicationsSection({ publications, id, title }: PublicationsSec
         <p className="text-sm text-brand-subtle">
           * indicates equal contributions, † indicates senior author.
         </p>
-        <div role="group" aria-label="Publication view" className="inline-flex rounded-lg bg-brand-page p-1 ring-1 ring-brand-border">
-          {(['list', 'map'] as const).map((mode) => (
-            <button key={mode} type="button" aria-pressed={requestedView === mode}
-              onClick={() => changeView(mode)}
-              className={`rounded-md px-3 py-2 text-sm font-medium transition-colors ${requestedView === mode ? 'bg-white text-brand-heading shadow-sm' : 'text-brand-muted hover:text-brand-heading'}`}>
-              {mode === 'list' ? 'List' : 'Research Map'}
-            </button>
-          ))}
+        <div className="ml-auto flex max-w-full flex-wrap items-center justify-end gap-3">
+          <button className={`publication-control shrink-0 ${hasActiveFilters ? '' : 'invisible'}`}
+            type="button" disabled={!hasActiveFilters} onClick={() => resetFilters()}>Clear filters</button>
+          <div role="group" aria-label="Publication view" className="inline-flex rounded-lg bg-brand-page p-1 ring-1 ring-brand-border">
+            {(['list', 'map'] as const).map((mode) => (
+              <button key={mode} type="button" aria-pressed={requestedView === mode}
+                onClick={() => changeView(mode)}
+                className={`whitespace-nowrap rounded-md px-3 py-2 text-sm font-medium transition-colors ${requestedView === mode ? 'bg-white text-brand-heading shadow-sm' : 'text-brand-muted hover:text-brand-heading'}`}>
+                {mode === 'list' ? 'List' : 'Research Map'}
+              </button>
+            ))}
+          </div>
         </div>
       </div>
 
@@ -133,7 +147,6 @@ export function PublicationsSection({ publications, id, title }: PublicationsSec
       </div>
       <div className="mb-3 mt-5 flex flex-wrap items-center justify-between gap-2">
         <div className="text-xs text-brand-muted">
-          <p role="status">{visible.length} of {publications.length} papers</p>
           {view === 'list' && (mapSelection.foundation || mapSelection.domain || query.trim()) &&
             <p className="mt-1">{[
               RESEARCH_FOUNDATIONS.find((item) => item.id === mapSelection.foundation)?.label,
@@ -141,16 +154,13 @@ export function PublicationsSection({ publications, id, title }: PublicationsSec
               query.trim() && `Search: ${query.trim()}`,
             ].filter(Boolean).join(' · ')}</p>}
         </div>
-        {(mapSelection.foundation || mapSelection.domain || query || venue !== 'all' || focus !== 'all' || goal !== 'all') &&
-          <button className="publication-control" type="button" onClick={() => {
-            setMapSelection({ foundation: null, domain: null }); setQuery(''); setVenue('all'); setFocus('all'); setGoal('all')
-          }}>Clear filters</button>}
       </div>
       <div className={`publication-view ${leaving ? 'publication-view-leaving' : ''}`} inert={leaving} aria-busy={leaving}>
         <div>
           {view === 'map' ? (
             <ResearchMap publications={publications} visible={visible} selection={mapSelection}
               showPapers={Boolean(query.trim() || venue !== 'all' || focus !== 'all' || goal !== 'all')}
+              onOverview={() => resetFilters()}
               onSelectionChange={setMapSelection} />
           ) : visible.length === 0 ? (
             <p className="py-6 text-brand-subtle">No publications match these filters.</p>
