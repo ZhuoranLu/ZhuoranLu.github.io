@@ -24,10 +24,10 @@ describe('research map', () => {
   it('supports independent dimensions and intersects multi-label membership without duplicates or reordering', () => {
     const original = structuredClone(publications)
     const papers = selectResearchPapers(publications, { foundation: 'ai', domain: 'social-media' })
-    expect(papers.map((paper) => paper.id)).toEqual(['pub-llm-adversarial-risks-interventions', 'pub-llm-adversarial-lbw'])
+    expect(papers.map((paper) => paper.id)).toEqual(['pub-llm-adversarial-risks-interventions', 'pub-llm-adversarial-lbw', 'pub-pearl', 'pub-synthetic-data-generation', 'pub-biased-language'])
     expect(selectResearchPapers(publications, { foundation: 'human', domain: null }).map((paper) => paper.id)).toContain('pub-modeling-human-trust')
-    expect(selectResearchPapers(publications, { foundation: null, domain: 'entertainment' }).map((paper) => paper.id)).toEqual([
-      'pub-tracing-genai-art', 'pub-fanverse', 'pub-whatelse',
+    expect(selectResearchPapers(publications, { foundation: null, domain: 'creative-work' }).map((paper) => paper.id)).toEqual([
+      'pub-likelihood-not-authorship', 'pub-tracing-genai-art', 'pub-fanverse', 'pub-whatelse', 'pub-pearl',
     ])
     expect(selectResearchPapers(publications, all)).toEqual(publications)
     expect(publications).toEqual(original)
@@ -45,7 +45,7 @@ describe('research map', () => {
   })
 
   it('distinguishes an empty intersection from a domain without any publications', () => {
-    const markup = renderToStaticMarkup(<ResearchMap publications={publications} visible={publications}
+    const markup = renderToStaticMarkup(<ResearchMap publications={publications} visible={publications.filter((paper) => paper.id === 'pub-digital-privacy-end-of-life-care')}
       selection={{ foundation: 'ai', domain: 'health' }} onSelectionChange={() => {}} />)
     expect(markup).toContain('No publications match this intersection and the current filters.')
     expect(markup).not.toContain('Research in Health is coming soon.')

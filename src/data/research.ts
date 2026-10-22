@@ -8,12 +8,14 @@ export const RESEARCH_FOUNDATIONS = [
 
 // Keep domains at a broad application level; describe subtopics within them.
 export const RESEARCH_DOMAINS = [
-  { id: 'entertainment', label: 'Entertainment', description: 'Storytelling & creative practice' },
-  { id: 'social-media', label: 'Social Media', description: 'Information spread & social influence' },
+  { id: 'creative-work', label: 'Creative Work', description: 'Writing, storytelling & visual creation' },
+  { id: 'social-media', label: 'Media & Communication', description: 'Information spread, reviews, online communication & media bias' },
   { id: 'health', label: 'Health', description: 'Care, health data & privacy' },
   { id: 'education', label: 'Education', description: 'Learning & teaching' },
-  { id: 'finance', label: 'Finance', description: 'Trading, financial information & sustainability disclosures' },
-  { id: 'transportation', label: 'Transportation', description: 'AI in transportation, including aviation' },
+  { id: 'finance', label: 'Finance', description: 'Lending, income, trading & sustainability disclosures' },
+  { id: 'transportation', label: 'Transportation', description: 'Aviation, travel & mobility' },
+  { id: 'law-justice', label: 'Law & Justice', description: 'Legal decisions & recidivism risk assessment' },
+  { id: 'relationships', label: 'Relationships', description: 'Dating & interpersonal relationships' },
 ] as const
 
 export type ResearchFoundation = typeof RESEARCH_FOUNDATIONS[number]['id']
@@ -26,16 +28,19 @@ export interface ResearchPlacement {
 // Editorial draft based on the stated subject of each paper; review with the author.
 // Foundations and domains are independent, multi-valued dimensions. An empty domain
 // means no specific application domain is assigned, not an incomplete record.
-// An experimental task alone is not sufficient to assign an application domain.
+// Domains include the paper's subject and concrete tasks/datasets actually evaluated.
+// Introductory examples or potential applications alone do not establish membership.
+// A domain tag does not imply deployment or validation with domain professionals.
 export const RESEARCH_PLACEMENTS: Record<string, ResearchPlacement> = {
   'pub-single-user-assistants-others': { foundations: ['human', 'interaction'], domains: [] },
   'pub-autoredtrader': { foundations: ['ai'], domains: ['finance'] },
-  'pub-likelihood-not-authorship': { foundations: ['ai', 'interaction'], domains: [] },
+  // AI-assisted writing and authorship evaluation: https://arxiv.org/abs/2610.19767
+  'pub-likelihood-not-authorship': { foundations: ['ai', 'interaction'], domains: ['creative-work'] },
   'pub-skillvetbench': { foundations: ['ai'], domains: [] },
-  'pub-tracing-genai-art': { foundations: ['human', 'interaction'], domains: ['entertainment'] },
+  'pub-tracing-genai-art': { foundations: ['human', 'interaction'], domains: ['creative-work'] },
   'pub-digital-privacy-end-of-life-care': { foundations: ['human'], domains: ['health'] },
   'pub-interpret-agent-behavior': { foundations: ['ai'], domains: [] },
-  'pub-fanverse': { foundations: ['interaction'], domains: ['entertainment'] },
+  'pub-fanverse': { foundations: ['interaction'], domains: ['creative-work'] },
   'pub-grounded-theory-agent-behavior': { foundations: ['ai'], domains: [] },
   'pub-greenaudit-bench': { foundations: ['ai'], domains: ['finance'] },
   'pub-ubiquitous-health-data-end-of-life': { foundations: ['human', 'interaction'], domains: ['health'] },
@@ -45,26 +50,39 @@ export const RESEARCH_PLACEMENTS: Record<string, ResearchPlacement> = {
   'pub-adaptive-ai-assistance-bandits': { foundations: ['ai', 'interaction'], domains: [] },
   'pub-xagen': { foundations: ['ai', 'interaction'], domains: [] },
   'pub-llm-adversarial-risks-interventions': { foundations: ['human', 'ai', 'interaction'], domains: ['social-media'] },
-  'pub-human-llm-feature-engineering': { foundations: ['ai', 'interaction'], domains: [] },
-  'pub-from-text-to-trust': { foundations: ['interaction'], domains: [] },
+  // Sec. 4.5 and Table C.1: aviation user study; loan, medical and travel benchmarks. https://arxiv.org/html/2601.21060v1
+  'pub-human-llm-feature-engineering': { foundations: ['ai', 'interaction'], domains: ['health', 'finance', 'transportation'] },
+  // Sec. 3.1: income and recidivism prediction. https://arxiv.org/html/2502.11919v1
+  'pub-from-text-to-trust': { foundations: ['interaction'], domains: ['finance', 'law-justice'] },
   'pub-credibility-peers-experts': { foundations: ['human', 'interaction'], domains: ['social-media'] },
-  'pub-whatelse': { foundations: ['interaction'], domains: ['entertainment'] },
+  'pub-whatelse': { foundations: ['interaction'], domains: ['creative-work'] },
   'pub-llm-adversarial-lbw': { foundations: ['human', 'ai', 'interaction'], domains: ['social-media'] },
-  'pub-does-more-advice-help': { foundations: ['human', 'interaction'], domains: [] },
-  'pub-pearl': { foundations: ['ai', 'interaction'], domains: [] },
-  'pub-mix-and-match': { foundations: ['human'], domains: [] },
+  // Sec. 3.1: sentiment judgments on IMDb movie reviews. https://mingyin.org/paper/CSCW-24/second.pdf
+  'pub-does-more-advice-help': { foundations: ['human', 'interaction'], domains: ['social-media'] },
+  // Personalized writing evaluated on workplace communications and Reddit. https://aclanthology.org/2024.customnlp4u-1.16/
+  'pub-pearl': { foundations: ['ai', 'interaction'], domains: ['creative-work', 'social-media'] },
+  // Evaluation datasets: diabetes, loan default and income prediction. https://mingyin.org/paper/HCOMP-24/mm.pdf
+  'pub-mix-and-match': { foundations: ['human'], domains: ['health', 'finance'] },
   'pub-behavior-aware-ai': { foundations: ['human', 'ai', 'interaction'], domains: [] },
   'pub-ai-pilot-cockpit': { foundations: ['human'], domains: ['transportation'] },
-  'pub-devils-advocate': { foundations: ['interaction'], domains: [] },
-  'pub-decoding-ai-nudge': { foundations: ['human'], domains: [] },
-  'pub-synthetic-data-generation': { foundations: ['ai'], domains: [] },
+  // Sec. 3: group recidivism risk assessment. https://mingyin.org/paper/IUI-24/devil.pdf
+  'pub-devils-advocate': { foundations: ['interaction'], domains: ['law-justice'] },
+  // Human-subject experiment: diabetes prediction. https://arxiv.org/html/2401.05840v1
+  'pub-decoding-ai-nudge': { foundations: ['human'], domains: ['health'] },
+  // Evaluation includes news classification, spam and online toxicity detection. https://aclanthology.org/2023.emnlp-main.647/
+  'pub-synthetic-data-generation': { foundations: ['ai'], domains: ['social-media'] },
   'pub-strategic-adversarial-attacks': { foundations: ['human', 'ai', 'interaction'], domains: [] },
-  'pub-two-heads': { foundations: ['human', 'interaction'], domains: [] },
-  'pub-modeling-human-trust': { foundations: ['human'], domains: [] },
+  // Human-AI collaborative recidivism risk assessment. https://mingyin.org/paper/CHI-23/group-camera.pdf
+  'pub-two-heads': { foundations: ['human', 'interaction'], domains: ['law-justice'] },
+  // Human-subject experiment: UCI income prediction. https://mingyin.org/paper/AAAI-23/TrustModel.pdf
+  'pub-modeling-human-trust': { foundations: ['human'], domains: ['finance'] },
   'pub-credibility-indicators-detection': { foundations: ['human', 'interaction'], domains: ['social-media'] },
-  'pub-biased-language': { foundations: ['ai'], domains: [] },
-  'pub-will-you-accept': { foundations: ['human'], domains: [] },
-  'pub-human-reliance-ml': { foundations: ['human'], domains: [] },
+  // Evaluated on Wikipedia edits and news articles (WIKI-Bias, BABE, MBIC). https://mingyin.org/paper/AIES-22/cleare.pdf
+  'pub-biased-language': { foundations: ['ai'], domains: ['social-media'] },
+  // Sec. 5.1: loan default risk assessment. https://mingyin.org/paper/WWW-22/WWW_HAI_model.pdf
+  'pub-will-you-accept': { foundations: ['human'], domains: ['finance'] },
+  // Experiments 1 and 2: speed-dating outcome prediction. https://mingyin.org/paper/CHI-21/reliance.pdf
+  'pub-human-reliance-ml': { foundations: ['human'], domains: ['relationships'] },
 }
 
 export interface ResearchSelection {

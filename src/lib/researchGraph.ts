@@ -4,12 +4,14 @@ import { RESEARCH_DOMAINS, RESEARCH_FOUNDATIONS, selectResearchPapers, type Rese
 
 // Fixed, staggered positions keep the overview organic without jumping on updates.
 const domainPositions: Record<ResearchDomain, { desktop: [number, number]; compact: [number, number] }> = {
-  entertainment: { desktop: [20, 380], compact: [0, 315] },
+  'creative-work': { desktop: [20, 380], compact: [0, 315] },
   'social-media': { desktop: [270, 340], compact: [245, 350] },
   health: { desktop: [610, 420], compact: [30, 435] },
-  education: { desktop: [90, 545], compact: [230, 475] },
+  education: { desktop: [5, 650], compact: [230, 475] },
   finance: { desktop: [420, 510], compact: [0, 565] },
   transportation: { desktop: [650, 570], compact: [250, 605] },
+  'law-justice': { desktop: [180, 495], compact: [25, 720] },
+  relationships: { desktop: [400, 670], compact: [240, 765] },
 }
 
 export type ResearchNodeData = {

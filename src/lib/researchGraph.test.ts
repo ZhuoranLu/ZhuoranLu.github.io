@@ -37,7 +37,7 @@ describe('interactive research graph', () => {
 
   it('handles filtered subsets and empty intersections', () => {
     expect(buildResearchGraph([publications[0]], { foundation: 'human', domain: null }).papers).toEqual([publications[0]])
-    const empty = buildResearchGraph(publications, { foundation: 'ai', domain: 'health' })
+    const empty = buildResearchGraph(publications, { foundation: 'ai', domain: 'relationships' })
     expect(empty.papers).toEqual([])
     expect(empty.edges).toEqual([])
   })
@@ -46,8 +46,8 @@ describe('interactive research graph', () => {
     const graph = buildResearchGraph(publications, overview)
     const original = structuredClone(graph)
     const neighborhood = graphNeighborhood('domain:health', graph.edges)
-    expect([...neighborhood.nodes].sort()).toEqual(['domain:health', 'foundation:human', 'foundation:interaction'])
-    expect(neighborhood.links.size).toBe(2)
+    expect([...neighborhood.nodes].sort()).toEqual(['domain:health', 'foundation:ai', 'foundation:human', 'foundation:interaction'])
+    expect(neighborhood.links.size).toBe(3)
     expect(graphNeighborhood(null, graph.edges).nodes.size).toBe(0)
     expect(graph).toEqual(original)
   })
