@@ -23,11 +23,8 @@ export function PublicationCard({ pub, variant = 'list' }: Props) {
         {pub.thumb && <img src={pub.thumb} alt="" loading="lazy" draggable={false} />}
       </Block>
       <Block className="publication-body">
-        <Block className="publication-meta">
-          <span className="publication-venue" style={{ backgroundColor: VENUES[pub.venue].color }}>{pub.venue}</span>
-          <span>{pub.year}</span>
-        </Block>
         <Block className="publication-title">
+          <span className="publication-venue" style={{ backgroundColor: VENUES[pub.venue].color }}>{pub.venue}</span>
           {pub.url && variant !== 'node'
             ? <a href={pub.url} target="_blank" rel="noopener noreferrer">{pub.title}</a>
             : <span>{pub.title}</span>}

@@ -49,8 +49,7 @@
   .publication-thumbnail { @apply w-16 shrink-0 sm:w-24; }
   .publication-thumbnail img { @apply aspect-square w-full rounded-lg border border-brand-border bg-white object-contain p-1; }
   .publication-body { @apply block min-w-0 flex-1; }
-  .publication-meta { @apply mb-2 flex flex-wrap items-center gap-2 text-xs text-brand-muted; }
-  .publication-venue { @apply max-w-full rounded px-1.5 py-0.5 font-semibold text-black; }
+  .publication-venue { @apply mr-2 inline-flex min-w-16 max-w-full translate-y-[-1px] items-center justify-center whitespace-nowrap rounded px-1.5 py-0.5 align-middle text-xs font-semibold text-black; }
   .publication-title { @apply block text-sm font-semibold leading-relaxed text-brand-heading; }
   .publication-title a { @apply text-brand-heading hover:text-brand-primary; }
   .publication-authors { @apply block mt-2 text-xs leading-relaxed text-brand-muted; }
