@@ -69,7 +69,7 @@ export function PublicationsSection({ publications, id, title }: PublicationsSec
   )
 
   const filters = (
-    <div className="space-y-4 rounded-xl bg-brand-page p-5">
+    <>
       <FilterRow label="Venue" options={VENUE_OPTIONS} value={venue} onChange={setVenue} />
       <FilterRow
         label="Focus"
@@ -85,7 +85,7 @@ export function PublicationsSection({ publications, id, title }: PublicationsSec
         value={goal}
         onChange={setGoal}
       />
-    </div>
+    </>
   )
 
   return (
@@ -105,32 +105,32 @@ export function PublicationsSection({ publications, id, title }: PublicationsSec
         </div>
       </div>
 
-      {filters}
-
-      {view === 'map' && <div className="publication-toolbar mt-4">
-        <div className="flex flex-wrap items-end gap-3">
-          <label className="publication-field">
-            <span>Foundation</span>
-            <select aria-label="Research foundation" value={mapSelection.foundation ?? ''}
-              onChange={(event) => setMapSelection({ ...mapSelection, foundation: event.target.value as ResearchSelection['foundation'] || null })}>
-              <option value="">All foundations</option>
-              {RESEARCH_FOUNDATIONS.map((item) => <option key={item.id} value={item.id}>{item.label}</option>)}
-            </select>
-          </label>
-          <label className="publication-field">
-            <span>Domain</span>
-            <select aria-label="Application domain" value={mapSelection.domain ?? ''}
-              onChange={(event) => setMapSelection({ ...mapSelection, domain: event.target.value as ResearchSelection['domain'] || null })}>
-              <option value="">All domains</option>
-              {RESEARCH_DOMAINS.map((item) => <option key={item.id} value={item.id}>{item.label}</option>)}
-            </select>
-          </label>
-          <label className="publication-field min-w-0 flex-1 basis-48">
-            <span>Search</span>
-            <input type="search" aria-label="Search publications" placeholder="Title, author, or venue" value={query} onChange={(event) => setQuery(event.target.value)} />
-          </label>
-        </div>
-      </div>}
+      <div className="publication-filters space-y-4 rounded-xl bg-brand-page p-5">
+        {view === 'list' ? filters : (
+          <div className="flex flex-wrap items-end gap-3">
+            <label className="publication-field">
+              <span>Foundation</span>
+              <select aria-label="Research foundation" value={mapSelection.foundation ?? ''}
+                onChange={(event) => setMapSelection({ ...mapSelection, foundation: event.target.value as ResearchSelection['foundation'] || null })}>
+                <option value="">All foundations</option>
+                {RESEARCH_FOUNDATIONS.map((item) => <option key={item.id} value={item.id}>{item.label}</option>)}
+              </select>
+            </label>
+            <label className="publication-field">
+              <span>Domain</span>
+              <select aria-label="Application domain" value={mapSelection.domain ?? ''}
+                onChange={(event) => setMapSelection({ ...mapSelection, domain: event.target.value as ResearchSelection['domain'] || null })}>
+                <option value="">All domains</option>
+                {RESEARCH_DOMAINS.map((item) => <option key={item.id} value={item.id}>{item.label}</option>)}
+              </select>
+            </label>
+            <label className="publication-field min-w-0 flex-1 basis-48">
+              <span>Search</span>
+              <input type="search" aria-label="Search publications" placeholder="Title, author, or venue" value={query} onChange={(event) => setQuery(event.target.value)} />
+            </label>
+          </div>
+        )}
+      </div>
       <div className="mb-3 mt-5 flex flex-wrap items-center justify-between gap-2">
         <div className="text-xs text-brand-muted">
           <p role="status">{visible.length} of {publications.length} papers</p>

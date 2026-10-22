@@ -35,9 +35,6 @@
 }
 
 @layer components {
-  .publication-toolbar {
-    @apply mb-3 rounded-xl border border-brand-border bg-brand-page p-4;
-  }
   .publication-field { @apply block text-xs text-brand-muted; }
   .publication-field > span { @apply mb-1.5 block; }
   .publication-field input, .publication-field select {
