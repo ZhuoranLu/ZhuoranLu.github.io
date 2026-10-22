@@ -26,14 +26,14 @@ function ResearchGraphNode({ data }: NodeProps<ResearchNode>) {
     <div className={`research-node research-node-${data.kind} ${data.active ? 'is-active' : ''} ${data.empty ? 'is-empty' : ''}`} style={style}>
       <Handle type="target" position={Position.Top} isConnectable={false} />
       {data.kind === 'root' ? <div className="research-root"><span>{data.description}</span><strong>{data.label}</strong></div> : (
-        <button type="button" aria-label={data.kind === 'paper' ? `Read ${data.label}` : `Explore ${data.label}, ${data.count} papers`}
+        <button type="button" aria-label={data.kind === 'paper' ? `Read ${data.label}` : data.empty ? `${data.label}, coming soon` : `Explore ${data.label}, ${data.count} papers`}
           aria-pressed={data.active} title={data.kind === 'paper' ? data.label : data.description}
           onClick={data.onActivate} onFocus={() => data.onPreview?.(true)} onBlur={() => data.onPreview?.(false)}
           onMouseEnter={() => data.onPreview?.(true)} onMouseLeave={() => data.onPreview?.(false)}>
           {data.kind === 'paper' && data.paper ? <PublicationCard pub={data.paper} variant="node" /> : <>
             {data.kind === 'foundation' && <span className="research-orb"><Icon size={27} /><span className="research-orbit" /></span>}
             <span className="research-node-title">{data.label}</span>
-            <span className="research-node-caption">{data.empty ? 'No papers yet' : `${data.count} ${data.count === 1 ? 'paper' : 'papers'}`}</span>
+            <span className="research-node-caption">{data.empty ? 'Coming soon' : `${data.count} ${data.count === 1 ? 'paper' : 'papers'}`}</span>
             {data.kind === 'domain' && <FiArrowUpRight className="research-node-arrow" size={14} />}
           </>}
 

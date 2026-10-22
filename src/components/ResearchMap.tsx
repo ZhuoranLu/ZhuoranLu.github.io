@@ -79,9 +79,9 @@ export function ResearchMap({ publications, visible, selection, showPapers = fal
             onPaper={(paper) => openPaper(paper.id)} />
         </Suspense>}
         {graph.expanded && graph.papers.length === 0 && <div className="research-empty" role="status">
-          <p className="mb-2 font-semibold text-brand-heading">{selection.domain && !domainHasPapers ? 'No papers yet' : 'No matching papers'}</p>
+          <p className="mb-2 font-semibold text-brand-heading">{selection.domain && !domainHasPapers ? 'Coming soon' : 'No matching papers'}</p>
           <p>{selection.domain && !domainHasPapers
-            ? `No publications are assigned to ${domainLabel} yet.`
+            ? `Research in ${domainLabel} is coming soon.`
             : 'No publications match this intersection and the current filters. Try another area or clear the filters above.'}</p>
         </div>}
         {selectedPaper && <aside className="research-inspector" aria-label="Selected paper"

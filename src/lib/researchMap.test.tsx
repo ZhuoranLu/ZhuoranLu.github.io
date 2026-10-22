@@ -33,13 +33,13 @@ describe('research map', () => {
     expect(publications).toEqual(original)
   })
 
-  it('works on an already filtered subset and retains Education as an honest empty domain', () => {
+  it('works on an already filtered subset and retains Education as a coming-soon domain', () => {
     expect(selectResearchPapers([publications[0]], { foundation: 'ai', domain: null })).toEqual([])
     const markup = renderToStaticMarkup(<ResearchMap publications={publications} visible={publications}
       selection={{ foundation: null, domain: 'education' }} onSelectionChange={() => {}} />)
     expect(markup).toContain('Education')
-    expect(markup).toContain('No papers yet')
-    expect(markup).toContain('No publications are assigned to Education yet.')
+    expect(markup).toContain('Coming soon')
+    expect(markup).toContain('Research in Education is coming soon.')
     expect(markup).not.toContain('<article')
     expect(selectResearchPapers([], all)).toEqual([])
   })
@@ -48,7 +48,7 @@ describe('research map', () => {
     const markup = renderToStaticMarkup(<ResearchMap publications={publications} visible={publications}
       selection={{ foundation: 'ai', domain: 'health' }} onSelectionChange={() => {}} />)
     expect(markup).toContain('No publications match this intersection and the current filters.')
-    expect(markup).not.toContain('No publications are assigned to Health yet.')
+    expect(markup).not.toContain('Research in Health is coming soon.')
   })
 
   it('starts in list view with all papers available as before', () => {
