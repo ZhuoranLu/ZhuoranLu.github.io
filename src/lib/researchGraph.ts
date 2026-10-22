@@ -1,6 +1,16 @@
 import type { Node, Edge } from '@xyflow/react'
 import type { Publication } from '@/types'
-import { RESEARCH_DOMAINS, RESEARCH_FOUNDATIONS, selectResearchPapers, type ResearchSelection } from '@/data/research'
+import { RESEARCH_DOMAINS, RESEARCH_FOUNDATIONS, selectResearchPapers, type ResearchDomain, type ResearchSelection } from '@/data/research'
+
+// Fixed, staggered positions keep the overview organic without jumping on updates.
+const domainPositions: Record<ResearchDomain, { desktop: [number, number]; compact: [number, number] }> = {
+  entertainment: { desktop: [20, 380], compact: [0, 315] },
+  'social-media': { desktop: [270, 340], compact: [245, 350] },
+  health: { desktop: [610, 420], compact: [30, 435] },
+  education: { desktop: [90, 545], compact: [230, 475] },
+  finance: { desktop: [420, 510], compact: [0, 565] },
+  transportation: { desktop: [650, 570], compact: [250, 605] },
+}
 
 export type ResearchNodeData = {
   kind: 'root' | 'foundation' | 'domain' | 'paper'
@@ -44,14 +54,11 @@ export function buildResearchGraph(publications: readonly Publication[], selecti
       })
       addEdge('root', id, item.color)
     })
-    RESEARCH_DOMAINS.forEach((item, index) => {
+    RESEARCH_DOMAINS.forEach((item) => {
       const id = `domain:${item.id}`
       const count = selectResearchPapers(publications, { foundation: null, domain: item.id }).length
-      const columns = compact ? 2 : 4
-      const row = Math.floor(index / columns)
-      const rowSize = Math.min(columns, RESEARCH_DOMAINS.length - row * columns)
-      addNode(id, (compact ? 20 : 15) + ((columns - rowSize) / 2 + index % columns) * 215,
-        compact ? 350 + row * 100 : 390 + row * 120, {
+      const [x, y] = domainPositions[item.id][compact ? 'compact' : 'desktop']
+      addNode(id, x, y, {
         kind: 'domain', label: item.label, description: item.description, color: '#6F88A6', count,
         empty: item.id === 'education' && count === 0,
         selection: { foundation: null, domain: item.id },
