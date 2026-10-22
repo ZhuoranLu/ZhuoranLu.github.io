@@ -105,7 +105,9 @@ export function PublicationsSection({ publications, id, title }: PublicationsSec
         </div>
       </div>
 
-      <div className="publication-toolbar">
+      {filters}
+
+      {view === 'map' && <div className="publication-toolbar mt-4">
         <div className="flex flex-wrap items-end gap-3">
           <label className="publication-field">
             <span>Foundation</span>
@@ -128,13 +130,17 @@ export function PublicationsSection({ publications, id, title }: PublicationsSec
             <input type="search" aria-label="Search publications" placeholder="Title, author, or venue" value={query} onChange={(event) => setQuery(event.target.value)} />
           </label>
         </div>
-        <details className="mt-3">
-          <summary className="cursor-pointer text-xs text-brand-muted">More filters</summary>
-          <div className="mt-3">{filters}</div>
-        </details>
-      </div>
-      <div className="mb-4 flex min-h-10 flex-wrap items-center justify-between gap-2">
-        <p role="status" className="text-xs text-brand-muted">{visible.length} of {publications.length} papers</p>
+      </div>}
+      <div className="mb-3 mt-5 flex flex-wrap items-center justify-between gap-2">
+        <div className="text-xs text-brand-muted">
+          <p role="status">{visible.length} of {publications.length} papers</p>
+          {view === 'list' && (mapSelection.foundation || mapSelection.domain || query.trim()) &&
+            <p className="mt-1">{[
+              RESEARCH_FOUNDATIONS.find((item) => item.id === mapSelection.foundation)?.label,
+              RESEARCH_DOMAINS.find((item) => item.id === mapSelection.domain)?.label,
+              query.trim() && `Search: ${query.trim()}`,
+            ].filter(Boolean).join(' · ')}</p>}
+        </div>
         {(mapSelection.foundation || mapSelection.domain || query || venue !== 'all' || focus !== 'all' || goal !== 'all') &&
           <button className="publication-control" type="button" onClick={() => {
             setMapSelection({ foundation: null, domain: null }); setQuery(''); setVenue('all'); setFocus('all'); setGoal('all')
