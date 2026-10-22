@@ -4,60 +4,41 @@ import { VENUES } from '@/data/venues'
 
 interface Props {
   pub: Publication
+  variant?: 'list' | 'node' | 'detail'
 }
 
-function AwardIcon({ award }: { award: string }) {
-  return <span className="shrink-0" aria-hidden>{/oral/i.test(award) ? '🗣️' : '🏆'}</span>
-}
+const variantClasses = {
+  list: 'publication-card-list',
+  node: 'publication-card-node',
+  detail: 'publication-card-detail',
+} as const
 
-export function PublicationCard({ pub }: Props) {
+/** One paper presentation; views only change its density and arrangement. */
+export function PublicationCard({ pub, variant = 'list' }: Props) {
+  const Container = variant === 'node' ? 'span' : 'article'
+  const Block = variant === 'node' ? 'span' : 'div'
   return (
-    <article className="animate-fade-in flex gap-4 border-b border-brand-border py-5 last:border-b-0 sm:gap-5">
-      {/* Fixed-width column so entries without a thumbnail still align. */}
-      <div className="w-16 shrink-0 sm:w-28">
-        {pub.thumb && (
-          <img
-            src={pub.thumb}
-            alt=""
-            loading="lazy"
-            className="aspect-square w-full rounded-md bg-white object-contain p-1 shadow-[0_0_5px_rgba(0,0,0,0.25)]"
-          />
-        )}
-      </div>
-      <div className="min-w-0 flex-1">
-        <div className="leading-relaxed">
-          {pub.venue && (
-            <span
-              className="mr-2 inline-flex min-w-16 translate-y-[-1px] items-center justify-center whitespace-nowrap rounded px-1.5 py-0.5 align-middle text-xs font-semibold text-black"
-              style={{ backgroundColor: VENUES[pub.venue].color }}
-            >
-              {pub.venue}
-            </span>
-          )}
-          {pub.url ? (
-            <a
-              href={pub.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-semibold text-brand-heading hover:text-brand-primary"
-            >
-              {pub.title}
-            </a>
-          ) : (
-            <span className="font-semibold text-brand-heading">{pub.title}</span>
-          )}
-          {pub.award && (
-            <span className="ml-1.5 inline-flex max-w-full items-center gap-1 whitespace-normal align-baseline font-semibold text-brand-danger sm:whitespace-nowrap">
-              <AwardIcon award={pub.award} />
-              {pub.award}
-            </span>
-          )}
-        </div>
-
-        <div className="mt-1.5 text-sm text-brand-muted">{renderInline(pub.authors)}</div>
-        <div className="mt-0.5 text-sm italic text-brand-subtle">{pub.venueFull}</div>
-        {pub.prelim && <div className="text-sm italic text-brand-subtle">{pub.prelim}</div>}
-      </div>
-    </article>
+    <Container className={`publication-card ${variantClasses[variant]}`} data-publication-id={pub.id}>
+      <Block className="publication-thumbnail">
+        {pub.thumb && <img src={pub.thumb} alt="" loading="lazy" draggable={false} />}
+      </Block>
+      <Block className="publication-body">
+        <Block className="publication-meta">
+          <span className="publication-venue" style={{ backgroundColor: VENUES[pub.venue].color }}>{pub.venue}</span>
+          <span>{pub.year}</span>
+        </Block>
+        <Block className="publication-title">
+          {pub.url && variant !== 'node'
+            ? <a href={pub.url} target="_blank" rel="noopener noreferrer">{pub.title}</a>
+            : <span>{pub.title}</span>}
+        </Block>
+        <Block className="publication-authors">{renderInline(pub.authors)}</Block>
+        {variant !== 'node' && <>
+          <Block className="publication-venue-full">{pub.venueFull}</Block>
+          {pub.prelim && <Block className="publication-venue-full">{pub.prelim}</Block>}
+        </>}
+        {pub.award && <Block className="publication-award"><span aria-hidden="true">{/oral/i.test(pub.award) ? '🗣️' : '🏆'}</span> {pub.award}</Block>}
+      </Block>
+    </Container>
   )
 }

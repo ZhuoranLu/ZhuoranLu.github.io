@@ -3,7 +3,8 @@ import {
   ReactFlow, Background, Controls, Handle, Position, useNodesState,
   type NodeProps, type ReactFlowInstance,
 } from '@xyflow/react'
-import { FiArrowUpRight, FiCpu, FiUsers, FiGitMerge, FiFileText } from 'react-icons/fi'
+import { FiArrowUpRight, FiCpu, FiUsers, FiGitMerge } from 'react-icons/fi'
+import { PublicationCard } from './PublicationCard'
 import type { Publication } from '@/types'
 import { buildResearchGraph, graphNeighborhood, type ResearchNode } from '@/lib/researchGraph'
 import type { ResearchSelection } from '@/data/research'
@@ -29,11 +30,13 @@ function ResearchGraphNode({ data }: NodeProps<ResearchNode>) {
           aria-pressed={data.active} title={data.kind === 'paper' ? data.label : data.description}
           onClick={data.onActivate} onFocus={() => data.onPreview?.(true)} onBlur={() => data.onPreview?.(false)}
           onMouseEnter={() => data.onPreview?.(true)} onMouseLeave={() => data.onPreview?.(false)}>
-          {data.kind === 'foundation' && <span className="research-orb"><Icon size={27} /><span className="research-orbit" /></span>}
-          {data.kind === 'paper' && <div className="research-paper-image">{data.paper?.thumb ? <img src={data.paper.thumb} alt="" draggable={false} /> : <FiFileText size={32} />}</div>}
-          <span className="research-node-title">{data.label}</span>
-          <span className="research-node-caption">{data.kind === 'paper' ? data.description : data.empty ? 'No papers yet' : `${data.count} ${data.count === 1 ? 'paper' : 'papers'}`}</span>
-          {data.kind === 'domain' && <FiArrowUpRight className="research-node-arrow" size={14} />}
+          {data.kind === 'paper' && data.paper ? <PublicationCard pub={data.paper} variant="node" /> : <>
+            {data.kind === 'foundation' && <span className="research-orb"><Icon size={27} /><span className="research-orbit" /></span>}
+            <span className="research-node-title">{data.label}</span>
+            <span className="research-node-caption">{data.empty ? 'No papers yet' : `${data.count} ${data.count === 1 ? 'paper' : 'papers'}`}</span>
+            {data.kind === 'domain' && <FiArrowUpRight className="research-node-arrow" size={14} />}
+          </>}
+
         </button>
       )}
       <Handle type="source" position={Position.Bottom} isConnectable={false} />
@@ -82,7 +85,7 @@ export default function ResearchCanvas({ graph, activePaper, onSelect, onPaper }
       elementsSelectable={false} deleteKeyCode={null} zoomOnScroll={false} panOnScroll={false}
       preventScrolling={false} zoomOnDoubleClick={false}
       aria-label="Interactive research map. Drag nodes or the background; use zoom controls to explore.">
-      <Background color="#c9d3dd" gap={24} size={1} />
+      <Background color="#E2E5E8" gap={24} size={1} />
       <Controls position="bottom-right" showInteractive={false} fitViewOptions={{ padding: 0.14, maxZoom: 1 }} />
     </ReactFlow>
   )

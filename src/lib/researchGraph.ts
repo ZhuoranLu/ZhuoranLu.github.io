@@ -19,11 +19,11 @@ export type ResearchNodeData = {
 export type ResearchNode = Node<ResearchNodeData, 'research'>
 
 /** Edges encode editorial membership/shared papers, never citation or causation. */
-export function buildResearchGraph(publications: readonly Publication[], selection: ResearchSelection, compact = false) {
+export function buildResearchGraph(publications: readonly Publication[], selection: ResearchSelection, compact = false, showPapers = false) {
   const nodes: ResearchNode[] = []
   const edges: Edge[] = []
   const papers = selectResearchPapers(publications, selection)
-  const expanded = Boolean(selection.foundation || selection.domain)
+  const expanded = Boolean(selection.foundation || selection.domain || showPapers)
   const addEdge = (source: string, target: string, color: string, count?: number) => edges.push({
     id: `${source}--${target}`, source, target, type: 'default',
     style: { stroke: color, strokeWidth: 1.5, opacity: 0.35 },
@@ -34,7 +34,7 @@ export function buildResearchGraph(publications: readonly Publication[], selecti
   })
 
   if (!expanded) {
-    addNode('root', compact ? 115 : 330, 0, { kind: 'root', label: 'Human–AI', description: 'A research landscape', color: '#324c63' })
+    addNode('root', compact ? 115 : 330, 0, { kind: 'root', label: 'Human–AI', description: 'A research landscape', color: '#6F88A6' })
     RESEARCH_FOUNDATIONS.forEach((item, index) => {
       const id = `foundation:${item.id}`
       addNode(id, compact ? index * 145 : 90 + index * 270, 130, {
@@ -52,7 +52,7 @@ export function buildResearchGraph(publications: readonly Publication[], selecti
       const rowSize = Math.min(columns, RESEARCH_DOMAINS.length - row * columns)
       addNode(id, (compact ? 20 : 15) + ((columns - rowSize) / 2 + index % columns) * 215,
         compact ? 350 + row * 100 : 390 + row * 120, {
-        kind: 'domain', label: item.label, description: item.description, color: '#61778d', count,
+        kind: 'domain', label: item.label, description: item.description, color: '#6F88A6', count,
         empty: item.id === 'education' && count === 0,
         selection: { foundation: null, domain: item.id },
       })
@@ -66,13 +66,13 @@ export function buildResearchGraph(publications: readonly Publication[], selecti
     const domain = RESEARCH_DOMAINS.find((item) => item.id === selection.domain)
     const color = foundation?.color ?? '#6F88A6'
     const columns = Math.max(1, Math.min(compact ? 3 : 5, Math.ceil(Math.sqrt(papers.length))))
-    const gridWidth = (columns - 1) * 285 + 230
+    const gridWidth = (columns - 1) * 330 + 280
     addNode('selection', (gridWidth - 190) / 2, 0, {
-      kind: 'root', label: [foundation?.label, domain?.label].filter(Boolean).join(' × '),
+      kind: 'root', label: [foundation?.label, domain?.label].filter(Boolean).join(' × ') || 'Matching papers',
       description: `${papers.length} ${papers.length === 1 ? 'paper' : 'papers'} · select one to read`, color,
     })
     papers.forEach((paper, index) => {
-      addNode(paper.id, (index % columns) * 285, 170 + Math.floor(index / columns) * 230, {
+      addNode(paper.id, (index % columns) * 330, 170 + Math.floor(index / columns) * 260, {
         kind: 'paper', label: paper.title, description: `${paper.venue} · ${paper.year}`, color, paper,
       })
       addEdge('selection', paper.id, color)

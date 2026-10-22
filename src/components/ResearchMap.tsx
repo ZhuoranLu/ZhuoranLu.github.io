@@ -1,11 +1,11 @@
 import { lazy, Suspense, useEffect, useMemo, useRef, useState } from 'react'
 import type { Publication } from '@/types'
 import {
-  RESEARCH_DOMAINS, RESEARCH_FOUNDATIONS, selectResearchPapers,
+  RESEARCH_DOMAINS, selectResearchPapers,
   type ResearchSelection,
 } from '@/data/research'
 import { buildResearchGraph } from '@/lib/researchGraph'
-import { renderInline } from '@/lib/inline'
+import { PublicationCard } from './PublicationCard'
 import './research-map.css'
 
 const ResearchCanvas = lazy(() => import('./ResearchCanvas'))
@@ -13,10 +13,11 @@ interface ResearchMapProps {
   publications: readonly Publication[]
   visible: readonly Publication[]
   selection: ResearchSelection
+  showPapers?: boolean
   onSelectionChange: (selection: ResearchSelection) => void
 }
 
-export function ResearchMap({ publications, visible, selection, onSelectionChange }: ResearchMapProps) {
+export function ResearchMap({ publications, visible, selection, showPapers = false, onSelectionChange }: ResearchMapProps) {
   const [compact, setCompact] = useState(false)
   useEffect(() => {
     const media = window.matchMedia('(max-width: 639px)')
@@ -27,18 +28,20 @@ export function ResearchMap({ publications, visible, selection, onSelectionChang
   }, [])
   const [activePaper, setActivePaper] = useState<string | null>(null)
   const detailClose = useRef<HTMLButtonElement>(null)
-  const overviewButton = useRef<HTMLButtonElement>(null)
-  const foundationPicker = useRef<HTMLSelectElement>(null)
+  const mapContainer = useRef<HTMLDivElement>(null)
   const restoreTopicFocus = useRef(false)
   const paperTrigger = useRef<HTMLElement | null>(null)
-  const graph = useMemo(() => buildResearchGraph(visible, selection, compact), [visible, selection, compact])
-  const selectedPaper = graph.papers.find((paper) => paper.id === activePaper)
+  const graph = useMemo(() => buildResearchGraph(visible, selection, compact, showPapers), [visible, selection, compact, showPapers])
+  const selectedPaper = graph.nodes.find((node) => node.id === activePaper)?.data.paper
   useEffect(() => {
-    if (activePaper && !selectedPaper) setActivePaper(null)
+    if (activePaper && !selectedPaper) {
+      setActivePaper(null)
+      if (document.activeElement === document.body) mapContainer.current?.focus({ preventScroll: true })
+    }
   }, [activePaper, selectedPaper])
   useEffect(() => {
     if (restoreTopicFocus.current) {
-      (overviewButton.current ?? foundationPicker.current)?.focus({ preventScroll: true })
+      mapContainer.current?.focus({ preventScroll: true })
       restoreTopicFocus.current = false
     }
   }, [selection])
@@ -48,9 +51,7 @@ export function ResearchMap({ publications, visible, selection, onSelectionChang
       detailClose.current?.focus({ preventScroll: true })
     }
   }, [selectedPaper])
-  const foundationLabel = RESEARCH_FOUNDATIONS.find((item) => item.id === selection.foundation)?.label
   const domainLabel = RESEARCH_DOMAINS.find((item) => item.id === selection.domain)?.label
-  const title = [foundationLabel, domainLabel].filter(Boolean).join(' × ')
   const domainHasPapers = selection.domain && selectResearchPapers(publications, { foundation: null, domain: selection.domain }).length > 0
 
   function select(next: ResearchSelection, restoreFocus = false) {
@@ -61,7 +62,8 @@ export function ResearchMap({ publications, visible, selection, onSelectionChang
 
   function closeDetails() {
     setActivePaper(null)
-    paperTrigger.current?.focus({ preventScroll: true })
+    const target = paperTrigger.current?.isConnected ? paperTrigger.current : mapContainer.current
+    target?.focus({ preventScroll: true })
   }
 
   function openPaper(id: string) {
@@ -70,32 +72,7 @@ export function ResearchMap({ publications, visible, selection, onSelectionChang
   }
 
   return (
-    <div className="research-explorer">
-      <div className="research-toolbar">
-        <div><h3>{graph.expanded ? title : 'Explore my research'}</h3>
-          <p>{graph.expanded ? 'Select a paper to open its details.' : 'Follow a question. Discover the work behind it.'}</p></div>
-        {graph.expanded && <button ref={overviewButton} type="button" onClick={() => select({ foundation: null, domain: null }, true)}>← Overview</button>}
-        <div className="flex w-full flex-wrap gap-2">
-          <select ref={foundationPicker} aria-label="Research foundation" value={selection.foundation ?? ''}
-            onChange={(event) => select({ ...selection, foundation: event.target.value as ResearchSelection['foundation'] || null })}>
-            <option value="">All foundations</option>
-            {RESEARCH_FOUNDATIONS.map((item) => <option key={item.id} value={item.id}>{item.label}</option>)}
-          </select>
-          <select aria-label="Application domain" value={selection.domain ?? ''}
-            onChange={(event) => select({ ...selection, domain: event.target.value as ResearchSelection['domain'] || null })}>
-            <option value="">All domains</option>
-            {RESEARCH_DOMAINS.map((item) => <option key={item.id} value={item.id}>{item.label}</option>)}
-          </select>
-          <span role="status" className="self-center text-xs text-brand-muted">
-            {graph.expanded ? `${graph.papers.length} ${graph.papers.length === 1 ? 'paper' : 'papers'} · all shown` : 'Click a node to explore'}
-          </span>
-          {graph.expanded && graph.papers.length > 0 && <select aria-label="Find a paper" className="w-full" value={selectedPaper?.id ?? ''}
-            onChange={(event) => { if (event.target.value) openPaper(event.target.value) }}>
-            <option value="">Find a paper…</option>
-            {graph.papers.map((paper) => <option key={paper.id} value={paper.id}>{paper.title}</option>)}
-          </select>}
-        </div>
-      </div>
+    <div ref={mapContainer} className="research-explorer" tabIndex={-1} aria-label="Research map">
       <div className={`research-stage ${graph.expanded ? 'is-expanded' : ''}`}>
         {(!graph.expanded || graph.papers.length > 0) && <Suspense fallback={<p className="p-6 text-sm text-brand-muted">Loading interactive map…</p>}>
           <ResearchCanvas graph={graph} activePaper={selectedPaper?.id ?? null} onSelect={(next) => select(next, true)}
@@ -113,20 +90,11 @@ export function ResearchMap({ publications, visible, selection, onSelectionChang
             <span>Paper details · {selectedPaper.year}</span>
             <button ref={detailClose} className="rounded px-3 py-2 text-brand-heading hover:bg-brand-page" type="button" onClick={closeDetails}>Close</button>
           </div>
-          {selectedPaper.thumb && <img className="mb-4 h-32 w-full rounded-lg bg-brand-page object-contain p-3" src={selectedPaper.thumb} alt="" />}
-          <p className="mb-2 text-xs font-semibold text-brand-muted">{selectedPaper.venue}</p>
-          <h4 className="text-base font-semibold leading-relaxed">{selectedPaper.url
-            ? <a href={selectedPaper.url} target="_blank" rel="noopener noreferrer">{selectedPaper.title} ↗</a>
-            : selectedPaper.title}</h4>
-          <p className="mt-3 text-xs leading-relaxed text-brand-muted">{renderInline(selectedPaper.authors)}</p>
-          <p className="mt-3 text-xs italic leading-relaxed text-brand-muted">{selectedPaper.venueFull}</p>
-          {selectedPaper.award && <p className="mt-3 text-xs font-semibold text-brand-heading">{selectedPaper.award}</p>}
-          {selectedPaper.prelim && <p className="mt-3 text-xs text-brand-muted">{selectedPaper.prelim}</p>}
+          <PublicationCard pub={selectedPaper} variant="detail" />
         </aside>}
       </div>
       <div className="research-map-foot">
         <span>Drag to explore · + / − to zoom · hover to trace connections</span>
-
       </div>
     </div>
   )

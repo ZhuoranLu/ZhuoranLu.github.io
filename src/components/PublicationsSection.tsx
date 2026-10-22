@@ -4,7 +4,7 @@ import { Section } from './Section'
 import { FilterRow } from './FilterBar'
 import { PublicationCard } from './PublicationCard'
 import { ResearchMap } from './ResearchMap'
-import type { ResearchSelection } from '@/data/research'
+import { RESEARCH_FOUNDATIONS, RESEARCH_DOMAINS, selectResearchPapers, type ResearchSelection } from '@/data/research'
 import { filterPublications } from '@/lib/publications'
 import {
   VENUE_OPTIONS,
@@ -24,6 +24,7 @@ export function PublicationsSection({ publications, id, title }: PublicationsSec
   const [venue, setVenue] = useState<VenueGroup | 'all'>('all')
   const [focus, setFocus] = useState<Focus | 'all'>('all')
   const [goal, setGoal] = useState<Goal | 'all'>('all')
+  const [query, setQuery] = useState('')
   const [view, setView] = useState<'list' | 'map'>('list')
   const [requestedView, setRequestedView] = useState<'list' | 'map'>('list')
   const [leaving, setLeaving] = useState(false)
@@ -62,8 +63,9 @@ export function PublicationsSection({ publications, id, title }: PublicationsSec
   }
 
   const visible = useMemo(
-    () => filterPublications(publications, { venue, focus, goal }),
-    [publications, venue, focus, goal],
+    () => selectResearchPapers(filterPublications(publications, { venue, focus, goal }), mapSelection)
+      .filter((paper) => `${paper.title} ${paper.authors} ${paper.venue} ${paper.venueFull}`.toLowerCase().includes(query.trim().toLowerCase())),
+    [publications, venue, focus, goal, mapSelection, query],
   )
 
   const filters = (
@@ -103,18 +105,47 @@ export function PublicationsSection({ publications, id, title }: PublicationsSec
         </div>
       </div>
 
+      <div className="publication-toolbar">
+        <div className="flex flex-wrap items-end gap-3">
+          <label className="publication-field">
+            <span>Foundation</span>
+            <select aria-label="Research foundation" value={mapSelection.foundation ?? ''}
+              onChange={(event) => setMapSelection({ ...mapSelection, foundation: event.target.value as ResearchSelection['foundation'] || null })}>
+              <option value="">All foundations</option>
+              {RESEARCH_FOUNDATIONS.map((item) => <option key={item.id} value={item.id}>{item.label}</option>)}
+            </select>
+          </label>
+          <label className="publication-field">
+            <span>Domain</span>
+            <select aria-label="Application domain" value={mapSelection.domain ?? ''}
+              onChange={(event) => setMapSelection({ ...mapSelection, domain: event.target.value as ResearchSelection['domain'] || null })}>
+              <option value="">All domains</option>
+              {RESEARCH_DOMAINS.map((item) => <option key={item.id} value={item.id}>{item.label}</option>)}
+            </select>
+          </label>
+          <label className="publication-field min-w-0 flex-1 basis-48">
+            <span>Search</span>
+            <input type="search" aria-label="Search publications" placeholder="Title, author, or venue" value={query} onChange={(event) => setQuery(event.target.value)} />
+          </label>
+        </div>
+        <details className="mt-3">
+          <summary className="cursor-pointer text-xs text-brand-muted">More filters</summary>
+          <div className="mt-3">{filters}</div>
+        </details>
+      </div>
+      <div className="mb-4 flex min-h-10 flex-wrap items-center justify-between gap-2">
+        <p role="status" className="text-xs text-brand-muted">{visible.length} of {publications.length} papers</p>
+        {(mapSelection.foundation || mapSelection.domain || query || venue !== 'all' || focus !== 'all' || goal !== 'all') &&
+          <button className="publication-control" type="button" onClick={() => {
+            setMapSelection({ foundation: null, domain: null }); setQuery(''); setVenue('all'); setFocus('all'); setGoal('all')
+          }}>Clear filters</button>}
+      </div>
       <div className={`publication-view ${leaving ? 'publication-view-leaving' : ''}`} inert={leaving} aria-busy={leaving}>
-        {view === 'map' ? (
-          <details className="mb-4 rounded-lg border border-brand-border">
-            <summary className="cursor-pointer px-4 py-3 text-xs text-brand-muted">Refine papers · {visible.length} of {publications.length} included</summary>
-            {filters}
-          </details>
-        ) : filters}
-
-        {view === 'list' && <p role="status" className="mb-3 mt-5 text-xs text-brand-muted">{visible.length} of {publications.length} papers</p>}
         <div>
           {view === 'map' ? (
-            <ResearchMap publications={publications} visible={visible} selection={mapSelection} onSelectionChange={setMapSelection} />
+            <ResearchMap publications={publications} visible={visible} selection={mapSelection}
+              showPapers={Boolean(query.trim() || venue !== 'all' || focus !== 'all' || goal !== 'all')}
+              onSelectionChange={setMapSelection} />
           ) : visible.length === 0 ? (
             <p className="py-6 text-brand-subtle">No publications match these filters.</p>
           ) : (

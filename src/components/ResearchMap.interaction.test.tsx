@@ -43,6 +43,16 @@ async function openPaper(id: string) {
 }
 
 describe('research map selection lifecycle', () => {
+  it('shows filtered papers without requiring an additional topic selection', async () => {
+    const results = publications.filter((paper) => paper.title.toLowerCase().includes('fanverse'))
+    expect(results.length).toBeGreaterThan(0)
+    await act(async () => root.render(<ResearchMap publications={publications} visible={results}
+      selection={{ foundation: null, domain: null }} showPapers onSelectionChange={() => {}} />))
+    expect([...host.querySelectorAll('[data-paper]')].map((node) => node.getAttribute('data-paper'))).toEqual(results.map((paper) => paper.id))
+    await openPaper(results[0].id)
+    expect(host.querySelector('aside')?.textContent).toContain(results[0].title)
+  })
+
   it('does not reopen a dismissed-by-filter paper when the filter is cleared', async () => {
     await render(publications)
     await openPaper(humanPapers[0].id)
@@ -50,6 +60,17 @@ describe('research map selection lifecycle', () => {
     expect(document.activeElement?.textContent).toBe('Close')
     await render(publications.filter((paper) => paper.id !== humanPapers[0].id))
     expect(host.querySelector('aside')).toBeNull()
+    await render(publications)
+    expect(host.querySelector('aside')).toBeNull()
+  })
+
+  it('closes paper details and restores valid focus when shared filters return to overview', async () => {
+    await render(publications)
+    await openPaper(humanPapers[0].id)
+    await act(async () => root.render(<ResearchMap publications={publications} visible={publications}
+      selection={{ foundation: null, domain: null }} onSelectionChange={() => {}} />))
+    expect(host.querySelector('aside')).toBeNull()
+    expect(document.activeElement?.getAttribute('aria-label')).toBe('Research map')
     await render(publications)
     expect(host.querySelector('aside')).toBeNull()
   })
@@ -73,7 +94,7 @@ describe('research map selection lifecycle', () => {
     }
     await act(async () => root.render(<Harness />))
     await act(async () => { host.querySelector<HTMLButtonElement>('[data-topic="human"]')!.click() })
-    expect(document.activeElement?.textContent).toBe('← Overview')
+    expect(document.activeElement?.getAttribute('aria-label')).toBe('Research map')
     await openPaper(humanPapers[0].id)
     await act(async () => { document.activeElement!.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape', bubbles: true })) })
     expect(host.querySelector('aside')).toBeNull()

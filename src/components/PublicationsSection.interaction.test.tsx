@@ -4,9 +4,18 @@ import { createRoot, type Root } from 'react-dom/client'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import { PublicationsSection } from './PublicationsSection'
 import { publications } from '@/data/publications'
+import type { Publication } from '@/types'
+import { selectResearchPapers, type ResearchSelection } from '@/data/research'
 
 vi.mock('./ResearchCanvas', () => ({ default: () => null }))
-vi.mock('./ResearchMap', () => ({ ResearchMap: () => <div data-map>Research map</div> }))
+vi.mock('./ResearchMap', () => ({ ResearchMap: ({ visible, showPapers, onSelectionChange }: {
+  visible: readonly Publication[]
+  showPapers: boolean
+  onSelectionChange: (selection: ResearchSelection) => void
+}) => <div data-map data-show-papers={showPapers}>
+  <button onClick={() => onSelectionChange({ foundation: 'human', domain: null })}>Explore Human</button>
+  {visible.map((paper) => <div key={paper.id} data-publication-id={paper.id} />)}
+</div> }))
 let root: Root
 let host: HTMLDivElement
 let reduced = false
@@ -71,5 +80,55 @@ describe('publication view transitions', () => {
     expect(host.querySelector('[data-map]')).not.toBeNull()
     expect(isBusy()).toBe(false)
     expect(vi.getTimerCount()).toBe(0)
+  })
+
+  it('shares the same ordered papers and filters when moving between views', async () => {
+    const ids = () => [...host.querySelectorAll('[data-publication-id]')].map((card) => card.getAttribute('data-publication-id'))
+    await click('Research Map')
+    await settle()
+    await click('Explore Human')
+    const expected = selectResearchPapers(publications, { foundation: 'human', domain: null }).map((paper) => paper.id)
+    expect(ids()).toEqual(expected)
+    const foundation = host.querySelector<HTMLSelectElement>('[aria-label="Research foundation"]')!
+    expect(foundation.value).toBe('human')
+    const toolbar = host.querySelector('.publication-toolbar')
+    await click('List')
+    await settle()
+    expect(ids()).toEqual(expected)
+    expect(host.querySelector('.publication-toolbar')).toBe(toolbar)
+    await click('HCI')
+    const venueFiltered = ids()
+    expect(venueFiltered.length).toBeGreaterThan(0)
+    expect(venueFiltered.length).toBeLessThan(expected.length)
+    await click('Research Map')
+    await settle()
+    expect(ids()).toEqual(venueFiltered)
+    const domain = host.querySelector<HTMLSelectElement>('[aria-label="Application domain"]')!
+    await act(async () => { domain.value = 'education'; domain.dispatchEvent(new Event('change', { bubbles: true })) })
+    expect(ids()).toEqual([])
+    await click('Research Map')
+    await settle()
+    expect(ids()).toEqual([])
+    await click('Clear filters')
+    expect(ids()).toEqual(publications.map((paper) => paper.id))
+    expect(foundation.value).toBe('')
+    expect(domain.value).toBe('')
+  })
+
+  it('searches displayed venue names and opens matching papers directly in Map', async () => {
+    const search = host.querySelector<HTMLInputElement>('[aria-label="Search publications"]')!
+    await act(async () => {
+      Object.getOwnPropertyDescriptor(HTMLInputElement.prototype, 'value')!.set!.call(search, 'arXiv')
+      search.dispatchEvent(new Event('input', { bubbles: true }))
+    })
+    const expected = publications.filter((paper) => paper.venue === 'arXiv').map((paper) => paper.id)
+    expect([...host.querySelectorAll('[data-publication-id]')].map((card) => card.getAttribute('data-publication-id'))).toEqual(expected)
+    await click('Research Map')
+    await settle()
+    expect(host.querySelector('[data-map]')?.getAttribute('data-show-papers')).toBe('true')
+    expect([...host.querySelectorAll('[data-publication-id]')].map((card) => card.getAttribute('data-publication-id'))).toEqual(expected)
+    await click('Clear filters')
+    expect(search.value).toBe('')
+    expect(host.querySelector('[data-map]')?.getAttribute('data-show-papers')).toBe('false')
   })
 })
